@@ -57,5 +57,8 @@ brew install maven
 brew install maven-shell
 brew install play
 
+## haskell
+brew install haskell-platform
+
 ## node.js
 brew install node
