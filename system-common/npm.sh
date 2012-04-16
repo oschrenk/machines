@@ -3,7 +3,7 @@
 # Install npm
 curl http://npmjs.org/install.sh | sh
 
-# Instsall global node modules
+# Install global node modules
 npm install -g express
 npm install -g markdown-wiki
 npm install -g deja
