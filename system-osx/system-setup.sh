@@ -14,3 +14,7 @@ sudo bash -c "echo /usr/local/bin/bash >> /private/etc/shells"
 
 # Install haskell packages
 . ../system-common/cabal.sh
+
+# Symlink editors
+ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
+ln -s /Applications/TextMate.app/Contents/Resources/mate /usr/local/bin/mate
