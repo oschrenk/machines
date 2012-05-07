@@ -22,3 +22,7 @@ deja link dotfiles
 # Symlink editors
 ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 ln -s /Applications/TextMate.app/Contents/Resources/mate /usr/local/bin/mate
+
+# Symlink sublime user settings
+mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/
+ln -s ~/.sublime ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
