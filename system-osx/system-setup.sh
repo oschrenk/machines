@@ -15,9 +15,7 @@ echo '<?xml version="1.0" encoding="UTF-8" ?><Preferences><Suppressed>1</Suppres
 # Install npm and the global npm modules
 . ../system-common/npm.sh
 
-# Install haskell packages
-. ../system-common/cabal.sh
-
 # Symlink editors
 ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 ln -s /Applications/TextMate.app/Contents/Resources/mate /usr/local/bin/mate
+
