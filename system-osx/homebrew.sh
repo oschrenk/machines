@@ -18,6 +18,7 @@ brew install xmlstarlet
 ## http
 brew install curl
 brew install httrack
+brew install ngrep
 brew install wget
 
 ## git
