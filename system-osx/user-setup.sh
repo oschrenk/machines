@@ -20,6 +20,7 @@ deja link dotfiles
 
 # Symlink sublime user settings
 mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/
+rm -r ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
 ln -s ~/.sublime ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
 
 # Setup ssh-agent-locker
