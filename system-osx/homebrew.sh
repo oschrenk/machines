@@ -11,12 +11,14 @@ brew install z
 
 ## tools
 brew install ack
-brew install curl
-brew install httrack
 brew install multimarkdown
 brew install synergy
-brew install wget
 brew install xmlstarlet
+
+## http
+brew install curl
+brew install httrack
+brew install wget
 
 ## git
 brew install git
