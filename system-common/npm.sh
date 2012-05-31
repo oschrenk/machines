@@ -10,3 +10,4 @@ npm install -g deja
 npm install -g pegjs
 npm install -g codestream
 npm install -g webmake
+npm install -g jshint
