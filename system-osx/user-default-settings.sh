@@ -26,8 +26,6 @@ defaults write com.apple.screencapture location ~/Downloads
 # Disable Dashboard
 defaults write com.apple.dashboard mcx-disabled -boolean yes
 
-
-
 # set clock in login screen to 24h schema
 sudo defaults write /Library/Preferences/.GlobalPreferences AppleLocale "de_DE"
 
