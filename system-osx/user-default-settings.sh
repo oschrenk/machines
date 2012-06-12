@@ -57,6 +57,10 @@ sudo pmset -a hibernatemode 0
 # Don't put hard disks to sleep. x is time in minute
 sudo pmset disksleep 0
 
+# Show remaining battery time; hide percentage
+defaults write com.apple.menuextra.battery ShowPercent -string "NO"
+defaults write com.apple.menuextra.battery ShowTime -string "NO"
+
 ## --------------------------------------------------------------------------
 # Time Machine
 ## --------------------------------------------------------------------------
