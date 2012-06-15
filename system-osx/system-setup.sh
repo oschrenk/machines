@@ -22,3 +22,11 @@ ln -s /Applications/TextMate.app/Contents/Resources/mate /usr/local/bin/mate
 # Symlink sublime user settings
 mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/
 ln -s ~/.sublime ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
+
+# MultimarkDown Quicklook
+cd ~/Downloads
+wget https://github.com/downloads/oschrenk/MMD-QuickLook/MultiMarkdown%20QuickLook.qlgenerator.zip
+unzip MultiMarkdown\ QuickLook.qlgenerator.zip
+sudo cp -r MultiMarkdown\ QuickLook.qlgenerator /Library/QuickLook/
+rm -r MultiMarkdown\ QuickLook.qlgenerator*
+qlmanage -r
