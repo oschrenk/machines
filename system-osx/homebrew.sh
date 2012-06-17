@@ -16,10 +16,13 @@ brew install multimarkdown
 brew install synergy
 brew install xmlstarlet
 
+## network
+brew install nmap
+brew install ngrep
+
 ## http
 brew install curl
 brew install httrack
-brew install ngrep
 brew install wget
 
 ## git
