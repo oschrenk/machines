@@ -7,6 +7,7 @@ brew install ssh-agent-locker # configuration on user level
 ## command line
 brew install bash # configuration as shell happens on user level
 brew install bash-completion
+brew install tree
 brew install z
 
 ## tools
