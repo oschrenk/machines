@@ -13,15 +13,17 @@ cd ~/Development
 git clone git@github.com:oschrenk/notes.git
 git clone git@github.com:oschrenk/scripts.git
 
-# setup dotfiles	
+# setup dotfiles
 cd ~
 deja clone oschrenk/dotfiles
 deja link dotfiles
 
 # Symlink sublime user settings
-mkdir -p ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/
-rm -r ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
-ln -s $HOME/.sublime ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User
+SUBLIME_PACKAGES="$HOME/Library/Application Support/Sublime Text 2/Packages"
+SUBLIME_USER_SETTINGS="$SUBLIME_PACKAGES/User"
+mkdir -p "$SUBLIME_PACKAGES"
+rm -rf "$SUBLIME_USER_SETTINGS"
+ln -s $HOME/.sublime "$SUBLIME_USER_SETTINGS"
 
 # Setup ssh-agent-locker
 mkdir -p ~/Library/LaunchAgents
@@ -34,4 +36,3 @@ echo '<?xml version="1.0" encoding="UTF-8" ?><Preferences><UpdaterPrefSchedCheck
 # Update textmate and sublime
 mateup
 sublimeup
-
