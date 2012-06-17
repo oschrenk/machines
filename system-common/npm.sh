@@ -11,3 +11,4 @@ npm install -g pegjs
 npm install -g codestream
 npm install -g webmake
 npm install -g jshint
+npm install -g node-gyp
