@@ -30,3 +30,13 @@ unzip MultiMarkdown\ QuickLook.qlgenerator.zip
 sudo cp -r MultiMarkdown\ QuickLook.qlgenerator /Library/QuickLook/
 rm -r MultiMarkdown\ QuickLook.qlgenerator*
 qlmanage -r
+
+# P4Merge
+
+cat > /usr/local/bin/p4merge  <<DELIM
+#!/bin/bash
+
+for arg; do [[ $arg = /* ]] || arg=$PWD/$arg; absargs+=("$arg"); done;
+/Applications/p4merge.app/Contents/Resources/launchp4merge "${absargs[@]}"
+DELIM
+chmod +x /usr/local/bin/p4merge
