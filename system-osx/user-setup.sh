@@ -36,3 +36,6 @@ echo '<?xml version="1.0" encoding="UTF-8" ?><Preferences><UpdaterPrefSchedCheck
 # Update textmate and sublime
 mateup
 sublimeup
+
+# install vim bundles via vundle
+vim +BundleInstall +qall
