@@ -169,6 +169,9 @@ defaults write -g userMenuExtraStyle -int 1
 # Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
+# Only use UTF-8 in Terminal.app
+defaults write com.apple.terminal StringEncodings -array 4
+
 # Enable “focus follows mouse” for Terminal.app and all X11 apps
 # This means you can hover over a window and start typing in it without clicking first
 #defaults write com.apple.terminal FocusFollowsMouse -bool true
