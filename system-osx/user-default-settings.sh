@@ -264,8 +264,11 @@ defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Fi
 ## Remove Spotlight icon
 sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
 
-## --------------------------------------------------------------------------
-# Kill affected applications
-## --------------------------------------------------------------------------
+###############################################################################
+# Kill affected applications                                                  #
+###############################################################################
 
-for app in Finder Dock Mail SystemUIServer; do killall "$app" >/dev/null 2>&1; done
+for app in Finder Dock Mail Safari iTunes iCal Address\ Book SystemUIServer; do
+	killall "$app" > /dev/null 2>&1
+done
+echo "Done. Note that some of these changes require a logout/restart to take effect."
