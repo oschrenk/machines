@@ -5,10 +5,10 @@
 ## System
 ## --------------------------------------------------------------------------
 
-# Enable fast user switching 
+# Enable fast user switching
 defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -bool YES
 
-# Enable non-natural scrolling 
+# Enable non-natural scrolling
 defaults write -g com.apple.swipescrolldirection -bool false
 
 # Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
@@ -26,8 +26,18 @@ defaults write com.apple.screencapture location ~/Downloads
 # Disable Dashboard
 defaults write com.apple.dashboard mcx-disabled -boolean yes
 
-# set clock in login screen to 24h schema
+# Set language and text formats
+# Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with `Inches`, and `true` with `false`.
+
+# Set clock in login screen to 24h schema
 sudo defaults write /Library/Preferences/.GlobalPreferences AppleLocale "de_DE"
+
+defaults write NSGlobalDomain AppleLanguages -array "de" "en"
+defaults write NSGlobalDomain AppleLocale -string "de_DE@currency=EUR"
+
+# AppleMeasurementUnits
+defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
+defaults write NSGlobalDomain AppleMetricUnits -bool true
 
 ## --------------------------------------------------------------------------
 # Hardware
@@ -40,12 +50,12 @@ sudo defaults write /Library/Preferences/com.apple.driver.AppleIRController Devi
 sudo pmset -a sms 0
 
 # Only use RAM to hibernate
-# hibernatemode = 0 (binary 0000) by default on supported desktops. 
+# hibernatemode = 0 (binary 0000) by default on supported desktops.
 # The system will not back memory up to persistent storage.
 # hibernatemode = 3 (binary 0011) by default on supported portables.
 # The system will store a copy of memory to persistent storage (the disk), and will power memory during sleep.
-# hibernatemode = 25 (binary 0001 1001) is only settable via pmset. 
-# The system will store a copy of memory to persistent storage (the disk), and will remove power to memory. 
+# hibernatemode = 25 (binary 0001 1001) is only settable via pmset.
+# The system will store a copy of memory to persistent storage (the disk), and will remove power to memory.
 # The system will restore from disk image. If you want “hibernation” – slower sleeps, slower wakes, and better battery life, you should use this setting.
 sudo pmset -a hibernatemode 0
 
@@ -87,7 +97,7 @@ sudo sysctl -w net.inet.tcp.slowstart_flightsize=10
 ## --------------------------------------------------------------------------
 
 # Force expanded dialogs
-# These commands force expanded dialog boxes for saving (top) and printing (bottom), 
+# These commands force expanded dialog boxes for saving (top) and printing (bottom),
 # if an app doesn't already have a custom setting. Use 'false' to reverse the commands.
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -boolean true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -boolean true
