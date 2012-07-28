@@ -13,6 +13,7 @@ brew install z
 ## tools
 brew install ack
 brew install multimarkdown
+brew install rename
 brew install synergy
 brew install xmlstarlet
 
