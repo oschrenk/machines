@@ -5,6 +5,11 @@
 ## System
 ## --------------------------------------------------------------------------
 
+# Set computer name (as done via System Preferences → Sharing)
+scutil --set ComputerName "Schmendrick Pro"
+scutil --set HostName "Schmendrick Pro"
+scutil --set LocalHostName "Schmendrick-Pro"
+
 # Enable fast user switching
 defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -bool YES
 
