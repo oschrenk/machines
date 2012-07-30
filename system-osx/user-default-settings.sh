@@ -8,7 +8,7 @@
 # Set computer name (as done via System Preferences → Sharing)
 scutil --set ComputerName "Schmendrick Pro"
 scutil --set HostName "Schmendrick Pro"
-scutil --set LocalHostName "Schmendrick-Pro"
+scutil --set LocalHostName"Schmendrick-Pro"
 
 # Enable fast user switching
 defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -bool YES
@@ -176,6 +176,12 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
+
+# Use the IR_Black theme/settings by default in Terminal.app
+open "../application-settings/IR_Black.terminal"
+sleep 1 # Wait a bit to make sure the theme is loaded
+defaults write com.apple.Terminal "Default Window Settings" -string "IR_Black"
+defaults write com.apple.Terminal "Startup Window Settings" -string "IR_Black"
 
 # Enable “focus follows mouse” for Terminal.app and all X11 apps
 # This means you can hover over a window and start typing in it without clicking first
