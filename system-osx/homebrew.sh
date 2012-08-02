@@ -1,5 +1,10 @@
 #!/bin/sh
 
+brew tap adamv/alt
+brew tap homebrew/dupes
+brew tap josegonzalez/php
+brew tap oschrenk/homebrew-formulae
+
 ## system
 # osx lion broke keyhchain/ssh-agent
 brew install ssh-agent-locker # configuration on user level
@@ -13,7 +18,6 @@ brew install z
 ## tools
 brew install ack
 brew install multimarkdown
-brew install rename
 brew install synergy
 brew install xmlstarlet
 
