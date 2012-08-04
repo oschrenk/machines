@@ -266,8 +266,13 @@ defaults write com.apple.iTunes disablePing -bool true
 # Changes arrows next to artists and albums to search your library instead of iTunes Store (0 to revert)
 defaults write com.apple.iTunes invertStoreLinks 1
 
-# Make ⌘ + F focus the search input in iTunes
-defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Field" "@F"
+ # Make ⌘ + F focus the search input in iTunes
+# To use these commands in another language, browse iTunes’s package contents,
+# open `Contents/Resources/your-language.lproj/Localizable.strings`, and look
+# for `kMenuItemFullScreen` and `kHiddenMenuItemTargetSearch`.
+# for English
+#defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Field" "@F"
+defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Zielsuchfeld" "@F"
 
 ## --------------------------------------------------------------------------
 # Spotlight
