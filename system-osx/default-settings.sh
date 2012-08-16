@@ -273,7 +273,7 @@ defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 defaults write com.apple.mail PreferPlainText -bool TRUE
 
 # Add invitations to iCal automatically
-defaults write com.apple.mail AddInvitationsToICalAutomatically -bool true
+# defaults write com.apple.mail AddInvitationsToICalAutomatically -bool true
 
 # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
