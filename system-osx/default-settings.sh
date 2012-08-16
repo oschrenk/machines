@@ -240,20 +240,20 @@ defaults write com.apple.dock 'magnification' -bool false
 # Lock size
 defaults write com.apple.Dock size-immutable -bool true
 
-### Position on screen: bottom
+# Position on screen: bottom
 defaults write com.apple.dock 'orientation' -string 'bottom'
 
-### Autohide
+# Autohide
 defaults write com.apple.dock 'autohide' -bool yes
 
-### Autohide delay
+# Autohide delay
 defaults write com.apple.Dock autohide-delay -float 0
 
 ## --------------------------------------------------------------------------
 # Desktop
 ## --------------------------------------------------------------------------
 
-## change wallpaper
+# change wallpaper
 # sudo defaults write /Library/Preferences/com.apple.loginwindow DesktopPicture /Users/Shared/mynewbackground.jpg
 
 # Show item info below desktop icons
@@ -266,20 +266,20 @@ defaults write com.apple.Dock autohide-delay -float 0
 # Mail
 ## --------------------------------------------------------------------------
 
-## Forces messages in Mail to be displayed as plain text instead of formatted (0 to reverse)
+# Forces messages in Mail to be displayed as plain text instead of formatted (0 to reverse)
 defaults write com.apple.mail PreferPlainText -bool TRUE
 
-## Add invitations to iCal automatically
+# Add invitations to iCal automatically
 defaults write com.apple.mail AddInvitationsToICalAutomatically -bool true
 
-## Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
+# Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
 # Disable send and reply animations in Mail.app
 #defaults write com.apple.Mail DisableReplyAnimations -bool true
 #defaults write com.apple.Mail DisableSendAnimations -bool true
 
-## Enable Mail Bundles
+# Enable Mail Bundles
 defaults write com.apple.mail EnableBundles -bool true
 defaults write com.apple.mail BundleCompatibilityVersion 4
 
@@ -287,7 +287,7 @@ defaults write com.apple.mail BundleCompatibilityVersion 4
 # iTunes
 ## --------------------------------------------------------------------------
 
-## Disable the Ping sidebar in iTunes
+# Disable the Ping sidebar in iTunes
 defaults write com.apple.iTunes disablePingSidebar -bool true
 
 # Disable all the other Ping stuff in iTunes
@@ -296,7 +296,7 @@ defaults write com.apple.iTunes disablePing -bool true
 # Changes arrows next to artists and albums to search your library instead of iTunes Store (0 to revert)
 defaults write com.apple.iTunes invertStoreLinks 1
 
- # Make ⌘ + F focus the search input in iTunes
+# Make ⌘ + F focus the search input in iTunes
 # To use these commands in another language, browse iTunes’s package contents,
 # open `Contents/Resources/your-language.lproj/Localizable.strings`, and look
 # for `kMenuItemFullScreen` and `kHiddenMenuItemTargetSearch`.
@@ -308,10 +308,10 @@ defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Zielsuchfeld" "@
 # Spotlight
 ## --------------------------------------------------------------------------
 
-## Disable Spotlight indexing
+# Disable Spotlight indexing
 # sudo mdutil -a -i on
 
-## Remove Spotlight icon
+# Remove Spotlight icon
 sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
 
 ###############################################################################
