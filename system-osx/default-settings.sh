@@ -37,6 +37,9 @@ sudo pmset disksleep 0
 defaults write com.apple.menuextra.battery ShowPercent -string "NO"
 defaults write com.apple.menuextra.battery ShowTime -string "NO"
 
+# Automatically illuminate built-in MacBook keyboard in low light
+defaults write com.apple.BezelServices kDim -bool true
+
 ## --------------------------------------------------------------------------
 ## System
 ## --------------------------------------------------------------------------
