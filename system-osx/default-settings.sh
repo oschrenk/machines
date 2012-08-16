@@ -8,54 +8,7 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 ## --------------------------------------------------------------------------
-## System
-## --------------------------------------------------------------------------
-
-# Set computer name (as done via System Preferences → Sharing)
-scutil --set ComputerName "OlschBook Pro"
-scutil --set HostName "OlschBook Pro"
-scutil --set LocalHostName "OlschBook-Pro"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "MathBook-Pro"
-
-# Restart automatically if the computer freezes
-systemsetup -setrestartfreeze on
-
-# Enable fast user switching
-defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -bool YES
-
-# Enable non-natural scrolling
-defaults write -g com.apple.swipescrolldirection -bool false
-
-# Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
-defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
-
-# Take screenshots as png
-defaults write com.apple.screencapture type png
-
-# Save screenshots to ...
-defaults write com.apple.screencapture location ~/Downloads
-
-# Disable shadow in screenshots
-# defaults write com.apple.screencapture disable-shadow -bool true
-
-# Disable Dashboard
-defaults write com.apple.dashboard mcx-disabled -boolean yes
-
-# Set language and text formats
-# Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with `Inches`, and `true` with `false`.
-
-# Set clock in login screen to 24h schema
-sudo defaults write /Library/Preferences/.GlobalPreferences AppleLocale "de_DE"
-
-defaults write NSGlobalDomain AppleLanguages -array "de" "en"
-defaults write NSGlobalDomain AppleLocale -string "de_DE@currency=EUR"
-
-# AppleMeasurementUnits
-defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
-defaults write NSGlobalDomain AppleMetricUnits -bool true
-
-## --------------------------------------------------------------------------
-# Hardware
+# Hardware & Energy settings
 ## --------------------------------------------------------------------------
 
 # Disable InfraredController
@@ -85,14 +38,33 @@ defaults write com.apple.menuextra.battery ShowPercent -string "NO"
 defaults write com.apple.menuextra.battery ShowTime -string "NO"
 
 ## --------------------------------------------------------------------------
-# Time Machine
+## System
 ## --------------------------------------------------------------------------
 
-# Disable local Time Machine backups
-hash tmutil &> /dev/null && sudo tmutil disablelocal
+# Set computer name (as done via System Preferences → Sharing)
+scutil --set ComputerName "OlschBook Pro"
+scutil --set HostName "OlschBook Pro"
+scutil --set LocalHostName "OlschBook-Pro"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "MathBook-Pro"
 
-# Prevent Time Machine from prompting to use new hard drives as backup volume
-defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+# Restart automatically if the computer freezes
+systemsetup -setrestartfreeze on
+
+# Enable fast user switching
+defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -bool YES
+
+# Set language and text formats
+# Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with `Inches`, and `true` with `false`.
+
+# Set clock in login screen to 24h schema
+sudo defaults write /Library/Preferences/.GlobalPreferences AppleLocale "de_DE"
+
+defaults write NSGlobalDomain AppleLanguages -array "de" "en"
+defaults write NSGlobalDomain AppleLocale -string "de_DE@currency=EUR"
+
+# AppleMeasurementUnits
+defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
+defaults write NSGlobalDomain AppleMetricUnits -bool true
 
 ## --------------------------------------------------------------------------
 # Network
@@ -106,6 +78,33 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 # Increase TCP's initial window (IW) to 10 segments
 sudo sysctl -w net.inet.tcp.slowstart_flightsize=10
+
+## --------------------------------------------------------------------------
+# Time Machine
+## --------------------------------------------------------------------------
+
+# Disable local Time Machine backups
+hash tmutil &> /dev/null && sudo tmutil disablelocal
+
+# Prevent Time Machine from prompting to use new hard drives as backup volume
+defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
+
+## --------------------------------------------------------------------------
+# General UI/UX
+## --------------------------------------------------------------------------
+
+
+# Take screenshots as png
+defaults write com.apple.screencapture type png
+
+# Save screenshots to ...
+defaults write com.apple.screencapture location ~/Downloads
+
+# Disable shadow in screenshots
+# defaults write com.apple.screencapture disable-shadow -bool true
+
+# Disable Dashboard
+defaults write com.apple.dashboard mcx-disabled -boolean yes
 
 ## --------------------------------------------------------------------------
 # Finder
@@ -186,6 +185,9 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
+
+# Enable non-natural scrolling
+defaults write -g com.apple.swipescrolldirection -bool false
 
 # Use the IR_Black theme/settings by default in Terminal.app
 open "../application-settings/IR_Black.terminal"
