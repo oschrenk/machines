@@ -17,6 +17,9 @@ scutil --set HostName "OlschBook Pro"
 scutil --set LocalHostName "OlschBook-Pro"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "MathBook-Pro"
 
+# Restart automatically if the computer freezes
+systemsetup -setrestartfreeze on
+
 # Enable fast user switching
 defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -bool YES
 
