@@ -334,7 +334,9 @@ defaults write com.apple.Terminal "Startup Window Settings" -string "IR_Black"
 # Kill affected applications                                                  #
 ###############################################################################
 
-for app in Finder Dock Mail Safari iTunes iCal Address\ Book SystemUIServer; do
+for app in "Calendar" "Contacts" "Dock" "Finder" "Mail" \
+	"Safari" "SystemUIServer" "Terminal"  \
+	"iTunes"; do
 	killall "$app" > /dev/null 2>&1
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
