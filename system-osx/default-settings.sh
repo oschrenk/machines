@@ -249,6 +249,9 @@ defaults write com.apple.dock 'autohide' -bool yes
 # Autohide delay
 defaults write com.apple.Dock autohide-delay -float 0
 
+# Enable spring loading for all Dock items
+defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
+
 ## --------------------------------------------------------------------------
 # Desktop
 ## --------------------------------------------------------------------------
