@@ -176,6 +176,9 @@ defaults write com.apple.menuextra.clock DateFormat -string "d. MMM  HH:mm"
 # Show fast user switching menu as: 0: Full Name, 1: Short Name, 2: Icon
 defaults write -g userMenuExtraStyle -int 1
 
+# Menu bar: hide the useless Time Machine and Volume icons
+defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" "/System/Library/CoreServices/Menu Extras/AirPort.menu" "/System/Library/CoreServices/Menu Extras/Battery.menu" "/System/Library/CoreServices/Menu Extras/Clock.menu"
+
 ## --------------------------------------------------------------------------
 # Access and Input
 ## --------------------------------------------------------------------------
