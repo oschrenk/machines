@@ -33,10 +33,6 @@ sudo pmset -a hibernatemode 0
 # Don't put hard disks to sleep. x is time in minute
 sudo pmset disksleep 0
 
-# Show remaining battery time; hide percentage
-defaults write com.apple.menuextra.battery ShowPercent -string "NO"
-defaults write com.apple.menuextra.battery ShowTime -string "NO"
-
 # Automatically illuminate built-in MacBook keyboard in low light
 defaults write com.apple.BezelServices kDim -bool true
 # Turn off keyboard illumination when computer is not used for 5 minutes
@@ -182,6 +178,10 @@ defaults write -g userMenuExtraStyle -int 1
 
 # Menu bar: hide the useless Time Machine and Volume icons
 defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" "/System/Library/CoreServices/Menu Extras/AirPort.menu" "/System/Library/CoreServices/Menu Extras/Battery.menu" "/System/Library/CoreServices/Menu Extras/Clock.menu"
+
+# Show remaining battery time; hide percentage
+defaults write com.apple.menuextra.battery ShowPercent -string "NO"
+defaults write com.apple.menuextra.battery ShowTime -string "NO"
 
 ## --------------------------------------------------------------------------
 # Access and Input
