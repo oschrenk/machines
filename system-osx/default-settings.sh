@@ -15,6 +15,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 scutil --set ComputerName "OlschBook Pro"
 scutil --set HostName "OlschBook Pro"
 scutil --set LocalHostName "OlschBook-Pro"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "MathBook-Pro"
 
 # Enable fast user switching
 defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -bool YES
