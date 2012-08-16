@@ -12,9 +12,9 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ## --------------------------------------------------------------------------
 
 # Set computer name (as done via System Preferences → Sharing)
-scutil --set ComputerName "Schmendrick Pro"
-scutil --set HostName "Schmendrick Pro"
-scutil --set LocalHostName"Schmendrick-Pro"
+scutil --set ComputerName "OlschBook Pro"
+scutil --set HostName "OlschBook Pro"
+scutil --set LocalHostName "OlschBook-Pro"
 
 # Enable fast user switching
 defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -bool YES
