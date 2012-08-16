@@ -290,14 +290,14 @@ defaults write com.apple.mail BundleCompatibilityVersion 4
 # iTunes
 ## --------------------------------------------------------------------------
 
+# Disable the iTunes store link arrows
+defaults write com.apple.iTunes show-store-link-arrows -bool false
+
 # Disable the Ping sidebar in iTunes
 defaults write com.apple.iTunes disablePingSidebar -bool true
 
 # Disable all the other Ping stuff in iTunes
 defaults write com.apple.iTunes disablePing -bool true
-
-# Changes arrows next to artists and albums to search your library instead of iTunes Store (0 to revert)
-defaults write com.apple.iTunes invertStoreLinks 1
 
 # Make ⌘ + F focus the search input in iTunes
 # To use these commands in another language, browse iTunes’s package contents,
