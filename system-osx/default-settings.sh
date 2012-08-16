@@ -81,6 +81,16 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 sudo sysctl -w net.inet.tcp.slowstart_flightsize=10
 
 ## --------------------------------------------------------------------------
+# Spotlight
+## --------------------------------------------------------------------------
+
+# Disable Spotlight indexing
+# sudo mdutil -a -i on
+
+# Remove Spotlight icon
+sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+
+## --------------------------------------------------------------------------
 # Time Machine
 ## --------------------------------------------------------------------------
 
@@ -142,17 +152,6 @@ sudo chmod 444 /private/var/db/.AccessibilityAPIEnabled
 # TODO: avoid GUI password prompt somehow (http://apple.stackexchange.com/q/60476/4408)
 #sudo osascript -e 'tell application "System Events" to set UI elements enabled to true'
 
-# Use the IR_Black theme/settings by default in Terminal.app
-open "../application-settings/IR_Black.terminal"
-sleep 1 # Wait a bit to make sure the theme is loaded
-defaults write com.apple.Terminal "Default Window Settings" -string "IR_Black"
-defaults write com.apple.Terminal "Startup Window Settings" -string "IR_Black"
-
-# Enable “focus follows mouse” for Terminal.app and all X11 apps
-# This means you can hover over a window and start typing in it without clicking first
-#defaults write com.apple.terminal FocusFollowsMouse -bool true
-#defaults write org.x.X11 wm_ffm -bool true
-
 # active corner top left: All Windows
 defaults write com.apple.dock wvous-tl-corner -int 2
 # active corner top right: All Windows
@@ -161,9 +160,6 @@ defaults write com.apple.dock wvous-tr-corner -int 2
 defaults write com.apple.dock wvous-bl-corner -int 3
 # active corner bottom right: Desktop
 defaults write com.apple.dock wvous-br-corner -int 4
-
-# Only use UTF-8 in Terminal.app
-defaults write com.apple.terminal StringEncodings -array 4
 
 ## --------------------------------------------------------------------------
 # Finder
@@ -317,14 +313,22 @@ defaults write com.apple.iTunes disableRadio -bool true
 defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Zielsuchfeld" "@F"
 
 ## --------------------------------------------------------------------------
-# Spotlight
+# Terminal
 ## --------------------------------------------------------------------------
 
-# Disable Spotlight indexing
-# sudo mdutil -a -i on
+# Only use UTF-8 in Terminal.app
+defaults write com.apple.terminal StringEncodings -array 4
 
-# Remove Spotlight icon
-sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+# Use the IR_Black theme/settings by default in Terminal.app
+open "../application-settings/IR_Black.terminal"
+sleep 1 # Wait a bit to make sure the theme is loaded
+defaults write com.apple.Terminal "Default Window Settings" -string "IR_Black"
+defaults write com.apple.Terminal "Startup Window Settings" -string "IR_Black"
+
+# Enable “focus follows mouse” for Terminal.app and all X11 apps
+# This means you can hover over a window and start typing in it without clicking first
+#defaults write com.apple.terminal FocusFollowsMouse -bool true
+#defaults write org.x.X11 wm_ffm -bool true
 
 ###############################################################################
 # Kill affected applications                                                  #
