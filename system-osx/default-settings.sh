@@ -293,6 +293,9 @@ defaults write com.apple.mail BundleCompatibilityVersion 4
 # Disable the iTunes store link arrows
 defaults write com.apple.iTunes show-store-link-arrows -bool false
 
+# Disable the Genius sidebar in iTunes
+defaults write com.apple.iTunes disableGeniusSidebar -bool true
+
 # Disable the Ping sidebar in iTunes
 defaults write com.apple.iTunes disablePingSidebar -bool true
 
