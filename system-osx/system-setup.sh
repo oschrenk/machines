@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Install homebrew package manager
-ruby -e "$(curl -fsSLk https://gist.github.com/raw/323731/install_homebrew.rb)"
+ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
 
 # Install homebrew packages
 ./homebrew.sh
