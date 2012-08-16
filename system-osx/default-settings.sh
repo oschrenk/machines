@@ -107,63 +107,6 @@ defaults write com.apple.screencapture location ~/Downloads
 defaults write com.apple.dashboard mcx-disabled -boolean yes
 
 ## --------------------------------------------------------------------------
-# Finder
-## --------------------------------------------------------------------------
-
-# Force expanded dialogs
-# These commands force expanded dialog boxes for saving (top) and printing (bottom),
-# if an app doesn't already have a custom setting. Use 'false' to reverse the commands.
-defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -boolean true
-defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -boolean true
-
-# Show all filename extensions in Finder
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
-
-# Disable the warning when changing a file extension
-defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
-
-# Use current directory as default search scope in Finder
-defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
-
-# Sidebar icon size: Small
-defaults write -g 'NSTableViewDefaultSizeMode' -int 1
-
-# Number of recent items: Applications: None
-/usr/bin/osascript -e 'tell application "System Events" to tell appearance preferences to set recent applications limit to 0'
-
-# Number of recent items: Documents: None
-/usr/bin/osascript -e 'tell application "System Events" to tell appearance preferences to set recent documents limit to 0'
-
-# Number of recent items: Servers: None
-/usr/bin/osascript -e 'tell application "System Events" to tell appearance preferences to set recent servers limit to 0'
-
-# Show scroll bars: Always
-defaults write -g 'AppleShowScrollBars' -string 'Always'
-
-# Show Path bar in Finder
-defaults write com.apple.finder ShowPathbar -bool true
-
-# Hide Statusbar
-defaults write com.apple.finder 'ShowStatusBar' -bool false
-
-# Disable Sounds
-# /usr/bin/defaults write com.apple.finder 'FinderSounds' -bool false
-
-# Automatically open a new Finder window when a volume is mounted
-defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
-defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
-defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
-
-# Enable the ability to highlight text in QuickLook
-defaults write com.apple.finder QLEnableTextSelection -bool TRUE
-
-# Allow quitting Finder via ⌘ + Q; doing so will also hide desktop icons
-# defaults write com.apple.finder QuitMenuItem -bool true
-
-# Disable the animation for showing and hiding information panels in Finder
-# defaults write com.apple.finder AnimateInfoPanes -bool false
-
-## --------------------------------------------------------------------------
 # Menubar
 ## --------------------------------------------------------------------------
 
@@ -221,6 +164,63 @@ defaults write com.apple.dock wvous-br-corner -int 4
 
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
+
+## --------------------------------------------------------------------------
+# Finder
+## --------------------------------------------------------------------------
+
+# Force expanded dialogs
+# These commands force expanded dialog boxes for saving (top) and printing (bottom),
+# if an app doesn't already have a custom setting. Use 'false' to reverse the commands.
+defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -boolean true
+defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -boolean true
+
+# Show all filename extensions in Finder
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
+# Disable the warning when changing a file extension
+defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
+
+# Use current directory as default search scope in Finder
+defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+
+# Sidebar icon size: Small
+defaults write -g 'NSTableViewDefaultSizeMode' -int 1
+
+# Number of recent items: Applications: None
+/usr/bin/osascript -e 'tell application "System Events" to tell appearance preferences to set recent applications limit to 0'
+
+# Number of recent items: Documents: None
+/usr/bin/osascript -e 'tell application "System Events" to tell appearance preferences to set recent documents limit to 0'
+
+# Number of recent items: Servers: None
+/usr/bin/osascript -e 'tell application "System Events" to tell appearance preferences to set recent servers limit to 0'
+
+# Show scroll bars: Always
+defaults write -g 'AppleShowScrollBars' -string 'Always'
+
+# Show Path bar in Finder
+defaults write com.apple.finder ShowPathbar -bool true
+
+# Hide Statusbar
+defaults write com.apple.finder 'ShowStatusBar' -bool false
+
+# Disable Sounds
+# /usr/bin/defaults write com.apple.finder 'FinderSounds' -bool false
+
+# Automatically open a new Finder window when a volume is mounted
+defaults write com.apple.frameworks.diskimages auto-open-ro-root -bool true
+defaults write com.apple.frameworks.diskimages auto-open-rw-root -bool true
+defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
+
+# Enable the ability to highlight text in QuickLook
+defaults write com.apple.finder QLEnableTextSelection -bool TRUE
+
+# Allow quitting Finder via ⌘ + Q; doing so will also hide desktop icons
+# defaults write com.apple.finder QuitMenuItem -bool true
+
+# Disable the animation for showing and hiding information panels in Finder
+# defaults write com.apple.finder AnimateInfoPanes -bool false
 
 ## --------------------------------------------------------------------------
 # Dock
