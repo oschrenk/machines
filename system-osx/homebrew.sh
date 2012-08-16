@@ -6,6 +6,9 @@ brew tap josegonzalez/php
 brew tap oschrenk/homebrew-formulae
 
 ## system
+# Install GNU core utilities (those that come with OS X are outdated)
+brew install coreutils
+echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."
 # osx lion broke keyhchain/ssh-agent
 brew install ssh-agent-locker # configuration on user level
 
