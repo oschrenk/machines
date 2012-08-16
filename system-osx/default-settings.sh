@@ -93,7 +93,6 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 # General UI/UX
 ## --------------------------------------------------------------------------
 
-
 # Take screenshots as png
 defaults write com.apple.screencapture type png
 
@@ -186,11 +185,14 @@ defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreS
 # Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
-# Only use UTF-8 in Terminal.app
-defaults write com.apple.terminal StringEncodings -array 4
-
 # Enable non-natural scrolling
 defaults write -g com.apple.swipescrolldirection -bool false
+
+# Enable access for assistive devices
+echo -n 'a' | sudo tee /private/var/db/.AccessibilityAPIEnabled > /dev/null 2>&1
+sudo chmod 444 /private/var/db/.AccessibilityAPIEnabled
+# TODO: avoid GUI password prompt somehow (http://apple.stackexchange.com/q/60476/4408)
+#sudo osascript -e 'tell application "System Events" to set UI elements enabled to true'
 
 # Use the IR_Black theme/settings by default in Terminal.app
 open "../application-settings/IR_Black.terminal"
@@ -211,6 +213,9 @@ defaults write com.apple.dock wvous-tr-corner -int 2
 defaults write com.apple.dock wvous-bl-corner -int 3
 # active corner bottom right: Desktop
 defaults write com.apple.dock wvous-br-corner -int 4
+
+# Only use UTF-8 in Terminal.app
+defaults write com.apple.terminal StringEncodings -array 4
 
 ## --------------------------------------------------------------------------
 # Dock
