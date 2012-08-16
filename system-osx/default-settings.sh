@@ -169,6 +169,11 @@ defaults write com.apple.terminal StringEncodings -array 4
 # Finder
 ## --------------------------------------------------------------------------
 
+# Use Column view in all Finder windows by default
+# Four-letter codes for the other view modes: 
+# `icnv` (Icon), `clmv` (Column), `Flwv` (Cover Flow), `Nlsv` (List)
+defaults write com.apple.Finder FXPreferredViewStyle -string "clmv"
+
 # Force expanded dialogs
 # These commands force expanded dialog boxes for saving (top) and printing (bottom),
 # if an app doesn't already have a custom setting. Use 'false' to reverse the commands.
