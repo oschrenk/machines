@@ -269,6 +269,9 @@ defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 # Mail
 ## --------------------------------------------------------------------------
 
+# Add the keyboard shortcut ⌘ + Enter to send an email in Mail.app
+defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" "@\\U21a9"
+
 # Forces messages in Mail to be displayed as plain text instead of formatted (0 to reverse)
 defaults write com.apple.mail PreferPlainText -bool TRUE
 
