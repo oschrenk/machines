@@ -1,37 +1,9 @@
 #!/bin/sh
 # Mainly taken from https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 
-# Ask for the administrator password upfront
-sudo -v
-
-# Keep-alive: update existing `sudo` time stamp until `.osx` has finished
-while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
-
 ## --------------------------------------------------------------------------
 # Hardware & Energy settings
 ## --------------------------------------------------------------------------
-
-# Disable InfraredController
-sudo defaults write /Library/Preferences/com.apple.driver.AppleIRController DeviceEnabled -bool false
-
-# Disable motion sensor (I have an SSD disk)
-sudo pmset -a sms 0
-
-# Only use RAM to hibernate
-# hibernatemode = 0 (binary 0000) by default on supported desktops.
-# The system will not back memory up to persistent storage.
-# hibernatemode = 3 (binary 0011) by default on supported portables.
-# The system will store a copy of memory to persistent storage (the disk), and will power memory during sleep.
-# hibernatemode = 25 (binary 0001 1001) is only settable via pmset.
-# The system will store a copy of memory to persistent storage (the disk), and will remove power to memory.
-# The system will restore from disk image. If you want “hibernation” – slower sleeps, slower wakes, and better battery life, you should use this setting.
-sudo pmset -a hibernatemode 0
-
-# Once you turn off hibernation you can remove the sleep image
-# sudo rm /var/vm/sleepimage
-
-# Don't put hard disks to sleep. x is time in minute
-sudo pmset disksleep 0
 
 # Automatically illuminate built-in MacBook keyboard in low light
 defaults write com.apple.BezelServices kDim -bool true
@@ -42,24 +14,8 @@ defaults write com.apple.BezelServices kDimTime -int 300
 ## System
 ## --------------------------------------------------------------------------
 
-# Set computer name (as done via System Preferences → Sharing)
-scutil --set ComputerName "OlschBook Pro"
-scutil --set HostName "OlschBook Pro"
-scutil --set LocalHostName "OlschBook-Pro"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "MathBook-Pro"
-
-# Restart automatically if the computer freezes
-systemsetup -setrestartfreeze on
-
-# Enable fast user switching
-defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -bool YES
-
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with `Inches`, and `true` with `false`.
-
-# Set clock in login screen to 24h schema
-sudo defaults write /Library/Preferences/.GlobalPreferences AppleLocale "de_DE"
-
 defaults write NSGlobalDomain AppleLanguages -array "de" "en"
 defaults write NSGlobalDomain AppleLocale -string "de_DE@currency=EUR"
 
@@ -77,25 +33,9 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 # Enable AirDrop over Ethernet and on unsupported Macs running Lion
 # defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 
-# Increase TCP's initial window (IW) to 10 segments
-sudo sysctl -w net.inet.tcp.slowstart_flightsize=10
-
-## --------------------------------------------------------------------------
-# Spotlight
-## --------------------------------------------------------------------------
-
-# Disable Spotlight indexing
-# sudo mdutil -a -i on
-
-# Remove Spotlight icon
-sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
-
 ## --------------------------------------------------------------------------
 # Time Machine
 ## --------------------------------------------------------------------------
-
-# Disable local Time Machine backups
-hash tmutil &> /dev/null && sudo tmutil disablelocal
 
 # Prevent Time Machine from prompting to use new hard drives as backup volume
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
@@ -145,12 +85,6 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 # Enable non-natural scrolling
 defaults write -g com.apple.swipescrolldirection -bool false
-
-# Enable access for assistive devices
-echo -n 'a' | sudo tee /private/var/db/.AccessibilityAPIEnabled > /dev/null 2>&1
-sudo chmod 444 /private/var/db/.AccessibilityAPIEnabled
-# TODO: avoid GUI password prompt somehow (http://apple.stackexchange.com/q/60476/4408)
-#sudo osascript -e 'tell application "System Events" to set UI elements enabled to true'
 
 # active corner top left: All Windows
 defaults write com.apple.dock wvous-tl-corner -int 2
@@ -320,7 +254,7 @@ defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Zielsuchfeld" "@
 defaults write com.apple.terminal StringEncodings -array 4
 
 # Use the IR_Black theme/settings by default in Terminal.app
-open "../application-settings/IR_Black.terminal"
+open "./application-settings/IR_Black.terminal"
 sleep 1 # Wait a bit to make sure the theme is loaded
 defaults write com.apple.Terminal "Default Window Settings" -string "IR_Black"
 defaults write com.apple.Terminal "Startup Window Settings" -string "IR_Black"
