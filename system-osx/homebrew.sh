@@ -13,6 +13,7 @@ echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH.
 brew install findutils
 # osx lion broke keyhchain/ssh-agent
 brew install ssh-agent-locker # configuration on user level
+brew install blueutil
 
 ## command line
 brew install bash # configuration as shell happens on user level
