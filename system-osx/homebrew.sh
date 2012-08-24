@@ -8,6 +8,7 @@ brew tap oschrenk/homebrew-formulae
 ## system
 # osx lion broke keyhchain/ssh-agent
 brew install ssh-agent-locker # configuration on user level
+brew install blueutil
 
 ## command line
 brew install bash # configuration as shell happens on user level
