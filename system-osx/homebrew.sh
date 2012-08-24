@@ -5,6 +5,9 @@ brew tap homebrew/dupes
 brew tap josegonzalez/php
 brew tap oschrenk/homebrew-formulae
 
+## node.js - install early to setup user in parallel
+brew install node
+
 ## system
 # Install GNU core utilities (those that come with OS X are outdated)
 brew install coreutils
@@ -77,6 +80,3 @@ brew install play
 
 ## haskell
 brew install haskell-platform
-
-## node.js
-brew install node

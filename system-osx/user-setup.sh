@@ -6,6 +6,10 @@
 # Change the shell for the user
 chsh -s /usr/local/bin/bash
 
+# osx userdefaults
+./defaults-user.sh
+./defaults-quicksilver.sh
+
 # Create standard directories
 mkdir -p ~/Projects
 git clone git@github.com:oschrenk/notes.git ~/Documents/Notizen
@@ -26,8 +30,15 @@ ln -s $HOME/.sublime "$SUBLIME_USER_SETTINGS"
 # Disable Adobe Updater for user
 echo '<?xml version="1.0" encoding="UTF-8" ?><Preferences><UpdaterPrefSchedCheckFreq>3</UpdaterPrefSchedCheckFreq><Automatic>3</Automatic></Preferences>' > ~/Library/Application\ Support/Adobe/AAMUpdater/1.0/AdobeUpdaterPrefs.dat
 
+# MultimarkDown Quicklook
+cd ~/Downloads
+wget https://github.com/downloads/oschrenk/MMD-QuickLook/MultiMarkdown%20QuickLook.qlgenerator.zip
+unzip MultiMarkdown\ QuickLook.qlgenerator.zip
+sudo cp -r MultiMarkdown\ QuickLook.qlgenerator /Library/QuickLook/
+rm -r MultiMarkdown\ QuickLook.qlgenerator*
+qlmanage -r
+
 # Update textmate and sublime
-mateup
 sublimeup
 
 # install vim bundles via vundle
