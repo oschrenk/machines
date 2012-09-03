@@ -5,7 +5,15 @@ brew tap homebrew/dupes
 brew tap josegonzalez/php
 brew tap oschrenk/homebrew-formulae
 
+## node.js - install early to setup user in parallel
+brew install node
+
 ## system
+# Install GNU core utilities (those that come with OS X are outdated)
+brew install coreutils
+echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."
+# Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
+brew install findutils
 # osx lion broke keyhchain/ssh-agent
 brew install ssh-agent-locker # configuration on user level
 brew install blueutil
@@ -73,6 +81,3 @@ brew install play
 
 ## haskell
 brew install haskell-platform
-
-## node.js
-brew install node
