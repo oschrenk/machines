@@ -100,7 +100,7 @@ defaults write com.apple.dock wvous-br-corner -int 4
 ## --------------------------------------------------------------------------
 
 # Use Column view in all Finder windows by default
-# Four-letter codes for the other view modes: 
+# Four-letter codes for the other view modes:
 # `icnv` (Icon), `clmv` (Column), `Flwv` (Cover Flow), `Nlsv` (List)
 defaults write com.apple.Finder FXPreferredViewStyle -string "clmv"
 
@@ -118,6 +118,12 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
 # Use current directory as default search scope in Finder
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
+
+# Enable spring loading for directories
+defaults write NSGlobalDomain com.apple.springing.enabled 1
+
+# Delay spring loading for directories
+defaults write NSGlobalDomain com.apple.springing.delay -float 0
 
 # Sidebar icon size: Small
 defaults write -g 'NSTableViewDefaultSizeMode' -int 1
