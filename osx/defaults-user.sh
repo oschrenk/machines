@@ -137,8 +137,8 @@ defaults write -g 'NSTableViewDefaultSizeMode' -int 1
 # Number of recent items: Servers: None
 /usr/bin/osascript -e 'tell application "System Events" to tell appearance preferences to set recent servers limit to 0'
 
-# Show scroll bars: Always
-defaults write -g 'AppleShowScrollBars' -string 'Always'
+# Show scroll bars: {Always, Automatic, WhenScrolling}
+defaults write -g 'AppleShowScrollBars' -string 'Automatic'
 
 # Show Path bar in Finder
 defaults write com.apple.finder ShowPathbar -bool true
