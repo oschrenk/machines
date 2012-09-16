@@ -12,7 +12,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ## --------------------------------------------------------------------------
 
 # Disable InfraredController
-sudo defaults write /Library/Preferences/com.apple.driver.AppleIRController DeviceEnabled -bool false
+# sudo defaults write /Library/Preferences/com.apple.driver.AppleIRController DeviceEnabled -bool false
 
 # Disable motion sensor (I have an SSD disk)
 sudo pmset -a sms 0
