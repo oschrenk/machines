@@ -38,10 +38,10 @@ sudo pmset disksleep 0
 ## --------------------------------------------------------------------------
 
 # Set computer name (as done via System Preferences → Sharing)
-scutil --set ComputerName "OlschBook Pro"
-scutil --set HostName "OlschBook Pro"
-scutil --set LocalHostName "OlschBook-Pro"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "MathBook-Pro"
+scutil --set ComputerName "OlschBook"
+scutil --set HostName "OlschBook"
+scutil --set LocalHostName "OlschBook"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "OlschBook"
 
 # Restart automatically if the computer freezes
 systemsetup -setrestartfreeze on
