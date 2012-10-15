@@ -98,6 +98,11 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 # Enable non-natural scrolling
 defaults write -g com.apple.swipescrolldirection -bool false
 
+# Enable tap to click (Trackpad) for this user and for the login screen
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+
 # active corner top left: All Windows
 defaults write com.apple.dock wvous-tl-corner -int 2
 # active corner top right: All Windows
