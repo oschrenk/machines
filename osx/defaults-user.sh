@@ -205,6 +205,9 @@ defaults write com.apple.Dock autohide-delay -float 0
 # Enable spring loading for all Dock items
 defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 
+# Prevent app icons from staying in the Dock after being closed
+defaults write com.apple.dock static-only -bool true
+
 ## --------------------------------------------------------------------------
 # Desktop
 ## --------------------------------------------------------------------------
