@@ -10,4 +10,5 @@ npm install -g express
 npm install -g jshint
 npm install -g json2yaml
 npm install -g markdown-wiki
+npm install -g mocha
 npm install -g pegjs
