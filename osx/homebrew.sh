@@ -1,8 +1,6 @@
 #!/bin/sh
 
-brew tap adamv/alt
 brew tap homebrew/dupes
-brew tap josegonzalez/php
 brew tap oschrenk/homebrew-formulae
 
 ## node.js - install early to setup user in parallel
