@@ -25,6 +25,7 @@ brew install z
 
 ## tools
 brew install ack
+brew install the_silver_searcher
 brew install dos2unix
 brew install multimarkdown
 brew install synergy
