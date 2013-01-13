@@ -46,6 +46,13 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 /usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.symbolichotkeys.plist" -c 'Add AppleSymbolicHotKeys:65:enabled bool false'
 
 ## --------------------------------------------------------------------------
+# Notification Center
+## --------------------------------------------------------------------------
+
+# Disable notification center & remove the menu bar icon
+launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
+
+## --------------------------------------------------------------------------
 # Time Machine
 ## --------------------------------------------------------------------------
 
