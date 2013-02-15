@@ -53,17 +53,17 @@ brew install mercurial
 brew install bazaar
 
 ## databases
-brew install mongodb
-brew install redis
-brew install mysql
-brew install postgresql
-brew install sqlite
+# brew install mongodb
+# brew install redis
+# brew install mysql
+# brew install postgresql
+# brew install sqlite
 
 ## geo
-brew install proj
-brew install geos
-brew install osmosis
-brew install postgis
+# brew install proj
+# brew install geos
+# brew install osmosis
+# brew install postgis
 
 ## a/v
 brew install ffmpeg
