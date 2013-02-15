@@ -20,6 +20,10 @@ cd ~
 deja clone oschrenk/dotfiles
 deja link dotfiles
 
+# setup sleepwatcher
+ln -sfv /usr/local/opt/sleepwatcher/de.bernhard-baehr.sleepwatcher-20compatibility-localuser.plist ~/Library/LaunchAgents/com.oschrenk.sleepwatcher.plist
+launchctl load ~/Library/LaunchAgents/com.oschrenk.sleepwatcher.plist
+
 # Symlink sublime user settings
 SUBLIME_PACKAGES="$HOME/Library/Application Support/Sublime Text 2/Packages"
 SUBLIME_USER_SETTINGS="$SUBLIME_PACKAGES/User"
