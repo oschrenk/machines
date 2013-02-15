@@ -49,7 +49,7 @@ brew install hub
 
 ## scms
 brew install svn
-brew install https://raw.github.com/adamv/homebrew-alt/master/other/mercurial.rb
+brew install mercurial
 brew install bazaar
 
 ## databases
