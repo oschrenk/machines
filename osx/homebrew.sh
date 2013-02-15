@@ -16,12 +16,14 @@ brew install findutils
 brew install ssh-agent-locker # configuration on user level
 brew install blueutil
 brew install duti
+brew install sleepwatcher
 
 ## command line
 brew install bash # configuration as shell happens on user level
 brew install bash-completion
 brew install tree
 brew install z
+
 
 ## tools
 brew install ack
