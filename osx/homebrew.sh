@@ -76,7 +76,6 @@ brew install xvid
 
 ## java
 brew install maven
-brew install maven-shell
 brew install play
 
 ## haskell
