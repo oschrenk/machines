@@ -36,10 +36,10 @@ echo '<?xml version="1.0" encoding="UTF-8" ?><Preferences><UpdaterPrefSchedCheck
 
 # MultimarkDown Quicklook
 cd ~/Downloads
-wget https://github.com/downloads/oschrenk/MMD-QuickLook/MultiMarkdown%20QuickLook.qlgenerator.zip
-unzip MultiMarkdown\ QuickLook.qlgenerator.zip
-sudo cp -r MultiMarkdown\ QuickLook.qlgenerator /Library/QuickLook/
-rm -r MultiMarkdown\ QuickLook.qlgenerator*
+git clone https://github.com/oschrenk/MMD-QuickLook
+cd MMD-QuickLook
+make compile
+make install
 qlmanage -r
 
 # Update textmate and sublime
