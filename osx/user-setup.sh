@@ -24,6 +24,9 @@ deja link dotfiles
 ln -sfv /usr/local/opt/sleepwatcher/de.bernhard-baehr.sleepwatcher-20compatibility-localuser.plist ~/Library/LaunchAgents/com.oschrenk.sleepwatcher.plist
 launchctl load ~/Library/LaunchAgents/com.oschrenk.sleepwatcher.plist
 
+# install jenv https://github.com/hikage/jenv/
+git clone https://github.com/hikage/jenv.git ~/.jenv
+
 # Symlink sublime user settings
 SUBLIME_PACKAGES="$HOME/Library/Application Support/Sublime Text 2/Packages"
 SUBLIME_USER_SETTINGS="$SUBLIME_PACKAGES/User"
