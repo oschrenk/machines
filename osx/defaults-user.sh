@@ -120,6 +120,7 @@ defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 # 7  : Dashboard
 # 10 : Put Display to sleep
 # 11 : Launchpad
+# 12 : Notification Center
 # active corner top left: Mission Control
 defaults write com.apple.dock wvous-tl-corner -int 2
 # active corner top right: Mission Control
