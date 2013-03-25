@@ -45,7 +45,7 @@ make compile
 make install
 qlmanage -r
 
-# Update textmate and sublime
+# Update sublime
 sublimeup
 
 # install vim bundles via vundle
