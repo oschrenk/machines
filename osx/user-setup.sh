@@ -10,10 +10,13 @@ chsh -s /usr/local/bin/bash
 ./defaults-user.sh
 ./defaults-quicksilver.sh
 
+# exclude directories from Time Machine backups
+tmutil addexclusion ~/Downloads
+tmutil addexclusion ~/Movies
+
 # Create standard directories
 mkdir -p ~/Projects
 git clone git@github.com:oschrenk/notes.git ~/Documents/Notizen
-
 
 # setup dotfiles
 cd ~
