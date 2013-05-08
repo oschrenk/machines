@@ -1,5 +1,10 @@
 #!/bin/sh
 
+# Update repositories
+sudo apt-get update
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
+
 ## basics
 sudo apt-get install make
 sudo apt-get install cron
@@ -18,9 +23,7 @@ apt-get install git-svn
 sudo apt-get install meld
 
 ## install node.js
-sudo apt-get install python-software-properties
-sudo add-apt-repository ppa:jerome-etienne/neoip
-sudo apt-get update
+sudo apt-get install python-software-properties python g++ make
 sudo apt-get install nodejs
 
 ## java
