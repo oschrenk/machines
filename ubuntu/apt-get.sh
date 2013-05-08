@@ -17,9 +17,9 @@ sudo apt-get install bash-completion
 sudo apt-get install gedit-plugins
 
 ## install scms
-apt-get install subversion
-apt-get install git
-apt-get install git-svn
+sudo apt-get install subversion
+sudo apt-get install git
+sudo apt-get install git-svn
 sudo apt-get install meld
 
 ## install node.js
