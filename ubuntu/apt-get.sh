@@ -37,3 +37,7 @@ sudo apt-get install rubygems
 
 ## http
 sudo apt-get install curl
+
+## tools
+sudo apt-get install dos2unix
+sudo apt-get install xmlstarlet
