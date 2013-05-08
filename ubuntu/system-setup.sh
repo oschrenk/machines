@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Update 
+# Update
 apt-get update
 apt-get upgrade
 
@@ -10,15 +10,12 @@ sudo bash -c "echo /usr/local/bin/bash >> /private/etc/shells"
 # Install npm and the global npm modules
 . ../system-common/npm.sh
 
-# cd Projec
-
+# Create default directory layout
 cd $HOME
-mkdir-p  Projects
-cd Projects
-mkdir -p external
-cd external
+mkdir -p Projects/external
 
 # Install git-sh
+cd $HOME/Projects/external
 git clone git://github.com/rtomayko/git-sh.git
 cd git-sh
 make
