@@ -13,3 +13,4 @@ npm install -g markdown-wiki
 npm install -g mocha
 npm install -g pegjs
 npm install -g jsontool
+npm install -g grunt-cli
