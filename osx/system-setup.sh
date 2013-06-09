@@ -23,6 +23,9 @@ echo '<?xml version="1.0" encoding="UTF-8" ?><Preferences><Suppressed>1</Suppres
 # Install npm and the global npm modules
 . ../common-system/npm.sh
 
+# Use black and white menu bar icons” setting for Dropbox
+for p in /Applications/Dropbox.app/Contents/Resources/*-lep.tiff; do echo cp $p ${p%-lep.tiff}.tiff; done
+
 # Symlink editors
 ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
 
