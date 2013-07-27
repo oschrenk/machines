@@ -81,3 +81,8 @@ brew install play
 
 ## haskell
 brew install haskell-platform
+
+## scala
+
+brew install sbt
+brew install scala
