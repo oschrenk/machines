@@ -71,6 +71,7 @@ brew install flac
 brew install lame
 brew install libmp3splt
 brew install mp3splt
+brew install youtube-dl
 brew install x264
 brew install xvid
 
