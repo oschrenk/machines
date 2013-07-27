@@ -48,9 +48,9 @@ brew install git-sh
 brew install hub
 
 ## scms
-brew install svn
-brew install mercurial
-brew install bazaar
+# brew install svn
+# brew install mercurial
+# brew install bazaar
 
 ## databases
 # brew install mongodb
