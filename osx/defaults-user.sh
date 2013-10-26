@@ -268,29 +268,6 @@ defaults write com.apple.mail BundleCompatibilityVersion 4
 ## --------------------------------------------------------------------------
 
 
-# link arrows point to media instead of store
-# defaults write com.apple.iTunes invertStoreLinks -boolean TRUE
-
-# Disable the Genius sidebar in iTunes
-#defaults write com.apple.iTunes disableGeniusSidebar -bool true
-
-# Disable the Ping sidebar in iTunes
-# #defaults write com.apple.iTunes disablePingSidebar -bool true
-
-# Disable all the other Ping stuff in iTunes
-# defaults write com.apple.iTunes disablePing -bool true
-
-# Disable radio stations in iTunes
-# defaults write com.apple.iTunes disableRadio -bool true
-
-# Make ⌘ + F focus the search input in iTunes
-# To use these commands in another language, browse iTunes’s package contents,
-# open `Contents/Resources/your-language.lproj/Localizable.strings`, and look
-# for `kMenuItemFullScreen` and `kHiddenMenuItemTargetSearch`.
-# for English
-# defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Field" "@F"
-# defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Zielsuchfeld" "@F"
-
 ## --------------------------------------------------------------------------
 # Terminal
 ## --------------------------------------------------------------------------
