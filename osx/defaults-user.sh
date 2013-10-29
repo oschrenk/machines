@@ -50,7 +50,7 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 ## --------------------------------------------------------------------------
 
 # Disable notification center & remove the menu bar icon
-launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
+# launchctl unload -w /System/Library/LaunchAgents/com.apple.notificationcenterui.plist
 
 ## --------------------------------------------------------------------------
 # Time Machine
