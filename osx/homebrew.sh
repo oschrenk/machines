@@ -83,3 +83,31 @@ brew install play
 ## scala
 brew install sbt
 brew install scala
+
+# Install native apps
+brew tap phinze/homebrew-cask
+brew install brew-cask
+
+# install to global directory
+$ export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
+function installcask() {
+	brew cask install "${@}" 2> /dev/null
+}
+
+# applications
+installcask bettertouchtool
+installcask bodega
+installcask dropbox
+installcask eclipse-ide
+installcask flux
+installcask gfxcardstatus
+installcask google-chrome
+installcask intellij-community
+installcask mplayerx
+installcask quicksilver
+installcask skype
+installcask spotify
+installcask sublime-text-3
+installcask the-unarchiver
+installcask vlc
