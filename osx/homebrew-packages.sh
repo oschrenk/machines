@@ -3,6 +3,9 @@
 brew tap homebrew/dupes
 brew tap oschrenk/homebrew-formulae
 
+# Install pip packages as homebrew formulas
+brew install brew-pip
+
 ## node.js - install early to setup user in parallel
 brew install node
 
