@@ -30,13 +30,3 @@ for p in /Applications/Dropbox.app/Contents/Resources/*-lep.tiff; do echo cp $p 
 
 # Symlink editors
 ln -s /Applications/Sublime\ Text\ 2.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
-
-# P4Merge
-
-cat > /usr/local/bin/p4merge  <<DELIM
-#!/bin/bash
-
-for arg; do [[ $arg = /* ]] || arg=$PWD/$arg; absargs+=("$arg"); done;
-/Applications/p4merge.app/Contents/Resources/launchp4merge "${absargs[@]}"
-DELIM
-chmod +x /usr/local/bin/p4merge
