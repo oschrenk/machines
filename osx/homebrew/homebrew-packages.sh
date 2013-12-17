@@ -1,7 +1,6 @@
 #!/bin/sh
 
 brew tap homebrew/dupes
-brew tap oschrenk/homebrew-formulae
 brew tap homebrew/binary
 brew tap homebrew/dupes
 
