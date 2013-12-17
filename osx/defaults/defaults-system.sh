@@ -1,4 +1,4 @@
-#!/bin/sh
+	#!/bin/sh
 # Mainly taken from https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 
 # Ask for the administrator password upfront
@@ -58,6 +58,13 @@ defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -b
 
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with `Inches`, and `true` with `false`.
+
+# --------------------------------------------------------------------------
+# Localization
+# --------------------------------------------------------------------------
+
+# set time zone
+/usr/sbin/systemsetup -settimezone "Europe/Berlin"
 
 # Set clock in login screen to 24h schema
 sudo defaults write /Library/Preferences/.GlobalPreferences AppleLocale "de_DE"
