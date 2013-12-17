@@ -1,9 +1,5 @@
 #!/bin/sh
 
-brew tap homebrew/dupes
-brew tap homebrew/binary
-brew tap homebrew/dupes
-
 ## node.js - install early to setup user in parallel
 brew install node
 
