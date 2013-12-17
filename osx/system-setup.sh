@@ -12,7 +12,9 @@ cp ~/Downloads/Menlo-ForPowerline.ttc /Library/Fonts
 ./defaults-system.sh
 
 # Install homebrew packages
-./homebrew.sh
+./homebrew-packages.sh
+./homebrew-casks.sh
+./homebrew-pips.sh
 
 # Add the new bash to the list of legit shells
 sudo bash -c "echo /usr/local/bin/bash >> /private/etc/shells"
