@@ -71,6 +71,9 @@ brew install youtube-dl
 brew install x264
 brew install xvid
 
+## media
+brew install kindlegen
+
 ## java
 brew install maven
 brew install play
