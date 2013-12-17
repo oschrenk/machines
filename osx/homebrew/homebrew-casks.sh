@@ -3,6 +3,7 @@
 # Install native apps
 brew tap phinze/homebrew-cask
 brew install brew-cask
+brew tap caskroom/fonts
 
 # install to global directory
 export HOMEBREW_CASK_OPTS="--appdir=/Applications"
