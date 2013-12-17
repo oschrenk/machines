@@ -1,5 +1,7 @@
 #!/bin/sh
-# Mainly taken from https://github.com/mathiasbynens/dotfiles/blob/master/.osx
+# Sources
+# https://github.com/mathiasbynens/dotfiles/blob/master/.osx
+# https://github.com/hjuutilainen/dotfiles/blob/master/bin/osx-user-defaults.sh
 
 ## --------------------------------------------------------------------------
 # Hardware & Energy settings
@@ -129,6 +131,71 @@ defaults write com.apple.dock wvous-tr-corner -int 2
 defaults write com.apple.dock wvous-bl-corner -int 3
 # active corner bottom right: Desktop
 defaults write com.apple.dock wvous-br-corner -int 4
+
+## --------------------------------------------------------------------------
+# Mouse
+## --------------------------------------------------------------------------
+
+# Secondary click:
+# Possible values: OneButton, TwoButton, TwoButtonSwapped
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode -string OneButton
+
+# Smart zoom enabled, double-tap with one finger (set to 1 to enable)
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseOneFingerDoubleTapGesture -int 1
+
+# Double-tap with two fingers to Mission Control (set to 0 to diable)
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseTwoFingerDoubleTapGesture -int 3
+
+# Two finger horizontal swipe
+# 0 = Swipe between pages with one finger
+# 1 = Swipe between pages
+# 2 = Swipe between full screen apps with two fingers, swipe between pages with one finger (Default Mode)
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseTwoFingerHorizSwipeGesture -int 2
+
+## --------------------------------------------------------------------------
+# Trackpad
+## --------------------------------------------------------------------------
+
+# Tap to click
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+
+# Tap with two fingers to emulate right click
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
+
+# Enable three finger tap (look up)
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerTapGesture -int 2
+
+# Disable three finger drag
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerDrag -bool false
+
+# Zoom in or out
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadPinch -bool true
+
+# Smart zoom, double-tap with two fingers
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadTwoFingerDoubleTapGesture -bool true
+
+# Rotate
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRotate -bool true
+
+# Notification Center
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadTwoFingerFromRightEdgeSwipeGesture -int 3
+
+# Swipe between pages with two fingers
+defaults write NSGlobalDomain AppleEnableSwipeNavigateWithScrolls -bool true
+
+# Swipe between full-screen apps
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerHorizSwipeGesture -int 2
+
+# Configure other multi-finger gestures
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadThreeFingerVertSwipeGesture -int 0
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFingerVertSwipeGesture -int 2
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFingerPinchGesture -int 2
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFourFingerHorizSwipeGesture -int 2
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadFiveFingerPinchGesture -int 2
+
+defaults write com.apple.dock showMissionControlGestureEnabled -bool true
+defaults write com.apple.dock showAppExposeGestureEnabled -bool true
+defaults write com.apple.dock showLaunchpadGestureEnabled -bool false
 
 ## --------------------------------------------------------------------------
 # Finder
