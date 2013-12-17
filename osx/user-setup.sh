@@ -6,9 +6,8 @@
 # Change the shell for the user
 chsh -s /usr/local/bin/bash
 
-# osx userdefaults
-./defaults-user.sh
-./defaults-quicksilver.sh
+# osx user defaults
+./defaults/defaults-user.sh
 
 # exclude directories from Time Machine backups
 tmutil addexclusion ~/Downloads
@@ -37,6 +36,9 @@ mkdir -p "$SUBLIME_PACKAGES"
 rm -rf "$SUBLIME_USER_SETTINGS"
 ln -s $HOME/.sublime "$SUBLIME_USER_SETTINGS"
 
+# Update sublime
+sublimeup
+
 # Disable Adobe Updater for user
 echo '<?xml version="1.0" encoding="UTF-8" ?><Preferences><UpdaterPrefSchedCheckFreq>3</UpdaterPrefSchedCheckFreq><Automatic>3</Automatic></Preferences>' > ~/Library/Application\ Support/Adobe/AAMUpdater/1.0/AdobeUpdaterPrefs.dat
 
@@ -52,8 +54,6 @@ qlmanage -r
 mkdir -p ~/Library/texmf/tex/latex/
 ln -s $HOME/.mmd $HOME/Library/texmf/tex/latex/mmd
 
-# Update sublime
-sublimeup
 
 # install vim bundles via vundle
 vim +BundleInstall +qall

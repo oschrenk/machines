@@ -285,7 +285,7 @@ defaults write com.apple.mail BundleCompatibilityVersion 4
 defaults write com.apple.terminal StringEncodings -array 4
 
 # Use the IR_Black theme/settings by default in Terminal.app
-open "./application-settings/IR_Black.terminal"
+open "./settings/IR_Black.terminal"
 sleep 1 # Wait a bit to make sure the theme is loaded
 defaults write com.apple.Terminal "Default Window Settings" -string "IR_Black"
 defaults write com.apple.Terminal "Startup Window Settings" -string "IR_Black"
