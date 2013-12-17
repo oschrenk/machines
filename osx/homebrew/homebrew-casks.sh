@@ -23,7 +23,6 @@ installcask dropbox
 installcask eclipse-ide
 installcask evernote
 installcask firefox
-installcask f-lux
 installcask gfxcardstatus
 installcask gimp
 installcask gitx-rowanj
