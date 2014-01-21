@@ -27,7 +27,7 @@ ln -sfv /usr/local/opt/sleepwatcher/de.bernhard-baehr.sleepwatcher-20compatibili
 launchctl load ~/Library/LaunchAgents/com.oschrenk.sleepwatcher.plist
 
 # Symlink sublime user settings
-SUBLIME_PACKAGES="$HOME/Library/Application Support/Sublime Text 2/Packages"
+SUBLIME_PACKAGES="$HOME/Library/Application Support/Sublime Text 3/Packages"
 SUBLIME_USER_SETTINGS="$SUBLIME_PACKAGES/User"
 mkdir -p "$SUBLIME_PACKAGES"
 rm -rf "$SUBLIME_USER_SETTINGS"
