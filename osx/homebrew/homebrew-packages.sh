@@ -15,7 +15,7 @@ brew install sleepwatcher
 
 ## command line
 brew install bash # configuration as shell happens on user level
-brew install bash-completion
+brew install bash-completion2
 brew install fasd
 brew install tree
 brew install z
