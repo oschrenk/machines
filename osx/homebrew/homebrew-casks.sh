@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # Install native apps
-brew tap phinze/homebrew-cask
+brew tap caskroom/homebrew-cask
 brew install brew-cask
 brew tap caskroom/fonts
 
