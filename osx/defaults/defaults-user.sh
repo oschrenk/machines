@@ -98,19 +98,15 @@ defaults write com.apple.menuextra.battery ShowPercent -string "NO"
 defaults write com.apple.menuextra.battery ShowTime -string "NO"
 
 ## --------------------------------------------------------------------------
-# Access and Input
+# Keyboard
 ## --------------------------------------------------------------------------
 
 # Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
-# Enable non-natural scrolling
-defaults write -g com.apple.swipescrolldirection -bool false
-
-# Enable tap to click (Trackpad) for this user and for the login screen
-defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
-defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+## --------------------------------------------------------------------------
+# Access and Input
+## --------------------------------------------------------------------------
 
 # Hot corners
 # 0  : noop
@@ -133,8 +129,18 @@ defaults write com.apple.dock wvous-bl-corner -int 3
 defaults write com.apple.dock wvous-br-corner -int 4
 
 ## --------------------------------------------------------------------------
-# Mouse
+# Mouse and Trackpad
 ## --------------------------------------------------------------------------
+
+# Scrolling direction
+# false = up is up
+# true = up is down
+defaults write -g com.apple.swipescrolldirection -bool false
+
+# Enable tap to click (Trackpad) for this user and for the login screen
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
+defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
+defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
 
 # Secondary click:
 # Possible values: OneButton, TwoButton, TwoButtonSwapped
