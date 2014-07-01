@@ -19,7 +19,7 @@ defaults write com.apple.BezelServices kDimTime -int 300
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with `Inches`, and `true` with `false`.
 defaults write NSGlobalDomain AppleLanguages -array "de" "en"
-defaults write NSGlobalDomain AppleLocale -string "de_DE@currency=EUR"
+defaults write NSGlobalDomain AppleLocale -string "en_DE@currency=EUR"
 
 # AppleMeasurementUnits
 defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
