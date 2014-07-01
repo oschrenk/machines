@@ -39,7 +39,6 @@ brew install wget
 ## git
 brew install git
 brew install git-extras
-brew install git-flow
 brew install git-sh
 brew install hub
 
