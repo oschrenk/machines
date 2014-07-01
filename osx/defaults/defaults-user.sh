@@ -335,7 +335,7 @@ defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" "@\\U21a9"
 defaults write com.apple.mail PreferPlainText -bool TRUE
 
 # Add invitations to iCal automatically
-# defaults write com.apple.mail AddInvitationsToICalAutomatically -bool true
+defaults write com.apple.mail AddInvitationsToICalAutomatically -bool false
 
 # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
