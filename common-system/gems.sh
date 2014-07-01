@@ -1,1 +1,0 @@
-rvm all do gem install svn2git
