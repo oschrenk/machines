@@ -7,4 +7,3 @@ brew tap jenv/jenv
 
 ./homebrew-packages.sh
 ./homebrew-casks.sh
-./homebrew-pips.sh
