@@ -341,7 +341,7 @@ defaults write com.apple.mail AddInvitationsToICalAutomatically -bool false
 defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
 
 # Disable inline attachments (just show the icons)
-defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
+defaults write com.apple.mail DisableInlineAttachmentViewing -bool false
 
 # Disable send and reply animations in Mail.app
 #defaults write com.apple.Mail DisableReplyAnimations -bool true
