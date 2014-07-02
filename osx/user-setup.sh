@@ -46,6 +46,3 @@ cd MMD-QuickLook
 make compile
 make install
 qlmanage -r
-
-# install vim bundles via vundle
-vim +BundleInstall +qall
