@@ -36,9 +36,6 @@ ln -s $HOME/.sublime "$SUBLIME_USER_SETTINGS"
 # Update sublime
 sublimeup
 
-# Disable Adobe Updater for user
-echo '<?xml version="1.0" encoding="UTF-8" ?><Preferences><UpdaterPrefSchedCheckFreq>3</UpdaterPrefSchedCheckFreq><Automatic>3</Automatic></Preferences>' > ~/Library/Application\ Support/Adobe/AAMUpdater/1.0/AdobeUpdaterPrefs.dat
-
 # MultimarkDown Quicklook
 cd ~/Downloads
 git clone https://github.com/oschrenk/MMD-QuickLook
