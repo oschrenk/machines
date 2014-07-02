@@ -110,6 +110,24 @@ defaults write NSGlobalDomain KeyRepeat -int 0
 # Set a delay until key repeat"
 defaults write NSGlobalDomain InitialKeyRepeat -int 12
 
+# Keyboard shortcuts
+# http://hints.macworld.com/article.php?story=20131123074223584
+# @ for Command, $ for Shift, ~ for Alt and ^ for Ctrl
+#
+# The key of the dictionary entry is the exact name of the menu item
+# If you need to drill down menu levels use \033 eg
+# \033Format\033Quote Level\033Decrease
+
+# ⌘⌥← and ⌘⌥→ to decrease/increase select next/previous tab
+defaults write com.apple.Terminal NSUserKeyEquivalents -dict-add "Select Next Tab" "@~\\U2192"
+defaults write com.apple.Terminal NSUserKeyEquivalents -dict-add "Select Previous Tab" "@~\\U2190"
+
+# ⌘⌥← and ⌘⌥→ to decrease/increase quote level
+defaults write -app Mail NSUserKeyEquivalents -dict-add "\033Format\033Quote Level\033Decrease" "@~\\U2190"
+defaults write -app Mail NSUserKeyEquivalents -dict-add "\033Format\033Quote Level\033Increase" "@~\\U2192"
+# Command Enter to send
+defaults write -app Mail NSUserKeyEquivalents -dict-add "Send" "@\\U21a9"
+
 ## --------------------------------------------------------------------------
 # Access and Input
 ## --------------------------------------------------------------------------
