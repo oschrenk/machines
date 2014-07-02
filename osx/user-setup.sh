@@ -47,10 +47,5 @@ make compile
 make install
 qlmanage -r
 
-# setup multimarkdown latex support files
-mkdir -p ~/Library/texmf/tex/latex/
-ln -s $HOME/.mmd $HOME/Library/texmf/tex/latex/mmd
-
-
 # install vim bundles via vundle
 vim +BundleInstall +qall
