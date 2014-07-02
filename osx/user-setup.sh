@@ -15,7 +15,7 @@ tmutil addexclusion ~/Movies
 
 # Create standard directories
 mkdir -p ~/Projects
-git clone git@github.com:oschrenk/notes.git ~/Documents/Notizen
+git clone git@github.com:oschrenk/notes.git ~/Documents/Notes
 
 # setup dotfiles
 cd ~
