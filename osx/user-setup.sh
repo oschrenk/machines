@@ -6,9 +6,6 @@
 # Change the shell for the user
 chsh -s /usr/local/bin/bash
 
-# osx user defaults
-./defaults/defaults-user.sh
-
 # exclude directories from Time Machine backups
 tmutil addexclusion ~/Downloads
 tmutil addexclusion ~/Movies
@@ -43,3 +40,6 @@ cd MMD-QuickLook
 make compile
 make install
 qlmanage -r
+
+# osx user defaults
+./defaults/defaults-user.sh
