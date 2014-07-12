@@ -105,7 +105,7 @@ hash tmutil &> /dev/null && sudo tmutil disablelocal
 ###############################################################################
 
 for app in "Calendar" "Contacts" "Dock" "Finder" "Mail" \
-	"Safari" "SystemUIServer" "Terminal"  \
+	"Safari" "SystemUIServer" \
 	"iTunes"; do
 	killall "$app" > /dev/null 2>&1
 done
