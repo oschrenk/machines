@@ -69,8 +69,8 @@ defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -b
 # Set clock in login screen to 24h schema
 sudo defaults write /Library/Preferences/.GlobalPreferences AppleLocale "de_DE"
 
-defaults write NSGlobalDomain AppleLanguages -array "de" "en"
-defaults write NSGlobalDomain AppleLocale -string "de_DE@currency=EUR"
+defaults write NSGlobalDomain AppleLanguages -array "en" "de"
+defaults write NSGlobalDomain AppleLocale -string "en_DE@currency=EUR"
 
 # AppleMeasurementUnits
 defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
