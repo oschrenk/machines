@@ -3,6 +3,8 @@
 # Install native apps
 brew tap caskroom/homebrew-cask
 brew install brew-cask
+
+# cask rooms
 brew tap caskroom/fonts
 
 # install to global directory
