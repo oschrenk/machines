@@ -76,7 +76,7 @@ brew install kindlegen
 ## java
 brew install jenv
 brew install maven
-brew install play
+brew install play22
 
 ## scala
 brew install sbt
