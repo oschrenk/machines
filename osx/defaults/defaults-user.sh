@@ -110,7 +110,10 @@ defaults write NSGlobalDomain KeyRepeat -int 0
 # Set a delay until key repeat"
 defaults write NSGlobalDomain InitialKeyRepeat -int 12
 
+## --------------------------------------------------------------------------
 # Keyboard shortcuts
+## --------------------------------------------------------------------------
+
 # http://hints.macworld.com/article.php?story=20131123074223584
 # @ for Command, $ for Shift, ~ for Alt and ^ for Ctrl
 #
@@ -127,6 +130,9 @@ defaults write -app Mail NSUserKeyEquivalents -dict-add "\033Format\033Quote Lev
 defaults write -app Mail NSUserKeyEquivalents -dict-add "\033Format\033Quote Level\033Increase" "@~\\U2192"
 # Command Enter to send
 defaults write -app Mail NSUserKeyEquivalents -dict-add "Send" "@\\U21a9"
+
+# Add the keyboard shortcut ⌘ + Enter to send an email in Mail.app
+defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" "@\\U21a9"
 
 ## --------------------------------------------------------------------------
 # Access and Input
@@ -345,9 +351,6 @@ defaults write com.apple.dock static-only -bool true
 ## --------------------------------------------------------------------------
 # Mail
 ## --------------------------------------------------------------------------
-
-# Add the keyboard shortcut ⌘ + Enter to send an email in Mail.app
-defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" "@\\U21a9"
 
 # Forces messages in Mail to be displayed as plain text instead of formatted (0 to reverse)
 defaults write com.apple.mail PreferPlainText -bool TRUE
