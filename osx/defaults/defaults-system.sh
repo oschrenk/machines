@@ -64,7 +64,7 @@ defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -b
 # --------------------------------------------------------------------------
 
 # set time zone
-/usr/sbin/systemsetup -settimezone "Europe/Berlin"
+/usr/sbin/systemsetup -settimezone "Europe/Amsterdam"
 
 # Set clock in login screen to 24h schema
 sudo defaults write /Library/Preferences/.GlobalPreferences AppleLocale "de_DE"
