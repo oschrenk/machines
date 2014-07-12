@@ -39,7 +39,7 @@ installcask inkscape
 installcask intellij-idea
 installcask kaleidoscope
 installcask keyboard-cleaner
-installcask marked2
+installcask marked
 installcask mindnode-pro
 installcask mplayerx
 installcask omni-graffle-pro
