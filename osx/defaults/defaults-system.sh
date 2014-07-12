@@ -15,7 +15,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # sudo defaults write /Library/Preferences/com.apple.driver.AppleIRController DeviceEnabled -bool false
 
 # Disable motion sensor (I have an SSD disk)
-sudo pmset -a sms 0
+# sudo pmset -a sms 0
 
 # Only use RAM to hibernate
 # hibernatemode = 0 (binary 0000) by default on supported desktops.
@@ -25,20 +25,20 @@ sudo pmset -a sms 0
 # hibernatemode = 25 (binary 0001 1001) is only settable via pmset.
 # The system will store a copy of memory to persistent storage (the disk), and will remove power to memory.
 # The system will restore from disk image. If you want “hibernation” – slower sleeps, slower wakes, and better battery life, you should use this setting.
-sudo pmset -a hibernatemode 0
+# sudo pmset -a hibernatemode 0
 
 # Once you turn off hibernation you can remove the sleep image
 ## Remove the sleep image file to save disk space
-sudo rm /Private/var/vm/sleepimage
+# sudo rm /Private/var/vm/sleepimage
 
 ## Create a zero-byte file instead…
-sudo touch /Private/var/vm/sleepimage
+# sudo touch /Private/var/vm/sleepimage
 
 ## …and make sure it can’t be rewritten
-sudo chflags uchg /Private/var/vm/sleepimage
+# sudo chflags uchg /Private/var/vm/sleepimage
 
 # Don't put hard disks to sleep. x is time in minute
-sudo pmset disksleep 0
+# sudo pmset disksleep 0
 
 ## --------------------------------------------------------------------------
 ## System
