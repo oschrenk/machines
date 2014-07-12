@@ -47,7 +47,7 @@ installcask omni-graffle-pro
 installcask onepassword
 installcask onyx
 installcask paparazzi
-installcask papers
+installcask papers2
 installcask pixelstick
 installcask quicksilver
 installcask reggy
