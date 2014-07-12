@@ -81,3 +81,7 @@ brew install play22
 ## scala
 brew install sbt
 brew install scala
+
+## ruby
+brew install rbenv
+brew install ruby-build
