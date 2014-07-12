@@ -35,6 +35,7 @@ installcask gitx-rowanj
 installcask google-chrome
 installcask handbrake
 installcask hexfiend
+installcask hipchat
 installcask inkscape
 installcask intellij-idea
 installcask kaleidoscope
