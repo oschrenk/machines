@@ -7,11 +7,8 @@ brew install brew-cask
 # cask rooms
 brew tap caskroom/fonts
 
-# install to global directory
-export HOMEBREW_CASK_OPTS="--appdir=/Applications"
-
 function installcask() {
-	sudo brew cask install "${@}" 2> /dev/null
+	sudo brew cask install --appdir=/Applications "${@}" 2> /dev/null
 }
 
 # app store
