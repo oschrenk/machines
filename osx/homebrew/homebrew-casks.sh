@@ -38,6 +38,7 @@ installcask hexfiend
 installcask hipchat
 installcask inkscape
 installcask intellij-idea
+installcask iterm2
 installcask kaleidoscope
 installcask keyboard-cleaner
 installcask marked
