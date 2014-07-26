@@ -1,10 +1,7 @@
 # README #
 
-	curl -L https://github.com/oschrenk/machines/zipball/master/ > machines.zip
-	unzip machines
+## Application Data ##
 
-Setup scripts for my machines.
+**Dash**
 
-	cd system-{opensuse,osx,raspberry,ubuntu}
-	./system-setup.sh
-	./user-setup.sh
+- [Install RFC's](https://github.com/willnorris/rfcdash)
