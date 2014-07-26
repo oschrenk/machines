@@ -12,5 +12,8 @@ brew tap jenv/jenv
 # sentaku
 brew tap rcmdnk/rcmdnkpac
 
+# mpv
+brew tap mpv-player/mpv
+
 ./homebrew-packages.sh
 ./homebrew-casks.sh

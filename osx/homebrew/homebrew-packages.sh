@@ -69,6 +69,8 @@ brew install mp3splt
 brew install youtube-dl
 brew install x264
 brew install xvid
+brew install --HEAD mpv-player/mpv/libass-ct
+brew install mpv
 
 ## media
 brew install kindlegen
