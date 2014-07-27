@@ -4,7 +4,7 @@
 
 # Setup bash4 as default shell
 # Change the shell for the user
-chsh -s /usr/local/bin/bash
+chsh -s /usr/local/bin/fish
 
 # exclude directories from Time Machine backups
 tmutil addexclusion ~/Downloads

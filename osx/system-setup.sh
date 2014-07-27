@@ -15,7 +15,7 @@ cp ~/Downloads/Menlo-ForPowerline.ttc /Library/Fonts
 ./homebrew/homebrew.sh
 
 # Add the new bash to the list of legit shells
-sudo bash -c "echo /usr/local/bin/bash >> /private/etc/shells"
+sudo bash -c "echo /usr/local/bin/fish >> /private/etc/shells"
 
 # Install npm and the global npm modules
 . ../common-system/npm.sh
