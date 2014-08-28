@@ -2,7 +2,7 @@
 
 # User setup
 
-# Setup bash4 as default shell
+# Setup fish as default shell
 # Change the shell for the user
 chsh -s /usr/local/bin/fish
 
@@ -32,6 +32,8 @@ ln -s $HOME/.sublime "$SUBLIME_USER_SETTINGS"
 
 # Update sublime
 sublimeup
+# Pressing keys should repeat and not stop
+defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false
 
 # MultimarkDown Quicklook
 cd ~/Downloads
