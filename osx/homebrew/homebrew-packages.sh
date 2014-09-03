@@ -13,6 +13,9 @@ brew install blueutil
 brew install duti
 brew install sleepwatcher
 
+## edit
+brew install vim
+
 ## command line
 brew install fish
 brew install fasd
