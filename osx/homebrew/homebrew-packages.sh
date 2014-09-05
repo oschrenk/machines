@@ -32,6 +32,7 @@ brew install xmlstarlet
 ## network
 brew install nmap
 brew install ngrep
+brew install mosh
 
 ## http
 brew install curl
