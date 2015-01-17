@@ -16,6 +16,9 @@ defaults write com.apple.BezelServices kDimTime -int 300
 ## System
 ## --------------------------------------------------------------------------
 
+# Check for software updates daily, not just once per week
+defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with `Inches`, and `true` with `false`.
 defaults write NSGlobalDomain AppleLanguages -array "en"
@@ -48,12 +51,9 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 /usr/libexec/PlistBuddy "$HOME/Library/Preferences/com.apple.symbolichotkeys.plist" -c 'Add AppleSymbolicHotKeys:65:enabled bool false'
 
 # Yosemite-specific search results
-#   MENU_DEFINITION
-#   MENU_CONVERSION
-#   MENU_EXPRESSION
+#   MESSAGES (loads remote content in mails)
 #   MENU_SPOTLIGHT_SUGGESTIONS (send search queries to Apple)
 #   MENU_WEBSEARCH             (send search queries to Apple)
-#   MENU_OTHER
 defaults write com.apple.spotlight orderedItems -array \
   '{"enabled" = 1;"name" = "APPLICATIONS";}' \
   '{"enabled" = 1;"name" = "SYSTEM_PREFS";}' \
