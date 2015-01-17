@@ -147,6 +147,11 @@ defaults write NSGlobalDomain KeyRepeat -int 0
 # Set a delay until key repeat"
 defaults write NSGlobalDomain InitialKeyRepeat -int 12
 
+# Disable smart quotes and smart dashes
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+
+
 ## --------------------------------------------------------------------------
 # Keyboard shortcuts
 ## --------------------------------------------------------------------------
