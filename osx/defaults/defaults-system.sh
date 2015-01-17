@@ -20,6 +20,9 @@ sudo pmset -a sms 0
 # Set standby delay to 24 hours (default is 1 hour)
 sudo pmset -a standbydelay 86400
 
+# Disable the sound effects on boot
+sudo nvram SystemAudioVolume=" "
+
 # Only use RAM to hibernate
 # hibernatemode = 0 (binary 0000) by default on supported desktops.
 # The system will not back memory up to persistent storage.
