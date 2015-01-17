@@ -201,7 +201,7 @@ defaults write com.apple.dock wvous-bl-corner -int 3
 defaults write com.apple.dock wvous-br-corner -int 4
 
 ## --------------------------------------------------------------------------
-# Mouse and Trackpad
+# Pointer devices
 ## --------------------------------------------------------------------------
 
 # Scrolling direction
@@ -212,23 +212,6 @@ defaults write -g com.apple.swipescrolldirection -bool false
 # Enable tap to click (Trackpad) for this user and for the login screen
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 defaults -currentHost write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-defaults write NSGlobalDomain com.apple.mouse.tapBehavior -int 1
-
-# Secondary click:
-# Possible values: OneButton, TwoButton, TwoButtonSwapped
-defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode -string OneButton
-
-# Smart zoom enabled, double-tap with one finger (set to 1 to enable)
-defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseOneFingerDoubleTapGesture -int 1
-
-# Double-tap with two fingers to Mission Control (set to 0 to diable)
-defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseTwoFingerDoubleTapGesture -int 3
-
-# Two finger horizontal swipe
-# 0 = Swipe between pages with one finger
-# 1 = Swipe between pages
-# 2 = Swipe between full screen apps with two fingers, swipe between pages with one finger (Default Mode)
-defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseTwoFingerHorizSwipeGesture -int 2
 
 ## --------------------------------------------------------------------------
 # Trackpad
