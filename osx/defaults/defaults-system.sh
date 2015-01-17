@@ -33,6 +33,9 @@ sudo nvram SystemAudioVolume=" "
 # The system will restore from disk image. If you want “hibernation” – slower sleeps, slower wakes, and better battery life, you should use this setting.
 # sudo pmset -a hibernatemode 0
 
+# Never go into computer sleep mode
+# sudo systemsetup -setcomputersleep Off > /dev/null
+
  Once you turn off hibernation you can remove the sleep image
 ## Remove the sleep image file to save disk space
 # sudo rm /Private/var/vm/sleepimage
