@@ -44,4 +44,4 @@ make install
 qlmanage -r
 
 # osx user defaults
-./defaults/defaults-user.sh
+./defaults/user.sh

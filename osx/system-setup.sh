@@ -9,7 +9,7 @@ unzip ~/Downloads/Menlo-ForPowerline.ttc.zip -d ~/Downloads
 cp ~/Downloads/Menlo-ForPowerline.ttc /Library/Fonts
 
 # osx system defaults
-./defaults-system.sh
+./defaults/system.sh
 
 # Install homebrew packages
 ./homebrew/homebrew.sh
