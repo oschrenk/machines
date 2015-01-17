@@ -45,3 +45,4 @@ qlmanage -r
 
 # osx user defaults
 ./defaults/user.sh
+./defaults/safari.sh
