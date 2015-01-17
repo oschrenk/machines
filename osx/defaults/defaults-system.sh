@@ -91,7 +91,7 @@ sudo sysctl -w net.inet.tcp.slowstart_flightsize=10
 # sudo mdutil -a -i on
 
 # Remove Spotlight icon
-sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
+# sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
 
 ## --------------------------------------------------------------------------
 # Time Machine
