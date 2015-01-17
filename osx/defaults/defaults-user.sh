@@ -431,7 +431,7 @@ defaults write com.apple.Terminal "Startup Window Settings" -string "IR_Black"
 ###############################################################################
 
 for app in "Calendar" "Contacts" "Dock" "Finder" "Mail" \
-	"Safari" "SystemUIServer" \
+	"SystemUIServer" \
 	"iTunes"; do
 	killall "$app" > /dev/null 2>&1
 done
