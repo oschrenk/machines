@@ -297,15 +297,6 @@ defaults write NSGlobalDomain com.apple.springing.delay -float 0
 # Sidebar icon size: Small
 defaults write -g 'NSTableViewDefaultSizeMode' -int 1
 
-# Number of recent items: Applications: None
-/usr/bin/osascript -e 'tell application "System Events" to tell appearance preferences to set recent applications limit to 0'
-
-# Number of recent items: Documents: None
-/usr/bin/osascript -e 'tell application "System Events" to tell appearance preferences to set recent documents limit to 0'
-
-# Number of recent items: Servers: None
-/usr/bin/osascript -e 'tell application "System Events" to tell appearance preferences to set recent servers limit to 0'
-
 # Show scroll bars: {Always, Automatic, WhenScrolling}
 defaults write -g 'AppleShowScrollBars' -string 'Automatic'
 
