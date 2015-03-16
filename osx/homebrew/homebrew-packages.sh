@@ -83,7 +83,7 @@ brew install kindlegen
 ## java
 brew install jenv
 brew install maven
-brew install play22
+brew install typesafe-activator
 
 ## scala
 brew install sbt
