@@ -18,7 +18,6 @@ brew install vim
 
 ## command line
 brew install fish                          # shell
-brew install fasd
 brew install fzf                           # fuzzy file finder
 brew install tree
 brew install z
