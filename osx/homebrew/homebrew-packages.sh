@@ -17,7 +17,7 @@ brew install sleepwatcher
 brew install vim
 
 ## command line
-brew install fish
+brew install fish                          # shell
 brew install fasd
 brew install tree
 brew install z
