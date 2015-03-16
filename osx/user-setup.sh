@@ -35,14 +35,6 @@ sublimeup
 # Pressing keys should repeat and not stop
 defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false
 
-# MultimarkDown Quicklook
-cd ~/Downloads
-git clone https://github.com/oschrenk/MMD-QuickLook
-cd MMD-QuickLook
-make compile
-make install
-qlmanage -r
-
 # osx user defaults
 ./defaults/user.sh
 ./defaults/safari.sh

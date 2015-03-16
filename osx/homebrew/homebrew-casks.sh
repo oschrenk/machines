@@ -67,3 +67,6 @@ installcask vlc
 installcask vox-preference-pane
 installcask xact
 installcask xld
+
+# Quicklook
+installcask qlmarkdown
