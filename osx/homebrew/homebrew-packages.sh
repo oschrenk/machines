@@ -22,6 +22,7 @@ brew install fasd
 brew install fzf                           # fuzzy file finder
 brew install tree
 brew install z
+brew install reattach-to-user-namespace    # tmux loses connection to login session
 
 ## tools
 brew install the_silver_searcher
