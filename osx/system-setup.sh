@@ -20,5 +20,3 @@ sudo bash -c "echo /usr/local/bin/fish >> /private/etc/shells"
 # Install npm and the global npm modules
 . ../common-system/npm.sh
 
-# Symlink editors
-ln -s /Applications/Sublime\ Text\ 3.app/Contents/SharedSupport/bin/subl /usr/local/bin/subl
