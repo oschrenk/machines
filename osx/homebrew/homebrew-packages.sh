@@ -1,7 +1,5 @@
 #!/bin/sh
 
-## node.js - install early to setup user in parallel
-brew install node
 
 ## system
 # Install GNU core utilities (those that come with OS X are outdated)
@@ -82,6 +80,9 @@ brew install kindlegen
 brew install jenv
 brew install maven
 brew install typesafe-activator
+
+## javascript
+brew install node
 
 ## clojure
 brew install leiningen           # build tool for clojure
