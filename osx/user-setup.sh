@@ -15,9 +15,11 @@ mkdir -p ~/Projects
 git clone git@github.com:oschrenk/notes.git ~/Documents/Notes
 
 # setup dotfiles
-cd ~
-deja clone oschrenk/dotfiles
-deja link dotfiles
+git clone https://github.com/oschrenk/dotfiles $HOME/.tilde/.dotfiles
+# bootstrap `tilde`
+ln -nsf $HOME/.tilde/dotfiles/.config $HOME/.config
+source $HOME/.config/fish/functions/tilde.fish
+tilde link dotfiles
 
 # setup sleepwatcher
 cp /usr/local/opt/sleepwatcher/de.bernhard-baehr.sleepwatcher-20compatibility-localuser.plist ~/Library/LaunchAgents/com.oschrenk.sleepwatcher.plist
