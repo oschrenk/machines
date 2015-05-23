@@ -23,7 +23,6 @@ function installcask() {
 
 # applications
 installcask actions-server
-installcask bettertouchtool
 installcask cheat-sheet
 installcask cocoa-rest-client
 installcask cog
