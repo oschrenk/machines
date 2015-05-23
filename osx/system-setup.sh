@@ -14,7 +14,7 @@ cp ~/Downloads/Menlo-ForPowerline.ttc /Library/Fonts
 # Install homebrew packages
 ./homebrew/homebrew.sh
 
-# Add the new bash to the list of legit shells
+# Add the fish to the list of legit shells
 sudo bash -c "echo /usr/local/bin/fish >> /private/etc/shells"
 
 # Install npm and the global npm modules
