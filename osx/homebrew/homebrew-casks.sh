@@ -22,9 +22,6 @@ function installcask() {
 # xcode
 
 # applications
-installcask actions-server
-installcask cheat-sheet
-installcask cocoa-rest-client
 installcask cog
 installcask dash
 installcask dropbox
