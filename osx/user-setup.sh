@@ -23,18 +23,6 @@ deja link dotfiles
 cp /usr/local/opt/sleepwatcher/de.bernhard-baehr.sleepwatcher-20compatibility-localuser.plist ~/Library/LaunchAgents/com.oschrenk.sleepwatcher.plist
 launchctl load ~/Library/LaunchAgents/com.oschrenk.sleepwatcher.plist
 
-# Symlink sublime user settings
-SUBLIME_PACKAGES="$HOME/Library/Application Support/Sublime Text 3/Packages"
-SUBLIME_USER_SETTINGS="$SUBLIME_PACKAGES/User"
-mkdir -p "$SUBLIME_PACKAGES"
-rm -rf "$SUBLIME_USER_SETTINGS"
-ln -s $HOME/.sublime "$SUBLIME_USER_SETTINGS"
-
-# Update sublime
-sublimeup
-# Pressing keys should repeat and not stop
-defaults write com.sublimetext.3 ApplePressAndHoldEnabled -bool false
-
 # osx user defaults
 ./defaults/user.sh
 ./defaults/safari.sh
