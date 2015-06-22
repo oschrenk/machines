@@ -24,11 +24,12 @@ function installcask() {
 
 # applications
 installcask cog
+installcask cyberduck
 installcask dash
 installcask dropbox
 installcask evernote
 installcask gfxcardstatus
-installcask google-chrome
+installcask google-chrome-dev
 installcask handbrake
 installcask hexfiend
 installcask hipchat
@@ -58,6 +59,7 @@ installcask transmission
 installcask virtualbox
 installcask viscosity
 installcask vlc
+installcask vox
 installcask vox-preference-pane
 installcask xact
 installcask xld
