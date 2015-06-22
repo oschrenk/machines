@@ -28,7 +28,6 @@ installcask dash
 installcask dropbox
 installcask evernote
 installcask gfxcardstatus
-installcask gitx-rowanj
 installcask google-chrome
 installcask handbrake
 installcask hexfiend
@@ -47,13 +46,11 @@ installcask onyx
 installcask paparazzi
 installcask papers2
 installcask pixelstick
-installcask quicksilver
 installcask reggy
 installcask sequel-pro
 installcask skype
 installcask slate
 installcask spotify
-installcask sublime-text-3
 installcask teamviewer
 installcask the-unarchiver
 installcask the-hit-list
