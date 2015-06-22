@@ -65,4 +65,4 @@ installcask xact
 installcask xld
 
 # Quicklook
-installcask qlmarkdown
+installcask ttscoff-mmd-quicklook
