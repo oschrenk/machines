@@ -6,6 +6,7 @@ brew install brew-cask
 
 # cask rooms
 brew tap caskroom/fonts
+brew tap caskroom/versions
 
 function installcask() {
 	sudo brew cask install --appdir=/Applications "${@}" 2> /dev/null
