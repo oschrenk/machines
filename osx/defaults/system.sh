@@ -36,15 +36,15 @@ sudo nvram SystemAudioVolume=" "
 # Never go into computer sleep mode
 # sudo systemsetup -setcomputersleep Off > /dev/null
 
- Once you turn off hibernation you can remove the sleep image
+# Once you turn off hibernation you can remove the sleep image
 ## Remove the sleep image file to save disk space
-# sudo rm /Private/var/vm/sleepimage
+# sudo rm /private/var/vm/sleepimage
 
 ## Create a zero-byte file instead…
-# sudo touch /Private/var/vm/sleepimage
+# sudo touch /private/var/vm/sleepimage
 
 ## …and make sure it can’t be rewritten
-# sudo chflags uchg /Private/var/vm/sleepimage
+# sudo chflags uchg /private/var/vm/sleepimage
 
 # Don't put hard disks to sleep. x is time in minute
 # sudo pmset disksleep 0
