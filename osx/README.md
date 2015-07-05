@@ -47,3 +47,11 @@ $ sudo chmod +a "group:Local allow delete,readattr,writeattr,readextattr,writeex
 You now have a folder where all members of the group `Local` can read, write and delete files, as well as read, write to and create new sub folders. The ACL rule takes precedence over standard UNIX file permissions and is automatically inherited. It's this automatic inheritance that is really important. Now you are ready to copy your iTunes, Aperture, iPhoto libraries, plus anything else you want to share, into the shared folder.
 
 **IMPORTANT**: You must copy (hold down Option in Finder prior to dragging), and not merely move, items. Moving items doesn't inherit the correct ACL rules. Moving doesn't change POSIX file attributes, permissions, ...
+
+## Sharing homebrew
+
+```shell
+sudo chmod -R 770 /usr/local/
+sudo chmod -R +a "group:Local allow delete,readattr,writeattr,readextattr,writeextattr,list,search,add_file,add_subdirectory,delete_child,file_inherit,directory_inherit" /usr/local/
+
+```
