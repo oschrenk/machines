@@ -29,3 +29,4 @@ launchctl load $HOME/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher-20compa
 ./defaults/user.sh
 ./defaults/safari.sh
 ./defaults/chrome.sh
+./defaults/transmission.sh
