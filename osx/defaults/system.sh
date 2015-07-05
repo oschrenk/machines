@@ -18,7 +18,13 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 sudo pmset -a sms 0
 
 # Set standby delay to 24 hours (default is 1 hour)
-sudo pmset -a standbydelay 86400
+# 24h = 86400
+# 12h = 43200
+#  8h = 28800
+#  4h = 14400
+#  2h =  7200
+#  1h =  3600
+sudo pmset -a standbydelay 28800
 
 # Disable the sound effects on boot
 sudo nvram SystemAudioVolume=" "
