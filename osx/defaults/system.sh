@@ -71,12 +71,10 @@ systemsetup -setrestartfreeze on
 # Enable fast user switching
 defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -bool YES
 
-# Set language and text formats
-# Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with `Inches`, and `true` with `false`.
-
 # --------------------------------------------------------------------------
 # Localization
 # --------------------------------------------------------------------------
+# Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with `Inches`, and `true` with `false`.
 
 # set time zone
 /usr/sbin/systemsetup -settimezone "Europe/Amsterdam"
