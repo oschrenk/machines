@@ -6,6 +6,7 @@ brew install brew-cask
 
 # cask rooms
 brew tap caskroom/fonts
+brew tap caskroom/versions
 
 function installcask() {
 	sudo brew cask install --appdir=/Applications "${@}" 2> /dev/null
@@ -23,12 +24,12 @@ function installcask() {
 
 # applications
 installcask cog
+installcask cyberduck
 installcask dash
 installcask dropbox
 installcask evernote
 installcask gfxcardstatus
-installcask gitx-rowanj
-installcask google-chrome
+installcask google-chrome-dev
 installcask handbrake
 installcask hexfiend
 installcask hipchat
@@ -46,13 +47,11 @@ installcask onyx
 installcask paparazzi
 installcask papers2
 installcask pixelstick
-installcask quicksilver
 installcask reggy
 installcask sequel-pro
 installcask skype
 installcask slate
 installcask spotify
-installcask sublime-text-3
 installcask teamviewer
 installcask the-unarchiver
 installcask the-hit-list
@@ -60,9 +59,10 @@ installcask transmission
 installcask virtualbox
 installcask viscosity
 installcask vlc
+installcask vox
 installcask vox-preference-pane
 installcask xact
 installcask xld
 
 # Quicklook
-installcask qlmarkdown
+installcask ttscoff-mmd-quicklook
