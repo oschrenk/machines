@@ -1,6 +1,7 @@
 #!/bin/sh
 
-# Install npm
-# brew node install npm
-# curl http://npmjs.org/install.sh | sh
+npm -g install bower
+npm -g install grunt-cli
+npm -g install json-server
+
 
