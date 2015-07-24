@@ -6,19 +6,35 @@
 
 To allow all users in `Local` group to execute certain commands, that require `sudo` you can add these command to `/etc/sudoers/`
 
-```shell
-su admin
-sudo vim /etc/sudoers
-```
-
-Add some under the section `User privilege specification`. Here I allow users in the `Local` group to change the `socks` proxy and install some `brew` casks.
+Starting with El Capitan they include a `/private/etc/sudoers.d` directory which is included by default, which makes upgrading easier.
 
 ```bash
-# User privilege specification
-root    ALL=(ALL) ALL
-%admin  ALL=(ALL) ALL
+su admin
+sudo mkdir -p /private/etc/sudoers.d/
+```
+
+Then start adding entries
+
+```bash
+sudo visudo -f /etc/sudoers.d/tunnel.sudo
+```
+
+and write
+
+```bash
 %Local  ALL=NOPASSWD: /usr/sbin/networksetup -setsocksfirewallproxy *
 %Local  ALL=NOPASSWD: /usr/sbin/networksetup -setsocksfirewallproxystate *
+```
+
+And
+
+```bash
+sudo visudo -f /etc/sudoers.d/cask.sudo
+```
+
+and write
+
+```
 %Local  ALL=NOPASSWD: /usr/local/bin/brew cask install *
 ```
 
