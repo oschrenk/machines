@@ -7,7 +7,8 @@ ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
 ./defaults/system.sh
 
 # Install homebrew packages
-./homebrew/homebrew.sh
+./homebrew/packages.sh
+./homebrew/casks.sh
 
 # Add the fish to the list of legit shells
 sudo bash -c "echo /usr/local/bin/fish >> /private/etc/shells"
