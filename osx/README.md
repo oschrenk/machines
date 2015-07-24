@@ -16,7 +16,7 @@ sudo mkdir -p /private/etc/sudoers.d/
 Then start adding entries
 
 ```bash
-sudo visudo -f /etc/sudoers.d/tunnel.sudo
+sudo visudo -f /etc/sudoers.d/tunnel
 ```
 
 and write
@@ -29,7 +29,7 @@ and write
 And
 
 ```bash
-sudo visudo -f /etc/sudoers.d/cask.sudo
+sudo visudo -f /etc/sudoers.d/cask
 ```
 
 and write
