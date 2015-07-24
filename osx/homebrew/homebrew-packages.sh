@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# taps
+brew tap homebrew/dupes
+brew tap homebrew/binary
 
 ## system
 # Install GNU core utilities (those that come with OS X are outdated)
