@@ -103,9 +103,6 @@ sudo sysctl -w net.inet.tcp.slowstart_flightsize=10
 # Disable Spotlight indexing
 # sudo mdutil -a -i on
 
-# Remove Spotlight icon
-# sudo chmod 600 /System/Library/CoreServices/Search.bundle/Contents/MacOS/Search
-
 # Disable Spotlight indexing for any volume that gets mounted and has not yet
 # been indexed before.
 # Use `sudo mdutil -i off "/Volumes/foo"` to stop indexing any volume.
