@@ -24,6 +24,7 @@ brew install tree
 brew install z
 brew install reattach-to-user-namespace    # tmux loses connection to login session
 brew install tmux                          # terminal multiplexer
+brew install tmux-cssh                     # cluster ssh
 
 ## tools
 brew install the_silver_searcher
