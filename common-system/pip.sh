@@ -3,3 +3,6 @@
 # pull command line tricks from commandlinefu.com via commandline
 # $ clf some text
 pip install clf
+
+# For Ensime
+pip install websocket-client

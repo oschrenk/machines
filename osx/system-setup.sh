@@ -13,6 +13,8 @@ ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
 # Add the fish to the list of legit shells
 sudo bash -c "echo /usr/local/bin/fish >> /private/etc/shells"
 
-# Install npm and the global npm modules
+# Global npm modules
 . ../common-system/npm.sh
 
+# Global pips
+. ../common-system/pip.sh
