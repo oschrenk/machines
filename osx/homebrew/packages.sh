@@ -90,6 +90,7 @@ brew install node
 
 ## clojure
 brew install leiningen           # build tool for clojure
+brew install boot-clj            # another build tool for clojure
 
 ## scala
 brew install sbt
