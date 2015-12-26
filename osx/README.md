@@ -38,6 +38,19 @@ and write
 %Local  ALL=NOPASSWD: /usr/local/bin/brew cask install *
 ```
 
+and
+
+```bash
+sudo visudo -f /etc/sudoers.d/location
+```
+
+and write
+
+```
+%Local  ALL=NOPASSWD: /usr/sbin/networksetup -switchtolocation "Home"
+%Local  ALL=NOPASSWD: /usr/sbin/networksetup -switchtolocation "Work"
+```
+
 # Sharing file access
 
 1. Create a new group called `Local` (or any way you want)
