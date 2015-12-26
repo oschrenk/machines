@@ -37,6 +37,7 @@ brew install xmlstarlet
 brew install nmap
 brew install ngrep
 brew install mosh
+brew install ssh-copy-id
 
 ## http
 brew install curl
