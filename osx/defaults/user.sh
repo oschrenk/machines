@@ -389,9 +389,18 @@ defaults write com.apple.mail EnableBundles -bool true
 defaults write com.apple.mail BundleCompatibilityVersion 4
 
 ## --------------------------------------------------------------------------
-# iTunes (for iTunes 10.x)
+# Photos
 ## --------------------------------------------------------------------------
 
+# don't open Photos app, when you connect iPhone
+# revert with `defaults -currentHost delete com.apple.ImageCapture disableHotPlug`
+defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
+
+## --------------------------------------------------------------------------
+# iTunes
+## --------------------------------------------------------------------------
+
+# nothing here at the moment
 
 
 ###############################################################################
