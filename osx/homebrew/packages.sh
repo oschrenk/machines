@@ -46,6 +46,7 @@ brew install wget
 ## git
 brew install git
 brew install git-extras
+brew install diff-so-fancy
 brew install hub
 
 ## scms
