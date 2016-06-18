@@ -21,6 +21,10 @@ cd $HOME/Documents/Notes
 git config --local user.email oliver.schrenk@gmail.com
 cd $HOME
 
+# Setup ruby
+mkdir $HOME/.rbenv
+# filters non-MRI versions with hyphen, select latest
+rbenv install -l | grep -v - | tail -1
 
 # setup dotfiles
 git clone https://github.com/oschrenk/dotfiles $HOME/tilde/.dotfiles
