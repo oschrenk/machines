@@ -29,6 +29,9 @@ defaults write NSGlobalDomain AppleLocale -string "en_DE@currency=EUR"
 defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
 defaults write NSGlobalDomain AppleMetricUnits -bool true
 
+# Unhide user library
+chflags nohidden ~/Library
+
 ## --------------------------------------------------------------------------
 # Network
 ## --------------------------------------------------------------------------
