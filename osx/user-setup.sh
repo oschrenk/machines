@@ -12,6 +12,8 @@ tmutil addexclusion ~/Movies
 
 # Create standard directories
 mkdir -p ~/Projects
+mkdir -p ~/Frameworks/go/bin
+mkdir -p ~/Data
 git clone git@github.com:oschrenk/notes.git ~/Documents/Notes
 
 # setup dotfiles
