@@ -25,6 +25,22 @@ brew install reattach-to-user-namespace    # tmux loses connection to login sess
 brew install tmux                          # terminal multiplexer
 brew install tmux-cssh                     # cluster ssh
 
+# cli is life
+brew install calcurse
+brew install contacts
+brew install khal
+brew install notmuch
+brew install offlineimap
+brew install mutt
+brew install vdirsyncer
+
+# parsing
+brew install jq
+brew install miller
+
+# network
+mobile-shell
+
 ## tools
 brew install the_silver_searcher
 brew install dos2unix
@@ -46,6 +62,7 @@ brew install wget
 ## git
 brew install git
 brew install git-extras
+brew install git-open
 brew install diff-so-fancy
 brew install hub
 
