@@ -14,7 +14,13 @@ tmutil addexclusion ~/Movies
 mkdir -p ~/Projects
 mkdir -p ~/Frameworks/go/bin
 mkdir -p ~/Data
-git clone git@github.com:oschrenk/notes.git ~/Documents/Notes
+
+# Setup notes
+git clone git@github.com:oschrenk/notes.git $HOME/Documents/Notes
+cd $HOME/Documents/Notes
+git config --local user.email oliver.schrenk@gmail.com
+cd $HOME
+
 
 # setup dotfiles
 git clone https://github.com/oschrenk/dotfiles $HOME/tilde/.dotfiles
