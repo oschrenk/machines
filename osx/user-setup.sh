@@ -15,10 +15,8 @@ mkdir -p ~/Projects
 git clone git@github.com:oschrenk/notes.git ~/Documents/Notes
 
 # setup dotfiles
-git clone https://github.com/oschrenk/dotfiles $HOME/.tilde/.dotfiles
-# bootstrap `tilde`
-ln -nsf $HOME/.tilde/dotfiles/.config $HOME/.config
-source $HOME/.config/fish/functions/tilde.fish
+git clone https://github.com/oschrenk/dotfiles $HOME/tilde/.dotfiles
+source $HOME/.tilde/dotfiles/config/fish/functions/tilde.fish
 tilde link dotfiles
 
 # osx user defaults
