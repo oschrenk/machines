@@ -21,10 +21,6 @@ ln -nsf $HOME/.tilde/dotfiles/.config $HOME/.config
 source $HOME/.config/fish/functions/tilde.fish
 tilde link dotfiles
 
-# setup sleepwatcher
-ln -sfv /usr/local/opt/sleepwatcher/*.plist ~/Library/LaunchAgents
-launchctl load $HOME/Library/LaunchAgents/de.bernhard-baehr.sleepwatcher-20compatibility-localuser.plist
-
 # osx user defaults
 ./defaults/user.sh
 ./defaults/safari.sh
