@@ -40,7 +40,6 @@ installcask iterm2
 installcask keyboard-cleaner
 installcask marked
 installcask mindnode-pro
-installcask mojibar
 installcask mplayerx
 installcask omni-graffle-pro
 installcask onepassword
