@@ -23,7 +23,8 @@ function installcask() {
 # vox
 # xcode
 
-# applications
+
+# /Applications
 installcask cog
 installcask cyberduck
 installcask dash
@@ -46,7 +47,6 @@ installcask onepassword
 installcask reggy
 installcask sequel-pro
 installcask skype
-installcask spotify
 installcask teamviewer
 installcask the-unarchiver
 installcask the-hit-list
