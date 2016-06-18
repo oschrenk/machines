@@ -47,6 +47,7 @@ installcask reggy
 installcask rescuetime
 installcask sequel-pro
 installcask skype
+installcask slack
 installcask teamviewer
 installcask the-unarchiver
 installcask the-hit-list
