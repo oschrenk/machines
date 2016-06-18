@@ -44,6 +44,7 @@ installcask mplayerx
 installcask omni-graffle-pro
 installcask onepassword
 installcask reggy
+installcask rescuetime
 installcask sequel-pro
 installcask skype
 installcask teamviewer
