@@ -24,6 +24,8 @@ and write
 ```bash
 %Local  ALL=NOPASSWD: /usr/sbin/networksetup -setsocksfirewallproxy *
 %Local  ALL=NOPASSWD: /usr/sbin/networksetup -setsocksfirewallproxystate *
+%Local  ALL=NOPASSWD: /usr/sbin/networksetup -setv6off *
+%Local  ALL=NOPASSWD: /usr/sbin/networksetup -setv6automatic *
 ```
 
 And
