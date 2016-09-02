@@ -41,3 +41,4 @@ brew cask install spotify
 ./defaults/safari.sh
 ./defaults/chrome.sh
 ./defaults/transmission.sh
+./defaults/dayone.sh
