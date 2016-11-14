@@ -1,5 +1,14 @@
 # README
 
+## What is worth reinstalling
+
+```shell
+# all top-level brew installs
+brew leaves      		  > brew-list.txt
+brew cask list 			  > cask-list.txt
+npm list -g --depth=0 > npm-g-list.txt
+```
+
 ## Dealing with multiple users
 
 ### Allowing other users to `sudo`
