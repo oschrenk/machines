@@ -8,50 +8,7 @@ To allow all users in `Local` group to execute certain commands, that require `s
 
 Starting with El Capitan they include a `/private/etc/sudoers.d` directory which is included by default, which makes upgrading easier.
 
-```bash
-su admin
-sudo mkdir -p /private/etc/sudoers.d/
-```
-
-Then start adding entries
-
-```bash
-sudo visudo -f /etc/sudoers.d/tunnel
-```
-
-and write
-
-```bash
-%Local  ALL=NOPASSWD: /usr/sbin/networksetup -setsocksfirewallproxy *
-%Local  ALL=NOPASSWD: /usr/sbin/networksetup -setsocksfirewallproxystate *
-%Local  ALL=NOPASSWD: /usr/sbin/networksetup -setv6off *
-%Local  ALL=NOPASSWD: /usr/sbin/networksetup -setv6automatic *
-```
-
-And
-
-```bash
-sudo visudo -f /etc/sudoers.d/cask
-```
-
-and write
-
-```
-%Local  ALL=NOPASSWD: /usr/local/bin/brew cask install *
-```
-
-and
-
-```bash
-sudo visudo -f /etc/sudoers.d/location
-```
-
-and write
-
-```
-%Local  ALL=NOPASSWD: /usr/sbin/networksetup -switchtolocation "Home"
-%Local  ALL=NOPASSWD: /usr/sbin/networksetup -switchtolocation "Work"
-```
+For now I put the files in `files/sudoers.d`.
 
 # Sharing file access
 

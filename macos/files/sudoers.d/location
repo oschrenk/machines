@@ -1,0 +1,1 @@
+%Local  ALL=NOPASSWD: /usr/sbin/networksetup -switchtolocation *
