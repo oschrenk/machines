@@ -39,7 +39,7 @@ brew install jq
 brew install miller
 
 # network
-mobile-shell
+brew install mobile-shell
 
 ## tools
 brew install the_silver_searcher
