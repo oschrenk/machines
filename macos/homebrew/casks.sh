@@ -1,10 +1,5 @@
 #!/bin/sh
 
-# Install native apps
-brew tap caskroom/homebrew-cask
-brew install brew-cask
-brew install homebrew/completions/brew-cask-completion
-
 # cask rooms
 brew tap caskroom/fonts
 brew tap caskroom/versions
