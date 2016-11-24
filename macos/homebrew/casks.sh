@@ -26,7 +26,7 @@ function installcask() {
 
 # /Applications
 installcask atom
-installcask ealibre
+installcask calibre
 installcask cog
 installcask cyberduck
 installcask dash
