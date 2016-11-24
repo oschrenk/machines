@@ -14,13 +14,15 @@ brew install blueutil
 brew install duti
 
 ## edit
+brew install ctags
 brew install vim
+brew install neovim/neovim/neovim
+brew install tmate
 
 ## command line
 brew install fish                          # shell
 brew install fzf                           # fuzzy file finder
 brew install tree
-brew install z
 brew install reattach-to-user-namespace    # tmux loses connection to login session
 brew install tmux                          # terminal multiplexer
 brew install tmux-cssh                     # cluster ssh
@@ -28,30 +30,29 @@ brew install tmux-cssh                     # cluster ssh
 # cli is life
 brew install calcurse
 brew install contacts
+brew install dasht
 brew install khal
 brew install notmuch
 brew install offlineimap
 brew install mutt
 brew install vdirsyncer
 
-# parsing
+# parsing/converting
 brew install jq
 brew install miller
-
-# network
-brew install mobile-shell
+brew install xmlstarlet
 
 ## tools
 brew install the_silver_searcher
 brew install dos2unix
 brew install multimarkdown
+brew install parallel
 brew install synergy
-brew install xmlstarlet
 
 ## network
 brew install nmap
 brew install ngrep
-brew install mosh
+brew install mobile-shell
 brew install ssh-copy-id
 
 ## http
