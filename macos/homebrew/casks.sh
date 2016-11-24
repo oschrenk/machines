@@ -5,7 +5,7 @@ brew tap caskroom/fonts
 brew tap caskroom/versions
 
 function installcask() {
-	brew cask install --appdir=/Applications "${@}" 2> /dev/null
+	brew cask install "${@}" 2> /dev/null
 }
 
 # app store
