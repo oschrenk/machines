@@ -30,6 +30,7 @@ installcask calibre
 installcask cog
 installcask cyberduck
 installcask dash
+installcask dayone-cli
 installcask dropbox
 installcask evernote
 installcask google-chrome
@@ -37,7 +38,6 @@ installcask hammerspoon
 installcask handbrake
 installcask hexfiend
 installcask hipchat
-installcask inkscape
 installcask intellij-idea
 installcask iterm2
 installcask keyboard-cleaner
@@ -48,9 +48,12 @@ installcask mindnode-pro
 installcask mplayerx
 installcask omni-graffle-pro
 installcask onepassword
+installcask osxfuse
+installcask paparazzi
 installcask paw
 installcask reggy
 installcask rescuetime
+installcask robomongo
 installcask sequel-pro
 installcask skype
 installcask slack
@@ -59,7 +62,6 @@ installcask telegram
 installcask the-unarchiver
 installcask the-hit-list
 installcask transmission
-installcask virtualbox
 installcask viscosity
 installcask vlc
 installcask xact
