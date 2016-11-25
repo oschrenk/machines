@@ -31,6 +31,9 @@ git clone https://github.com/oschrenk/dotfiles $HOME/tilde/.dotfiles
 source $HOME/.tilde/dotfiles/config/fish/functions/tilde.fish
 tilde link dotfiles
 
+# homebrew
+# disable analytics
+brew analytics off
 
 # ~/Applications
 # Some apps need to be local to user
