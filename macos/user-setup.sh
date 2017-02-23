@@ -45,3 +45,5 @@ brew cask install spotify
 ./defaults/chrome.sh
 ./defaults/transmission.sh
 ./defaults/dayone.sh
+
+cp ./files/agents/* ~/Library/LaunchAgents
