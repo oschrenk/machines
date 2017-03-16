@@ -28,7 +28,6 @@ brew install tmux                          # terminal multiplexer
 brew install tmux-cssh                     # cluster ssh
 
 # cli is life
-brew install calcurse
 brew install contacts
 brew install dasht
 brew install khal
