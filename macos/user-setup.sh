@@ -47,3 +47,4 @@ brew cask install spotify
 ./defaults/dayone.sh
 
 cp ./files/agents/* ~/Library/LaunchAgents
+launchctl load ~/Library/LaunchAgents/*.plist
