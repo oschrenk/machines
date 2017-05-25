@@ -11,7 +11,7 @@
       <string>en_US.UTF-8</string>
     </dict>
     <key>Label</key>
-    <string>oschrenk.vdirsyncer</string>
+    <string>com.oschrenk.vdirsyncer</string>
     <key>WorkingDirectory</key>
     <!-- working directory for vdirsyncer, usually the base directory where
          vdirsyncer is installed, e.g. /usr/local/ -->

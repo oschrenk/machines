@@ -11,7 +11,7 @@
       <string>en_US.UTF-8</string>
     </dict>
     <key>Label</key>
-    <string>com.sourcegraph.thyme</string>
+    <string>com.oschrenk.thyme</string>
     <key>WorkingDirectory</key>
     <string>/usr/local/</string>
     <key>ProgramArguments</key>
