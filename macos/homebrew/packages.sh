@@ -40,19 +40,22 @@ brew install vdirsyncer
 brew install jq
 brew install miller
 brew install xmlstarlet
+brew install dos2unix
+
+## searching
+brew install the_silver_searcher
+brew install ripgrep
 
 ## tools
-brew install the_silver_searcher
-brew install dos2unix
 brew install multimarkdown
 brew install parallel
-brew install synergy
 
 ## network
 brew install nmap
 brew install ngrep
 brew install mobile-shell
 brew install ssh-copy-id
+brew install synergy
 
 ## http
 brew install curl
