@@ -100,9 +100,10 @@ brew install xvid
 ## media
 brew install kindlegen
 
-## java
+## jvm
 brew install maven
 brew install typesafe-activator
+brew install drip
 
 ## javascript
 brew install node
