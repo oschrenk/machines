@@ -30,7 +30,6 @@ installcask calibre
 installcask cog
 installcask cyberduck
 installcask dash
-installcask dayone-cli
 installcask dropbox
 installcask evernote
 installcask google-chrome
