@@ -20,6 +20,7 @@ brew install neovim/neovim/neovim
 brew install tmate
 
 ## command line
+brew install direnv                        # auto load env
 brew install fish                          # shell
 brew install fzf                           # fuzzy file finder
 brew install tree
