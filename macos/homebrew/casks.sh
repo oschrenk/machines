@@ -37,7 +37,7 @@ installcask hammerspoon
 installcask handbrake
 installcask hexfiend
 installcask hipchat
-installcask intellij-idea
+installcask intellij-idea-ce
 installcask iterm2
 installcask keyboard-cleaner
 installcask knockknock
