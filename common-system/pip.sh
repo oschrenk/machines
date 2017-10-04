@@ -14,3 +14,6 @@ pip install todoman
 
 # for vdirsyncer
 pip install keyring
+
+# tmux window manager
+pip install tmuxp
