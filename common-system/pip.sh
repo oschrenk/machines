@@ -5,8 +5,12 @@
 pip install clf
 
 # For Ensime
-pip install websocket-client
+pip install websocket
+pip install sexpdata websocket-client
 pip install neovim
 
 # cli is life
 pip install todoman
+
+# for vdirsyncer
+pip install keyring
