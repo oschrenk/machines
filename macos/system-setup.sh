@@ -1,8 +1,7 @@
 #!/bin/sh
 
 # Install homebrew package manager
-ruby <(curl -fsSkL raw.github.com/mxcl/homebrew/go)
-
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 # osx system defaults
 ./defaults/system.sh
 
