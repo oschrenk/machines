@@ -23,7 +23,7 @@ cd $HOME
 # Setup ruby
 mkdir $HOME/.rbenv
 # filters non-MRI versions with hyphen, select latest
-LAST_RUBY_VERSION = rbenv install -l | grep -v - | tail -1
+export LAST_RUBY_VERSION=$(rbenv install -l | grep -v - | tail -1)
 rbenv install $LAST_RUBY_VERSION
 rbenv global $LAST_RUBY_VERSION
 
