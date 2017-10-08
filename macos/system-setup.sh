@@ -18,4 +18,6 @@ sudo bash -c "echo /usr/local/bin/fish >> /private/etc/shells"
 . ../common-system/npm.sh
 
 # Global pips
+# Make sure there are no system packages
+pip freeze | sudo xargs pip uninstall -y
 . ../common-system/pip.sh
