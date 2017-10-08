@@ -121,3 +121,6 @@ brew install scala
 ## ruby
 brew install rbenv
 brew install ruby-build
+
+#go
+brew install go
