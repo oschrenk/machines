@@ -1,8 +1,13 @@
 #!/bin/sh
 
+brew tap oschrenk/homebrew-casks
+
 function installcask() {
 	brew cask install "${@}" 2> /dev/null
 }
+
+# Fonts
+brew cask install mplus-powerline
 
 # /Applications
 installcask atom
