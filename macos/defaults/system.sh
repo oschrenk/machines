@@ -1,4 +1,4 @@
-	#!/bin/sh
+#!/bin/sh
 # Mainly taken from https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 
 # Ask for the administrator password upfront
