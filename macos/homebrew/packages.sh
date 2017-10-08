@@ -13,6 +13,7 @@ brew install findutils
 brew install blueutil
 brew install duti
 brew install mas        # install app store apps
+brew install gawk       # GNU awk utility
 
 ## edit
 brew install ctags
