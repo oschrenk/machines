@@ -57,6 +57,7 @@ installcask robomongo
 installcask sequel-pro
 installcask skype
 installcask slack
+installcask spotify
 installcask telegram
 installcask the-unarchiver
 installcask the-hit-list
