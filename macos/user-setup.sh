@@ -10,9 +10,19 @@ chsh -s /usr/local/bin/fish
 tmutil addexclusion ~/Downloads
 tmutil addexclusion ~/Movies
 
-# Create standard directories
-mkdir -p ~/Projects
+# Frameworks
 mkdir -p ~/Frameworks/go/bin
+
+# Project diretories
+mkdir -p ~/Projects/devops
+mkdir -p ~/Projects/external
+
+# Create Logs
+mkdir -p ~/Documents/Log
+
+## devops projects
+cd $HOME/Projects/devops
+git clone git@github.com:oschrenk/machines.git
 
 # Setup notes
 git clone git@github.com:oschrenk/notes.git $HOME/Documents/Notes
