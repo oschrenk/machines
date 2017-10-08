@@ -8,21 +8,6 @@ function installcask() {
 	brew cask install "${@}" 2> /dev/null
 }
 
-# app store
-
-# 1password
-# affinity designer
-# afiinity photo
-# due
-# data-graph
-# msgfiler
-# one day
-# readkit
-# vox
-# xcode
-
-# external
-# docker for mac
 
 # /Applications
 installcask atom
