@@ -12,6 +12,7 @@ echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH.
 brew install findutils
 brew install blueutil
 brew install duti
+brew install mas        # install app store apps
 
 ## edit
 brew install ctags
