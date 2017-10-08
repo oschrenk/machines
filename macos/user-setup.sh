@@ -36,10 +36,6 @@ tilde link dotfiles
 # disable analytics
 brew analytics off
 
-# ~/Applications
-# Some apps need to be local to user
-brew cask install spotify
-
 # osx user defaults
 ./defaults/user.sh
 ./defaults/safari.sh
