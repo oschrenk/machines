@@ -42,6 +42,7 @@ installcask iterm2
 installcask keyboard-cleaner
 installcask knockknock
 installcask lunchy
+installcask karabiner-elements
 installcask marked
 installcask mindnode-pro
 installcask mplayerx
