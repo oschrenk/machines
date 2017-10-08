@@ -6,7 +6,7 @@
 ./defaults/system.sh
 
 # Install homebrew packages
-./homebrew/packages.sh
+# casks before packages just because of java
 ./homebrew/casks.sh
 
 # Add the fish to the list of legit shells
