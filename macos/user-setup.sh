@@ -54,3 +54,10 @@ brew analytics off
 
 cp ./files/agents/* ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/*.plist
+
+# setup env
+source $HOME/.tilde/dotfiles/.config/fish/env.fish
+
+# setup user bins
+. ../common-user/go.sh
+
