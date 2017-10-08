@@ -102,12 +102,6 @@ sudo sysctl -w net.inet.tcp.slowstart_flightsize=10
 # Use `sudo mdutil -i off "/Volumes/foo"` to stop indexing any volume.
 sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
 
-## --------------------------------------------------------------------------
-# Time Machine
-## --------------------------------------------------------------------------
-
-# Disable local Time Machine backups
-hash tmutil &> /dev/null && sudo tmutil disablelocal
 
 ###############################################################################
 # Kill affected applications                                                  #
