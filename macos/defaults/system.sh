@@ -11,12 +11,6 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 # Hardware & Energy settings
 ## --------------------------------------------------------------------------
 
-# Disable InfraredController
-# sudo defaults write /Library/Preferences/com.apple.driver.AppleIRController DeviceEnabled -bool false
-
-# Disable motion sensor (I have an SSD disk)
-sudo pmset -a sms 0
-
 # Set standby delay to 24 hours (default is 1 hour)
 # 24h = 86400
 # 12h = 43200
