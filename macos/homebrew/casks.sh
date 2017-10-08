@@ -1,13 +1,8 @@
 #!/bin/sh
 
-# cask rooms
-brew tap caskroom/fonts
-brew tap caskroom/versions
-
 function installcask() {
 	brew cask install "${@}" 2> /dev/null
 }
-
 
 # /Applications
 installcask atom
