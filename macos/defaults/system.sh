@@ -31,20 +31,20 @@ sudo nvram SystemAudioVolume=" "
 # hibernatemode = 25 (binary 0001 1001) is only settable via pmset.
 # The system will store a copy of memory to persistent storage (the disk), and will remove power to memory.
 # The system will restore from disk image. If you want “hibernation” – slower sleeps, slower wakes, and better battery life, you should use this setting.
-# sudo pmset -a hibernatemode 0
+sudo pmset -a hibernatemode 0
 
 # Never go into computer sleep mode
 # sudo systemsetup -setcomputersleep Off > /dev/null
 
 # Once you turn off hibernation you can remove the sleep image
 ## Remove the sleep image file to save disk space
-# sudo rm /private/var/vm/sleepimage
+sudo rm /private/var/vm/sleepimage
 
 ## Create a zero-byte file instead…
-# sudo touch /private/var/vm/sleepimage
+sudo touch /private/var/vm/sleepimage
 
 ## …and make sure it can’t be rewritten
-# sudo chflags uchg /private/var/vm/sleepimage
+sudo chflags uchg /private/var/vm/sleepimage
 
 # Don't put hard disks to sleep. x is time in minute
 # sudo pmset disksleep 0
