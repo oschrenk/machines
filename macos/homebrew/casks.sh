@@ -11,6 +11,7 @@ brew cask install mplus-powerline
 
 # /Applications
 installcask atom
+installcask bettertouchtool
 installcask calibre
 installcask cog
 installcask cyberduck
