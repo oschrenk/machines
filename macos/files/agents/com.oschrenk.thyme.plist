@@ -26,7 +26,7 @@
     <true/>
     <key>StartInterval</key>
     <!-- Intervall in seconds -->
-    <integer>60</integer>
+    <integer>15</integer>
     <!-- Store output -->
     <key>StandardOutPath</key>
     <string>/tmp/thyme.log</string>
