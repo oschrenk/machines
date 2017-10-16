@@ -42,6 +42,7 @@ installcask paw
 installcask reggy
 installcask rescuetime
 installcask robomongo
+installcask selfcontrol
 installcask sequel-pro
 installcask skype
 installcask slack
