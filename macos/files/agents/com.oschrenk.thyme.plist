@@ -17,7 +17,7 @@
     <key>ProgramArguments</key>
     <array>
       <!-- full path to binary -->
-      <string>/usr/local/bin/thyme</string>
+      <string>/Users/oliver/Frameworks/go/bin/thyme</string>
       <string>track</string>
       <string>-o</string>
       <string>/Users/oliver/Log/thyme.json</string>
