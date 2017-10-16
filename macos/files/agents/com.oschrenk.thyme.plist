@@ -20,7 +20,7 @@
       <string>/Users/oliver/Frameworks/go/bin/thyme</string>
       <string>track</string>
       <string>-o</string>
-      <string>/Users/oliver/Log/thyme.json</string>
+      <string>/Users/oliver/Documents/Log/thyme.json</string>
     </array>
     <key>RunAtLoad</key>
     <true/>
