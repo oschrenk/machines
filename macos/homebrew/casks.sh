@@ -39,6 +39,7 @@ installcask onepassword
 installcask osxfuse
 installcask paparazzi
 installcask paw
+installcask plan
 installcask reggy
 installcask rescuetime
 installcask robomongo
