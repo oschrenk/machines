@@ -4,6 +4,10 @@
 brew tap homebrew/dupes
 brew tap homebrew/binary
 
+# infrastructure
+brew install ansible    # devops automation
+brew install mas        # install app store apps
+
 ## system
 # Install GNU core utilities (those that come with OS X are outdated)
 brew install coreutils
@@ -12,7 +16,6 @@ echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH.
 brew install findutils
 brew install blueutil
 brew install duti
-brew install mas        # install app store apps
 brew install gawk       # GNU awk utility
 
 ## edit
