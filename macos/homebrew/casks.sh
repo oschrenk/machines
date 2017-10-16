@@ -19,6 +19,7 @@ installcask dash
 installcask docker
 installcask dropbox
 installcask evernote
+installcask flux
 installcask google-chrome
 installcask hammerspoon
 installcask handbrake
