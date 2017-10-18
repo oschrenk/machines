@@ -53,7 +53,7 @@ installcask telegram
 installcask the-unarchiver
 installcask the-hit-list
 installcask transmission
-installcask viscosity
+installcask tunnelblick
 installcask vlc
 installcask xact
 installcask xld
