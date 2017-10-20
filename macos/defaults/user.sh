@@ -39,9 +39,6 @@ chflags nohidden ~/Library
 # Avoid creating .DS_Store files on network volumes
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
-# Enable AirDrop over Ethernet and on unsupported Macs running Lion
-# defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
-
 ## --------------------------------------------------------------------------
 # Spotlight
 ## --------------------------------------------------------------------------
