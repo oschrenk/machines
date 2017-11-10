@@ -33,6 +33,7 @@ installcask lunchy
 installcask karabiner-elements
 installcask little-snitch
 installcask marked
+installcask marp
 installcask mindnode-pro
 installcask mplayerx
 installcask omni-graffle-pro
