@@ -14,7 +14,6 @@ installcask atom
 installcask bettertouchtool
 installcask calibre
 installcask cog
-installcask cyberduck
 installcask dash
 installcask docker
 installcask dropbox
