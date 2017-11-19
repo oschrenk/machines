@@ -42,6 +42,7 @@ brew install notmuch
 brew install offlineimap
 brew install mutt
 brew install vdirsyncer
+brew install newsboat
 
 # parsing/converting
 brew install jq
