@@ -56,5 +56,7 @@ installcask vlc
 installcask xact
 installcask xld
 
+installcask mendeley-desktop
+
 # Quicklook
 installcask ttscoff-mmd-quicklook
