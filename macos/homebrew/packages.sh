@@ -63,7 +63,6 @@ brew install nmap
 brew install ngrep
 brew install mobile-shell
 brew install ssh-copy-id
-brew install synergy
 brew install telnet
 
 ## http
