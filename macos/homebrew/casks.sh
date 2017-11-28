@@ -34,7 +34,7 @@ installcask marked
 installcask marp
 installcask mindnode-pro
 installcask mplayerx
-installcask omni-graffle-pro
+installcask omnigraffle
 installcask onepassword
 installcask osxfuse
 installcask paparazzi
