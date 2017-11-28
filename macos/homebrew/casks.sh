@@ -10,6 +10,7 @@ function installcask() {
 brew cask install mplus-powerline
 
 # /Applications
+installcask 1password
 installcask atom
 installcask bettertouchtool
 installcask calibre
@@ -35,7 +36,6 @@ installcask marp
 installcask mindnode-pro
 installcask mplayerx
 installcask omnigraffle
-installcask onepassword
 installcask osxfuse
 installcask paparazzi
 installcask paw
