@@ -7,6 +7,7 @@ brew tap homebrew/binary
 # infrastructure
 brew install ansible    # devops automation
 brew install mas        # install app store apps
+brew install dockutil   # configures the dock
 
 ## system
 # Install GNU core utilities (those that come with OS X are outdated)
