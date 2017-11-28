@@ -42,7 +42,7 @@ installcask paw
 installcask plan
 installcask reggy
 installcask rescuetime
-installcask robomongo
+installcask robo-3t
 installcask selfcontrol
 installcask sequel-pro
 installcask skype
