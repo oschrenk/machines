@@ -30,6 +30,7 @@ installcask keyboard-cleaner
 installcask knockknock
 installcask lunchy
 installcask karabiner-elements
+installcask keycastr
 installcask little-snitch
 installcask marked
 installcask marp
