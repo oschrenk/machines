@@ -10,7 +10,7 @@ pip2 install sexpdata websocket-client
 pip2 install neovim
 
 # cli is life
-pip2 install todoman
+pip3 install todoman
 
 # for vdirsyncer
 pip3 install keyring
