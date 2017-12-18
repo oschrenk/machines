@@ -38,7 +38,7 @@ rbenv install $LAST_RUBY_VERSION
 rbenv global $LAST_RUBY_VERSION
 
 # setup dotfiles
-git clone https://github.com/oschrenk/dotfiles $HOME/tilde/.dotfiles
+git clone https://github.com/oschrenk/dotfiles $HOME/.tilde/dotfiles
 source $HOME/.tilde/dotfiles/.config/fish/functions/tilde.fish
 tilde link dotfiles
 
