@@ -2,18 +2,18 @@
 
 # pull command line tricks from commandlinefu.com via commandline
 # $ clf some text
-pip install clf
+pip3 install clf
 
 # For Ensime
-pip install websocket
-pip install sexpdata websocket-client
-pip install neovim
+pip2 install websocket
+pip2 install sexpdata websocket-client
+pip2 install neovim
 
 # cli is life
-pip install todoman
+pip2 install todoman
 
 # for vdirsyncer
-pip install keyring
+pip3 install keyring
 
 # tmux window manager
-pip install tmuxp
+pip3 install tmuxp
