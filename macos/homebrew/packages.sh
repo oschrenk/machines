@@ -132,3 +132,6 @@ brew install ruby-build
 
 #go
 brew install go
+
+# cloud
+brew install awscli
