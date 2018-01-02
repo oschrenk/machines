@@ -116,6 +116,7 @@ brew install drip
 
 ## javascript
 brew install node
+brew install yarn
 
 ## clojure
 brew install leiningen           # build tool for clojure
