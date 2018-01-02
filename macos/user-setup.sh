@@ -19,6 +19,7 @@ mkdir -p ~/Projects/external
 
 # Create Logs
 mkdir -p ~/Documents/Log
+mkdir -p ~/Documents/Journal
 
 ## devops projects
 cd $HOME/Projects/devops
