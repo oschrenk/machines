@@ -31,7 +31,6 @@ brew install fish                          # shell
 brew install bash                          # bash 4, maoinly as dependency for tmux-fingers
 brew install fzf                           # fuzzy file finder
 brew install tree
-brew install reattach-to-user-namespace    # tmux loses connection to login session
 brew install tmux                          # terminal multiplexer
 brew install tmux-cssh                     # cluster ssh
 
