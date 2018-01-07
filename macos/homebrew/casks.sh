@@ -36,6 +36,7 @@ installcask marked
 installcask marp
 installcask mindnode-pro
 installcask mplayerx
+installcask muzzle               # stops os-notifications during presentations
 installcask omnigraffle
 installcask osxfuse
 installcask paparazzi
