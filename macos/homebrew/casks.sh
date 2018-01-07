@@ -30,7 +30,7 @@ installcask keyboard-cleaner
 installcask knockknock
 installcask lunchy
 installcask karabiner-elements
-installcask keycastr
+installcask keycastr             # shows key strokes on screen
 installcask little-snitch
 installcask marked
 installcask marp
