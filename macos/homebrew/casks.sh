@@ -54,6 +54,7 @@ installcask spotify
 installcask telegram
 installcask the-unarchiver
 installcask the-hit-list
+installcask timing
 installcask transmission
 installcask vlc
 installcask xact
