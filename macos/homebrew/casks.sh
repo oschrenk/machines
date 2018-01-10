@@ -21,6 +21,7 @@ installcask dropbox
 installcask evernote
 installcask flux
 installcask google-chrome
+installcask grammarly
 installcask hammerspoon
 installcask handbrake
 installcask hex-fiend
