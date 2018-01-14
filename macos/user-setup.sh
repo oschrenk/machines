@@ -53,7 +53,7 @@ brew analytics off
 ./defaults/chrome.sh
 ./defaults/dayone.sh
 
-cp ./files/agents/* ~/Library/LaunchAgents
+cp ./agents/* ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/*.plist
 
 # setup env

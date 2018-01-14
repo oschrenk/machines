@@ -17,7 +17,7 @@ To allow all users in `Local` group to execute certain commands, that require `s
 
 Starting with El Capitan they include a `/private/etc/sudoers.d` directory which is included by default, which makes upgrading easier.
 
-For now I put the files in `files/sudoers.d`.
+For now I put the files in `sudoers.d`.
 
 # Sharing file access
 
