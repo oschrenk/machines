@@ -43,6 +43,7 @@ installcask osxfuse
 installcask paparazzi
 installcask paw
 installcask plan
+installcask postman
 installcask reggy
 installcask rescuetime
 installcask robo-3t
