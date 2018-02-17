@@ -15,7 +15,7 @@
     <key>WorkingDirectory</key>
     <!-- working directory for vdirsyncer, usually the base directory where
          vdirsyncer is installed, e.g. /usr/local/ -->
-    <string>/usr/local/Cellar/vdirsyncer/0.16.3_1/bin</string>
+    <string>/usr/local/Cellar/vdirsyncer/0.16.4/bin</string>
     <key>ProgramArguments</key>
     <array>
       <!-- full path to vdirsyncer binary -->
