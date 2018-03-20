@@ -5,9 +5,11 @@
 pip3 install clf
 
 # For Ensime
-pip2 install websocket
-pip2 install sexpdata websocket-client
-pip2 install neovim
+pip3 install websocket
+pip3 install sexpdata websocket-client
+
+# Ensime and deoplete
+pip3 install neovim
 
 # cli is life
 pip3 install todoman
