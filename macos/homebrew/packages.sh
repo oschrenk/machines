@@ -18,6 +18,7 @@ brew install findutils
 brew install blueutil
 brew install duti
 brew install gawk       # GNU awk utility
+brew install watch      # issue commands at regular interval
 
 ## edit
 brew install ctags
@@ -28,7 +29,7 @@ brew install tmate
 ## command line
 brew install direnv                        # auto load env
 brew install fish                          # shell
-brew install bash                          # bash 4, maoinly as dependency for tmux-fingers
+brew install bash                          # bash 4, mainly as dependency for tmux-fingers
 brew install fzf                           # fuzzy file finder
 brew install tree
 brew install tmux                          # terminal multiplexer
