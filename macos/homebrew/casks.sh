@@ -47,6 +47,7 @@ installcask postman
 installcask reggy
 installcask rescuetime
 installcask robo-3t
+installcask rocket               # quick emoji access
 installcask selfcontrol
 installcask sequel-pro
 installcask skype
