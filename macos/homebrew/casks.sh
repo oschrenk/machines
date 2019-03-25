@@ -15,7 +15,6 @@ installcask alacritty
 installcask bettertouchtool
 installcask calibre
 installcask cog
-installcask dash
 installcask docker
 installcask dropbox
 installcask evernote
