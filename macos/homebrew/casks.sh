@@ -11,6 +11,7 @@ brew cask install mplus-powerline
 
 # /Applications
 installcask 1password
+installcask alacritty
 installcask bettertouchtool
 installcask calibre
 installcask cog
