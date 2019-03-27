@@ -25,7 +25,7 @@ brew install tmate
 ## command line
 brew install direnv                        # auto load env
 brew install fish                          # shell
-brew install bash                          # bash 4, mainly as dependency for tmux-fingers
+brew install bash                          # newer bash
 brew install fzf                           # fuzzy file finder
 brew install tree
 brew install tmux                          # terminal multiplexer
