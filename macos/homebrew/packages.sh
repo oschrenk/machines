@@ -1,9 +1,5 @@
 #!/bin/sh
 
-# taps
-brew tap homebrew/dupes
-brew tap homebrew/binary
-
 # infrastructure
 brew install ansible    # devops automation
 brew install mas        # install app store apps
