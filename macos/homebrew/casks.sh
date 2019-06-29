@@ -28,6 +28,7 @@ installcask iterm2
 installcask knockknock
 installcask lunchy
 installcask karabiner-elements
+installcask keyboardcleantool
 installcask keycastr             # shows key strokes on screen
 installcask marked
 installcask marp
