@@ -25,7 +25,6 @@ installcask handbrake
 installcask hex-fiend
 installcask intellij-idea-ce
 installcask iterm2
-installcask keyboard-cleaner
 installcask knockknock
 installcask lunchy
 installcask karabiner-elements
@@ -54,7 +53,6 @@ installcask timing
 installcask transmission
 installcask vlc
 installcask xact
-installcask xld
 
 # Quicklook
 installcask ttscoff-mmd-quicklook
