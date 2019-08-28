@@ -51,6 +51,7 @@ brew install dos2unix
 ## searching
 brew install the_silver_searcher
 brew install ripgrep
+brew install fd
 
 ## tools
 brew install multimarkdown
