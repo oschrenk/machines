@@ -75,24 +75,6 @@ brew install git-open
 brew install diff-so-fancy
 brew install hub
 
-## scms
-# brew install svn
-# brew install mercurial
-# brew install bazaar
-
-## databases
-# brew install mongodb
-# brew install redis
-# brew install mysql
-# brew install postgresql
-# brew install sqlite
-
-## geo
-# brew install proj
-# brew install geos
-# brew install osmosis
-# brew install postgis
-
 ## a/v
 brew install ffmpeg
 brew install flac
