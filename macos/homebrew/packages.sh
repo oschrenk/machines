@@ -1,7 +1,6 @@
 #!/bin/sh
 
 # infrastructure
-brew install ansible    # devops automation
 brew install mas        # install app store apps
 brew install dockutil   # configures the dock
 
