@@ -24,9 +24,7 @@ installcask hammerspoon
 installcask handbrake
 installcask hex-fiend
 installcask intellij-idea-ce
-installcask iterm2
 installcask knockknock
-installcask lunchy
 installcask karabiner-elements
 installcask keyboardcleantool
 installcask keycastr             # shows key strokes on screen
@@ -40,10 +38,8 @@ installcask paparazzi
 installcask paw
 installcask plan
 installcask postman
-installcask reggy
 installcask rocket               # quick emoji access
 installcask selfcontrol
-installcask sequel-pro
 installcask skype
 installcask slack
 installcask spotify
