@@ -105,5 +105,8 @@ brew install ruby-build
 #go
 brew install go
 
+#python
+brew install python
+
 # cloud
 brew install awscli
