@@ -4,7 +4,7 @@
 # https://github.com/hjuutilainen/dotfiles/blob/master/bin/macos-user-defaults.sh
 
 ## --------------------------------------------------------------------------
-# Hardware & Energy settings
+# Hardware settings
 ## --------------------------------------------------------------------------
 
 # Automatically illuminate built-in MacBook keyboard in low light
@@ -17,20 +17,13 @@ defaults write com.apple.BezelServices kDimTime -int 300
 ## System
 ## --------------------------------------------------------------------------
 
-# Check for software updates daily, not just once per week
-defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+# Show the ~/Library directory
+chflags nohidden "${HOME}/Library"
 
-# Set language and text formats
-# Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with `Inches`, and `true` with `false`.
-defaults write NSGlobalDomain AppleLanguages -array "en"
-defaults write NSGlobalDomain AppleLocale -string "en_DE@currency=EUR"
-
-# AppleMeasurementUnits
-defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
-defaults write NSGlobalDomain AppleMetricUnits -bool true
-
-# Unhide user library
-chflags nohidden ~/Library
+# Don't show the ~/bin directory
+if [[ -d "${HOME}/bin" ]]; then
+    chflags hidden "${HOME}/bin"
+fi
 
 ## --------------------------------------------------------------------------
 # Network
@@ -139,29 +132,6 @@ defaults write com.apple.menuextra.battery ShowPercent -string "NO"
 defaults write com.apple.menuextra.battery ShowTime -string "NO"
 
 ## --------------------------------------------------------------------------
-# Keyboard
-## --------------------------------------------------------------------------
-
-# Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
-defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
-
-# Set a keyboard repeat rate"
-defaults write NSGlobalDomain KeyRepeat -int 0
-
-# Set a delay until key repeat"
-defaults write NSGlobalDomain InitialKeyRepeat -int 12
-
-# Disable smart quotes and smart dashes
-defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
-defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
-
-# Disabling press-and-hold for special keys in favor of key repeat
-defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
-
-# Disable auto correct
-defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
-
-## --------------------------------------------------------------------------
 # Keyboard shortcuts
 ## --------------------------------------------------------------------------
 
@@ -208,15 +178,6 @@ defaults write com.apple.dock wvous-tr-corner -int 2
 defaults write com.apple.dock wvous-bl-corner -int 3
 # active corner bottom right: Desktop
 defaults write com.apple.dock wvous-br-corner -int 4
-
-## --------------------------------------------------------------------------
-# Pointer devices
-## --------------------------------------------------------------------------
-
-# Scrolling direction
-# false = up is up
-# true = up is down // natural
-defaults write -g com.apple.swipescrolldirection -bool true
 
 ## --------------------------------------------------------------------------
 # Trackpad
@@ -397,12 +358,6 @@ defaults write com.apple.mail BundleCompatibilityVersion 4
 # don't open Photos app, when you connect iPhone
 # revert with `defaults -currentHost delete com.apple.ImageCapture disableHotPlug`
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
-
-## --------------------------------------------------------------------------
-# iTunes
-## --------------------------------------------------------------------------
-
-# nothing here at the moment
 
 
 ###############################################################################

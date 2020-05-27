@@ -7,50 +7,11 @@
 # Ask for the administrator password upfront
 sudo -v
 
-# Keep-alive: update existing `sudo` time stamp until `.osx` has finished
+# Keep-alive: update existing `sudo` time stamp until script has finished
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 ## --------------------------------------------------------------------------
-# Hardware & Energy settings
-## --------------------------------------------------------------------------
-
-# Set standby delay to 24 hours (default is 1 hour)
-# 24h = 86400
-# 12h = 43200
-#  8h = 28800
-#  4h = 14400
-#  2h =  7200
-#  1h =  3600
-sudo pmset -a standbydelay 28800
-
-# Only use RAM to hibernate
-# hibernatemode = 0 (binary 0000) by default on supported desktops.
-# The system will not back memory up to persistent storage.
-# hibernatemode = 3 (binary 0011) by default on supported portables.
-# The system will store a copy of memory to persistent storage (the disk), and will power memory during sleep.
-# hibernatemode = 25 (binary 0001 1001) is only settable via pmset.
-# The system will store a copy of memory to persistent storage (the disk), and will remove power to memory.
-# The system will restore from disk image. If you want “hibernation” – slower sleeps, slower wakes, and better battery life, you should use this setting.
-sudo pmset -a hibernatemode 0
-
-# Never go into computer sleep mode
-# sudo systemsetup -setcomputersleep Off > /dev/null
-
-# Once you turn off hibernation you can remove the sleep image
-## Remove the sleep image file to save disk space
-sudo rm /private/var/vm/sleepimage
-
-## Create a zero-byte file instead…
-sudo touch /private/var/vm/sleepimage
-
-## …and make sure it can’t be rewritten
-sudo chflags uchg /private/var/vm/sleepimage
-
-# Don't put hard disks to sleep. x is time in minute
-# sudo pmset disksleep 0
-
-## --------------------------------------------------------------------------
-## System
+## Name
 ## --------------------------------------------------------------------------
 
 # Set computer name (as done via System Preferences → Sharing)
@@ -59,19 +20,59 @@ scutil --set HostName "OlschBook"
 scutil --set LocalHostName "OlschBook"
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "OlschBook"
 
-# Restart automatically if the computer freezes
-systemsetup -setrestartfreeze on
+# ==============================================
+# Energy settings
+# ==============================================
 
-# Enable fast user switching
-defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -bool YES
+# From https://github.com/rtrouton/rtrouton_scripts/blob/master/rtrouton_scripts/setting_energy_saver_settings/powersettings.sh
 
-# --------------------------------------------------------------------------
+# Set separate power management settings for desktops and laptops
+#
+# If laptop, the power management settings for
+#   "Battery" are set to have the
+#     computer sleeps in 15 minutes,
+#     disk will spin down in 10 minutes,
+#     the display will sleep in 5 minutes and
+#     the display itself will dim to half-brightness before sleeping.
+#   "Charger" are set to have the
+#     computer never sleep,
+#     the disk doesn't spin down,
+#     the display sleeps after 30 minutes and the display dims before sleeping.
+#
+
+# If it's not a laptop (i.e. a desktop), the power management settings are set
+#   to have the computer never sleep,
+#   the disk doesn't spin down,
+#   the display sleeps after 30 minutes and the display dims before sleeping.
+#
+IS_LAPTOP=$(/usr/sbin/system_profiler SPHardwareDataType | grep "Model Identifier" | grep "Book")
+if [[ "$IS_LAPTOP" != "" ]]; then
+    pmset -b sleep 15 disksleep 10 displaysleep 5 halfdim 1
+    pmset -c sleep 0 disksleep 0 displaysleep 30 halfdim 1
+else
+    pmset sleep 0 disksleep 0 displaysleep 30 halfdim 1
+fi
+
+# ==============================================
+# Login window
+# ==============================================
+
+# Show shut down etc. buttons
+defaults write /Library/Preferences/com.apple.loginwindow PowerOffDisabled -bool false
+
+# Allow fast user switching
+defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -bool true
+
+# ==============================================
 # Localization
-# --------------------------------------------------------------------------
+# ==============================================
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with `Inches`, and `true` with `false`.
 
-# set time zone
+# set time
 /usr/sbin/systemsetup -settimezone "Europe/Amsterdam"
+/usr/sbin/systemsetup -setnetworktimeserver "time.euro.apple.com"
+/usr/sbin/systemsetup -setusingnetworktime on
+/usr/sbin/sysadminctl -automaticTime on
 
 # Set clock in login screen to 24h schema
 sudo defaults write /Library/Preferences/.GlobalPreferences AppleLocale "de_DE"
@@ -83,32 +84,57 @@ defaults write NSGlobalDomain AppleLocale -string "en_DE@currency=EUR"
 defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
 defaults write NSGlobalDomain AppleMetricUnits -bool true
 
-## --------------------------------------------------------------------------
+# ==============================================
+# Software update
+# ==============================================
+
+# Enable automatic update check and download
+defaults write /Library/Preferences/com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true
+defaults write /Library/Preferences/com.apple.SoftwareUpdate AutomaticDownload -bool true
+
+# Enable app update installs
+defaults write /Library/Preferences/com.apple.commerce AutoUpdate -bool true
+
+# Enable system data files and security update installs
+defaults write /Library/Preferences/com.apple.SoftwareUpdate ConfigDataInstall -bool true
+defaults write /Library/Preferences/com.apple.SoftwareUpdate CriticalUpdateInstall -bool true
+
+# Enable OS X update installs
+defaults write /Library/Preferences/com.apple.commerce AutoUpdateRestartRequired -bool true
+
+# ==============================================
+# Set keyboard & touchpad preferences
+# ==============================================
+# Enable key repeat
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool FALSE
+
+# Set a keyboard repeat rate
+defaults write NSGlobalDomain KeyRepeat -int 0
+
+# Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+# Set a delay until key repeat"
+defaults write NSGlobalDomain InitialKeyRepeat -int 12
+
+# Disable smart quotes and smart dashes
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+
+# Disable auto correct
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
+# Scrolling direction
+# false = up is up
+# true = up is down // natural
+# Set scroll direction
+defaults write /Library/Preferences/.GlobalPreferences com.apple.swipescrolldirection -bool false
+
+# ==============================================
 # Network
-## --------------------------------------------------------------------------
+# ==============================================
 
 # Increase TCP's initial window (IW) to 10 segments
 sudo sysctl -w net.inet.tcp.slowstart_flightsize=10
 
-## --------------------------------------------------------------------------
-# Spotlight
-## --------------------------------------------------------------------------
-
-# Disable Spotlight indexing
-# sudo mdutil -a -i on
-
-# Disable Spotlight indexing for any volume that gets mounted and has not yet
-# been indexed before.
-# Use `sudo mdutil -i off "/Volumes/foo"` to stop indexing any volume.
-sudo defaults write /.Spotlight-V100/VolumeConfiguration Exclusions -array "/Volumes"
-
-
-###############################################################################
-# Kill affected applications                                                  #
-###############################################################################
-
-for app in "Calendar" "Contacts" "Dock" "Finder" "Mail" \
-	"Safari" "SystemUIServer"; do
-	killall "$app" > /dev/null 2>&1
-done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
