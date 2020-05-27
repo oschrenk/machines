@@ -51,7 +51,8 @@ brew analytics off
 ./defaults/user.sh
 ./defaults/safari.sh
 ./defaults/chrome.sh
-./defaults/dayone.sh
+./defaults/terminal.sh
+./defaults/mail.sh
 
 cp ./agents/* ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/*.plist
