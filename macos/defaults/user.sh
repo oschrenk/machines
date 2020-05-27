@@ -1,7 +1,7 @@
 #!/bin/sh
 # Sources
-# https://github.com/mathiasbynens/dotfiles/blob/master/.osx
-# https://github.com/hjuutilainen/dotfiles/blob/master/bin/osx-user-defaults.sh
+# https://github.com/mathiasbynens/dotfiles/blob/master/.macos
+# https://github.com/hjuutilainen/dotfiles/blob/master/bin/macos-user-defaults.sh
 
 ## --------------------------------------------------------------------------
 # Hardware & Energy settings
