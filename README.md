@@ -1,7 +1,12 @@
 # README #
 
-## Application Data ##
+## Setting up new machine
 
-**Dash**
+We assume it has git
 
-- [Install RFC's](https://github.com/willnorris/rfcdash)
+```
+git clone git@github.com:oschrenk/machines.git
+cd macos
+./01-system-setup.sh
+./01-user-setup.sh
+```
