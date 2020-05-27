@@ -4,7 +4,7 @@
 
 # Setup fish as default shell
 # Change the shell for the user
-chsh -s /usr/local/bin/fish
+sudo chsh -s /usr/local/bin/fish
 
 # exclude directories from Time Machine backups
 tmutil addexclusion ~/Downloads
