@@ -15,9 +15,16 @@ Repeat the command and continue.
 
 ```
 git clone https://github.com/oschrenk/machines.git
-cd macos
+cd machines
 ./01-system-setup.sh
-./01-user-setup.sh
+```
+
+Follow the on-screen instructions. You will sometimes be asked for a password.
+
+Downloading and compiling all the various applications and packages will
+
+```
+./02-user-setup.sh
 ```
 
 ## What is worth reinstalling
