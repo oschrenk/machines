@@ -27,7 +27,7 @@ git config --local user.email oliver.schrenk@gmail.com
 cd $HOME
 
 # Setup ruby
-mkdir $HOME/.rbenv
+mkdir -p $HOME/.rbenv
 # filters non-MRI versions with hyphen, select latest
 export LAST_RUBY_VERSION=$(rbenv install -l | grep -v - | tail -1)
 rbenv install $LAST_RUBY_VERSION
