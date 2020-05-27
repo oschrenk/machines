@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# User setup
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 # exclude directories from Time Machine backups
 tmutil addexclusion ~/Downloads
@@ -29,6 +29,9 @@ export LAST_RUBY_VERSION=$(rbenv install -l | grep -v - | tail -1)
 rbenv install $LAST_RUBY_VERSION
 rbenv global $LAST_RUBY_VERSION
 
+# switch back to install dir
+cd $DIR
+
 # setup user bins
 ./installs/go.sh
 ./installs/gem.sh
@@ -53,4 +56,5 @@ launchctl load ~/Library/LaunchAgents/*.plist
 # Setup fish as default shell
 # Change the shell for the user
 sudo chsh -s /usr/local/bin/fish
+
 
