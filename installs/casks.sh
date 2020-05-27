@@ -11,6 +11,7 @@ installcask mplus-powerline
 
 # /Applications
 installcask 1password
+installcask homebrew/cask-versions/adoptopenjdk8
 installcask alacritty
 installcask bettertouchtool
 installcask calibre
