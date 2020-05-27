@@ -17,13 +17,8 @@ mkdir -p ~/Frameworks/go/bin
 mkdir -p ~/Projects/devops
 mkdir -p ~/Projects/external
 
-# Create Logs
-mkdir -p ~/Documents/Log
-mkdir -p ~/Documents/Journal
-
-## devops projects
-cd $HOME/Projects/devops
-git clone git@github.com:oschrenk/machines.git
+# Create Wiki
+mkdir -p ~/Documents/Wiki
 
 # Setup notes
 git clone git@github.com:oschrenk/notes.git $HOME/Documents/Notes
