@@ -21,7 +21,7 @@ mkdir -p ~/Projects/external
 mkdir -p ~/Documents/Wiki
 
 # Setup notes
-git clone git@github.com:oschrenk/notes.git $HOME/Documents/Notes
+git clone https://github.com/oschrenk/notes.git $HOME/Documents/Notes
 cd $HOME/Documents/Notes
 git config --local user.email oliver.schrenk@gmail.com
 cd $HOME
