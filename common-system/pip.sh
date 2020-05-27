@@ -4,11 +4,7 @@
 # $ clf some text
 pip3 install clf
 
-# For Ensime
-pip3 install websocket
-pip3 install sexpdata websocket-client
-
-# Ensime and deoplete
+# neovim
 pip3 install neovim
 
 # cli is life
