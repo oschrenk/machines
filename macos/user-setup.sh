@@ -62,4 +62,6 @@ source $HOME/.tilde/dotfiles/.config/fish/env.fish
 # setup user bins
 . ../common-user/go.sh
 . ../common-user/gem.sh
+. ../common-user/npm.sh
+. ../common-user/pip.sh
 

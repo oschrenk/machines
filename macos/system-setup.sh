@@ -15,10 +15,3 @@
 # Add the fish to the list of legit shells
 sudo bash -c "echo /usr/local/bin/fish >> /private/etc/shells"
 
-# Global npm modules
-. ../common-system/npm.sh
-
-# Global pips
-# Make sure there are no system packages
-pip freeze | sudo xargs pip uninstall -y
-. ../common-system/pip.sh
