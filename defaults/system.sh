@@ -58,10 +58,10 @@ fi
 # ==============================================
 
 # Show shut down etc. buttons
-defaults write /Library/Preferences/com.apple.loginwindow PowerOffDisabled -bool false
+sudo defaults write /Library/Preferences/com.apple.loginwindow PowerOffDisabled -bool false
 
 # Allow fast user switching
-defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -bool true
+sudo defaults write /Library/Preferences/.GlobalPreferences MultipleSessionEnabled -bool true
 
 # ==============================================
 # Localization
@@ -89,18 +89,18 @@ defaults write NSGlobalDomain AppleMetricUnits -bool true
 # ==============================================
 
 # Enable automatic update check and download
-defaults write /Library/Preferences/com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true
-defaults write /Library/Preferences/com.apple.SoftwareUpdate AutomaticDownload -bool true
+sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate AutomaticCheckEnabled -bool true
+sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate AutomaticDownload -bool true
 
 # Enable app update installs
-defaults write /Library/Preferences/com.apple.commerce AutoUpdate -bool true
+sudo defaults write /Library/Preferences/com.apple.commerce AutoUpdate -bool true
 
 # Enable system data files and security update installs
-defaults write /Library/Preferences/com.apple.SoftwareUpdate ConfigDataInstall -bool true
-defaults write /Library/Preferences/com.apple.SoftwareUpdate CriticalUpdateInstall -bool true
+sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate ConfigDataInstall -bool true
+sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate CriticalUpdateInstall -bool true
 
 # Enable OS X update installs
-defaults write /Library/Preferences/com.apple.commerce AutoUpdateRestartRequired -bool true
+sudo defaults write /Library/Preferences/com.apple.commerce AutoUpdateRestartRequired -bool true
 
 # ==============================================
 # Set keyboard & touchpad preferences
@@ -128,7 +128,7 @@ defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 # false = up is up
 # true = up is down // natural
 # Set scroll direction
-defaults write /Library/Preferences/.GlobalPreferences com.apple.swipescrolldirection -bool false
+sudo defaults write /Library/Preferences/.GlobalPreferences com.apple.swipescrolldirection -bool false
 
 # ==============================================
 # Network
