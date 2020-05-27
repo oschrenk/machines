@@ -85,14 +85,9 @@ brew install sox
 brew install youtube-dl
 brew install x264
 brew install xvid
-brew install --HEAD https://raw.githubusercontent.com/retrography/homebrew-tap/master/audioswitch.rb
-
-## media
-brew install kindlegen
 
 ## jvm
 brew install maven
-brew install typesafe-activator
 brew install drip
 
 ## javascript
