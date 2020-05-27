@@ -16,6 +16,7 @@ installcask alacritty
 installcask bettertouchtool
 installcask calibre
 installcask cog
+installcask discord
 installcask docker
 installcask google-chrome
 installcask grammarly
