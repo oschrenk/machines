@@ -33,13 +33,13 @@ brew install tmux-cssh                     # cluster ssh
 # cli is life
 brew install chrome-cli                    # control chrome via cli
 brew install contacts
-brew install dasht
 brew install khal
+brew install mutt
+brew install newsboat
 brew install notmuch
 brew install offlineimap
-brew install mutt
+brew install signal-cli
 brew install vdirsyncer
-brew install newsboat
 
 # parsing/converting
 brew install jq

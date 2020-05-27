@@ -36,6 +36,7 @@ installcask paw
 installcask plan
 installcask postman
 installcask rocket               # quick emoji access
+installcask signal-beta
 installcask skype
 installcask slack
 installcask spotify
