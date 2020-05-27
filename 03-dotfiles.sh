@@ -1,4 +1,4 @@
-#!/bin/fish
+#!/usr/local/bin/fish
 
 # setup dotfiles
 git clone https://github.com/oschrenk/dotfiles $HOME/.tilde/dotfiles
