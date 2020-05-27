@@ -61,8 +61,8 @@ launchctl load ~/Library/LaunchAgents/*.plist
 source $HOME/.tilde/dotfiles/.config/fish/env.fish
 
 # setup user bins
-. ../common/go.sh
-. ../common/gem.sh
-. ../common/npm.sh
-. ../common/pip.sh
+. ../installs/go.sh
+. ../installs/gem.sh
+. ../installs/npm.sh
+. ../installs/pip.sh
 

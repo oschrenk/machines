@@ -99,10 +99,6 @@ brew install drip
 brew install node
 brew install yarn
 
-## clojure
-brew install leiningen           # build tool for clojure
-brew install boot-clj            # another build tool for clojure
-
 ## scala
 brew install sbt
 brew install scala

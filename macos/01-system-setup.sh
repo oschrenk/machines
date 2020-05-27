@@ -8,9 +8,9 @@
 
 # Install packages
 # casks before packages just because of java
-./homebrew/casks.sh
-./homebrew/packages.sh
-./homebrew/apps.sh
+./installs/casks.sh
+./installs/packages.sh
+./installs/mas.sh
 
 # Add the fish to the list of legit shells
 sudo bash -c "echo /usr/local/bin/fish >> /private/etc/shells"
