@@ -20,9 +20,6 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 #  1h =  3600
 sudo pmset -a standbydelay 28800
 
-# Disable the sound effects on boot
-sudo nvram SystemAudioVolume=" "
-
 # Only use RAM to hibernate
 # hibernatemode = 0 (binary 0000) by default on supported desktops.
 # The system will not back memory up to persistent storage.
