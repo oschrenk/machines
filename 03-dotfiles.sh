@@ -2,6 +2,9 @@
 
 # setup dotfiles
 git clone https://github.com/oschrenk/dotfiles $HOME/.tilde/dotfiles
+cd $HOME/.tilde/dotfiles
+git config --local user.email oliver.schrenk@gmail.com
+
 source $HOME/.tilde/dotfiles/.config/fish/functions/tilde.fish
 tilde link dotfiles
 
