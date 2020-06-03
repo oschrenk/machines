@@ -105,6 +105,7 @@ brew install awscli
 brew install minikube
 brew install kubectl
 brew install kubectx
+brew install derailed/k9s/k9s
 
 # macos
 brew install fileicon
