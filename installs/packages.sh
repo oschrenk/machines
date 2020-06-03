@@ -61,6 +61,10 @@ brew install nmap
 brew install ngrep
 brew install mobile-shell
 brew install ssh-copy-id
+
+brew tap filippo.io/yubikey-agent https://filippo.io/yubikey-agent
+brew install yubikey-agent
+
 brew install telnet
 
 ## http
