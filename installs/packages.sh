@@ -114,3 +114,7 @@ brew install python
 
 # cloud
 brew install awscli
+brew install minikube
+brew install kubectl
+brew install kubectx
+
