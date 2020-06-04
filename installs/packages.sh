@@ -19,26 +19,22 @@ brew install watch      # issue commands at regular interval
 brew install ctags
 brew install vim
 brew install neovim/neovim/neovim
-brew install tmate
 
 ## command line
 brew install direnv                        # auto load env
 brew install fish                          # shell
 brew install bash                          # newer bash
 brew install fzf                           # fuzzy file finder
-brew install tree
 brew install tmux                          # terminal multiplexer
 brew install tmux-cssh                     # cluster ssh
 
 # cli is life
 brew install chrome-cli                    # control chrome via cli
 brew install contacts
-brew install khal
 brew install mutt
 brew install newsboat
 brew install notmuch
 brew install offlineimap
-brew install signal-cli
 brew install vdirsyncer
 
 # parsing/converting
@@ -61,23 +57,19 @@ brew install nmap
 brew install ngrep
 brew install mobile-shell
 brew install ssh-copy-id
-
 brew tap filippo.io/yubikey-agent https://filippo.io/yubikey-agent
 brew install yubikey-agent
-
 brew install telnet
 
 ## http
 brew install curl
-brew install httrack
 brew install wget
 
 ## git
-brew install git
-brew install git-extras
-brew install git-open
-brew install diff-so-fancy
-brew install hub
+brew install git                           # dvcs
+brew install git-extras                    # nice git extras
+brew install diff-so-fancy                 # better looking diffs
+brew install hub                           # interact with github
 brew install zaquestion/tap/lab            # interact with gitlab
 
 ## a/v
@@ -90,10 +82,6 @@ brew install sox
 brew install youtube-dl
 brew install x264
 brew install xvid
-
-## jvm
-brew install maven
-brew install drip
 
 ## javascript
 brew install node
