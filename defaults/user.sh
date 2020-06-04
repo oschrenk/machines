@@ -155,6 +155,28 @@ defaults write -app Mail NSUserKeyEquivalents -dict-add "Send" "@\\U21a9"
 # Add the keyboard shortcut ⌘ + Enter to send an email in Mail.app
 defaults write com.apple.mail NSUserKeyEquivalents -dict-add "Send" "@\\U21a9"
 
+# ==============================================
+# Set keyboard & touchpad preferences
+# ==============================================
+# Enable key repeat
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool FALSE
+
+# Set a keyboard repeat rate
+defaults write NSGlobalDomain KeyRepeat -int 0
+
+# Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+
+# Set a delay until key repeat
+defaults write NSGlobalDomain InitialKeyRepeat -int 12
+
+# Disable smart quotes and smart dashes
+defaults write NSGlobalDomain NSAutomaticQuoteSubstitutionEnabled -bool false
+defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
+
+# Disable auto correct
+defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
+
 ## --------------------------------------------------------------------------
 # Access and Input
 ## --------------------------------------------------------------------------
