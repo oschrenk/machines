@@ -34,6 +34,8 @@ brew install mutt
 brew install newsboat
 brew install notmuch
 brew install offlineimap
+brew install pandoc
+brew install signal-cli
 brew install vdirsyncer
 
 # parsing/converting
