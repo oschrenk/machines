@@ -78,6 +78,7 @@ brew install git-extras
 brew install git-open
 brew install diff-so-fancy
 brew install hub
+brew install zaquestion/tap/lab            # interact with gitlab
 
 ## a/v
 brew install ffmpeg
