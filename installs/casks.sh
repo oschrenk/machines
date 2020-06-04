@@ -31,6 +31,7 @@ installcask karabiner-elements
 installcask keyboardcleantool
 installcask keycastr             # shows key strokes on screen
 installcask kindlegen
+installcask mattermost
 installcask marked
 installcask marp
 installcask mindnode-pro
