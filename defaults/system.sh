@@ -2,7 +2,7 @@
 
 # Sources
 # https://github.com/hjuutilainen/dotfiles/blob/master/bin/macos-system-defaults.sh
-# Mainly taken from https://github.com/mathiasbynens/dotfiles/blob/master/.osx
+# https://github.com/mathiasbynens/dotfiles/blob/master/.osx
 
 # Ask for the administrator password upfront
 sudo -v
@@ -114,7 +114,7 @@ defaults write NSGlobalDomain KeyRepeat -int 0
 # Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
-# Set a delay until key repeat"
+# Set a delay until key repeat
 defaults write NSGlobalDomain InitialKeyRepeat -int 12
 
 # Disable smart quotes and smart dashes
