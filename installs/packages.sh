@@ -26,7 +26,6 @@ brew install fish                          # shell
 brew install bash                          # newer bash
 brew install fzf                           # fuzzy file finder
 brew install tmux                          # terminal multiplexer
-brew install tmux-cssh                     # cluster ssh
 
 # cli is life
 brew install chrome-cli                    # control chrome via cli
