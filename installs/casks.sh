@@ -31,14 +31,12 @@ installcask karabiner-elements
 installcask keyboardcleantool
 installcask keycastr             # shows key strokes on screen
 installcask kindlegen
-installcask mattermost
 installcask marked
 installcask marp
 installcask mindnode-pro
 installcask muzzle               # stops os-notifications during presentations
 installcask paparazzi
 installcask paw
-installcask plan
 installcask postman
 installcask rocket               # quick emoji access
 installcask signal-beta
