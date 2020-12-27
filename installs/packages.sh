@@ -47,9 +47,6 @@ brew install the_silver_searcher
 brew install ripgrep
 brew install fd
 
-## tools
-brew install multimarkdown
-
 ## network
 brew install nmap
 brew install ngrep
