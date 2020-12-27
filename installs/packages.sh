@@ -90,10 +90,10 @@ brew install scala
 brew install rbenv
 brew install ruby-build
 
-#go
+# go
 brew install go
 
-#python
+# python
 brew install python
 
 # cloud
