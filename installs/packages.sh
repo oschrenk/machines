@@ -49,7 +49,6 @@ brew install fd
 
 ## tools
 brew install multimarkdown
-brew install parallel
 
 ## network
 brew install nmap
