@@ -96,6 +96,9 @@ brew install go
 # python
 brew install python
 
+# tex
+brew install tectonic
+
 # cloud
 brew install awscli
 brew install minikube
