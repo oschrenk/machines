@@ -32,6 +32,7 @@ installcask keyboardcleantool
 installcask keycastr             # shows key strokes on screen
 installcask kindlegen
 installcask lens                 # Kubernetes UI
+installcask lulu                 # Firewall
 installcask marked
 installcask marp
 installcask mindnode-pro
