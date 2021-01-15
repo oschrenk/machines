@@ -3,7 +3,7 @@
 brew tap oschrenk/homebrew-casks
 
 function installcask() {
-	brew cask install "${@}" 2> /dev/null
+	brew install --cask "${@}" 2> /dev/null
 }
 
 # Fonts
