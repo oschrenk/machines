@@ -106,3 +106,5 @@ brew install minikube
 brew install kubectl
 brew install kubectx
 
+# macos
+brew install fileicon
