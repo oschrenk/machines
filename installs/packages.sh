@@ -63,6 +63,7 @@ brew install wget
 ## git
 brew install git                           # dvcs
 brew install git-extras                    # nice git extras
+brew install git-lfs                       # large file storage
 brew install diff-so-fancy                 # better looking diffs
 brew install hub                           # interact with github
 brew install zaquestion/tap/lab            # interact with gitlab
