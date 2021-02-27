@@ -81,6 +81,11 @@ brew install youtube-dl
 brew install x264
 brew install xvid
 
+## jvm
+brew install openjdk@11
+brew install maven
+brew install drip
+
 ## javascript
 brew install node
 brew install yarn
