@@ -18,3 +18,5 @@ sudo fileicon set /Applications/Vimac.app/ $_BASEDIR/icns/vimac.icns
 sudo fileicon set /Applications/VLC.app/ $_BASEDIR/icns/vlc.icns
 sudo fileicon set /Applications/zoom.us.app $_BASEDIR/icns/zoom.icns
 
+echo "Killing Dock"
+killall Dock
