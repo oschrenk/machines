@@ -7,6 +7,7 @@ sudo fileicon set /Applications/Blackmagic\ ATEM\ Switchers/ATEM\ Software\ Cont
 sudo fileicon set /Applications/calibre.app $_BASEDIR/icns/calibre.icns
 sudo fileicon set /Applications/Firefox.app/ $_BASEDIR/icns/firefox.icns
 sudo fileicon set /Applications/Google\ Chrome.app $_BASEDIR/icns/google-chrome.icns
+sudo fileicon set /Applications/GoToMeeting.app/ $_BASEDIR/icns/goto.icns
 sudo fileicon set /Applications/HandBrake.app/ $_BASEDIR/icns/handbrake.icns
 sudo fileicon set /Applications/IntelliJ\ IDEA\ CE.app $_BASEDIR/icns/intellij.icns
 sudo fileicon set /Applications/JDownloader2.app/ $_BASEDIR/icns/jdownloader.icns
