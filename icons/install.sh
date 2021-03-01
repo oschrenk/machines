@@ -3,6 +3,7 @@
 _BASEDIR="$( cd "$( dirname "$0" )" && pwd )"
 
 sudo fileicon set /Applications/Alacritty.app/ $_BASEDIR/icns/alacritty.icns
+sudo fileicon set /Applications/Blackmagic\ ATEM\ Switchers/ATEM\ Software\ Control.app/ $_BASEDIR/icns/atem.icns
 sudo fileicon set /Applications/calibre.app $_BASEDIR/icns/calibre.icns
 sudo fileicon set /Applications/Firefox.app/ $_BASEDIR/icns/firefox.icns
 sudo fileicon set /Applications/Google\ Chrome.app $_BASEDIR/icns/google-chrome.icns
