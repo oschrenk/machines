@@ -44,11 +44,15 @@ brew analytics off
 
 # osx user defaults
 ./defaults/user.sh
-./defaults/safari.sh
-./defaults/chrome.sh
-./defaults/terminal.sh
-./defaults/mail.sh
 
+# application defaults
+./defaults/chrome.sh
+./defaults/hammerspoon.sh
+./defaults/mail.sh
+./defaults/safari.sh
+./defaults/terminal.sh
+
+# launch agents
 cp ./agents/* ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/*.plist
 
