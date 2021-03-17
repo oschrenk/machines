@@ -41,6 +41,7 @@ installcask paparazzi
 installcask paw
 installcask postman
 installcask rocket               # quick emoji access
+installcask secretive            # store ssh keys in secure enclave
 installcask signal-beta
 installcask skype
 installcask slack
