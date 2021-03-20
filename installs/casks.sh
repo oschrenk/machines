@@ -7,7 +7,7 @@ function installcask() {
 }
 
 # Fonts
-installcask mplus-powerline
+installcask mplus-mn-nerd-font-complete
 
 # /Applications
 installcask 1password
