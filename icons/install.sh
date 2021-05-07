@@ -11,6 +11,7 @@ sudo fileicon set /Applications/GoToMeeting.app/ $_BASEDIR/icns/goto.icns
 sudo fileicon set /Applications/HandBrake.app/ $_BASEDIR/icns/handbrake.icns
 sudo fileicon set /Applications/IntelliJ\ IDEA\ CE.app $_BASEDIR/icns/intellij.icns
 sudo fileicon set /Applications/JDownloader2.app/ $_BASEDIR/icns/jdownloader.icns
+sudo fileicon set /Applications/NordVPN\ IKE.app/ $_BASEDIR/icns/nordvpn.icns
 sudo fileicon set /Applications/Slack.app/ $_BASEDIR/icns/slack.icns
 sudo fileicon set /Applications/Spotify.app/ $_BASEDIR/icns/spotify.icns
 sudo fileicon set /Applications/Steam.app/ $_BASEDIR/icns/steam.icns
