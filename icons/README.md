@@ -1,4 +1,4 @@
-# Big Icons
+# Big Sur Icons
 
 Resources
 
