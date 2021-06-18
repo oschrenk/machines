@@ -15,6 +15,7 @@ installcask agenda
 installcask homebrew/cask-versions/adoptopenjdk8
 installcask alacritty
 installcask bettertouchtool
+installcask boost-note            # collaborative mardkown editing (with plantuml, ...)
 installcask calibre
 installcask cog
 installcask discord
