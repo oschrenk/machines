@@ -9,6 +9,6 @@ mas install 1116599239  # NordVPN IKE
 mas install 409203825   # Numbers
 mas install 409201541   # Pages
 mas install 929507092   # PhotoScape X
-mas install 1449412482  # Reeder
+mas install 1529448980  # Reeder 5
 mas install 461369673   # VOX
 #mas install 497799835   # Xcode
