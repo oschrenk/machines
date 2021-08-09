@@ -6,6 +6,10 @@ sudo fileicon set /Applications/Alacritty.app/ $_BASEDIR/icns/alacritty.icns
 sudo fileicon set /Applications/Blackmagic\ ATEM\ Switchers/ATEM\ Software\ Control.app/ $_BASEDIR/icns/atem.icns
 sudo fileicon set /Applications/Boost\ Note.app/ $_BASEDIR/icns/boost-note.icns
 sudo fileicon set /Applications/calibre.app $_BASEDIR/icns/calibre.icns
+sudo fileicon set /Applications/Docker.app $_BASEDIR/icns/docker.icns
+# docker has app inside app
+sudo fileicon set /Applications/Docker.app/Contents/MacOS/Docker\ Desktop.app $_BASEDIR/icns/docker.icns
+
 sudo fileicon set /Applications/Firefox.app/ $_BASEDIR/icns/firefox.icns
 sudo fileicon set /Applications/Google\ Chrome.app $_BASEDIR/icns/google-chrome.icns
 # the default icon is to similar to Noteplan 3, switch to a green icon
