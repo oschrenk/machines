@@ -24,6 +24,7 @@ sudo fileicon set /Applications/Spotify.app/ $_BASEDIR/icns/spotify.icns
 sudo fileicon set /Applications/Steam.app/ $_BASEDIR/icns/steam.icns
 sudo fileicon set /Applications/Telegram.app/ $_BASEDIR/icns/telegram.icns
 sudo fileicon set /Applications/The\ Hit\ List.app $_BASEDIR/icns/the-hit-list.icns
+sudo fileicon set /Applications/The\ Unarchiver.app $_BASEDIR/icns/the-unarchiver.icns
 sudo fileicon set /Applications/Transmission.app/ $_BASEDIR/icns/transmission.icns
 sudo fileicon set /Applications/Vimac.app/ $_BASEDIR/icns/vimac.icns
 sudo fileicon set /Applications/VLC.app/ $_BASEDIR/icns/vlc.icns
