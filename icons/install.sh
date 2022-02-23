@@ -11,6 +11,8 @@ sudo fileicon set /Applications/Docker.app $_BASEDIR/icns/docker.icns
 sudo fileicon set /Applications/Docker.app/Contents/MacOS/Docker\ Desktop.app $_BASEDIR/icns/docker.icns
 
 sudo fileicon set /Applications/Firefox.app/ $_BASEDIR/icns/firefox.icns
+# Google Chat is in user app
+sudo fileicon set ~/Applications/Chrome\ Apps.localized/Google\ Chat.app $_BASEDIR/icns/google-chat.icns
 sudo fileicon set /Applications/Google\ Chrome.app $_BASEDIR/icns/google-chrome.icns
 # the default icon is to similar to Noteplan 3, switch to a green icon
 sudo fileicon set /Applications/GoToMeeting.app/ $_BASEDIR/icns/google_meet.icns
