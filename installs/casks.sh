@@ -8,6 +8,9 @@ function installcask() {
 
 # Fonts
 installcask mplus-mn-nerd-font-complete-mono
+installcask font-victor-mono
+installcask font-roboto-mono
+installcask font-roboto-mono-nerd-font
 
 # /Applications
 installcask 1password
