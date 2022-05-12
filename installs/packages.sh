@@ -30,14 +30,7 @@ brew install tmuxp                         # tmux session manager
 
 # cli is life
 brew install chrome-cli                    # control chrome via cli
-brew install contacts
-brew install mutt
-brew install newsboat
-brew install notmuch
-brew install offlineimap
 brew install pandoc
-brew install signal-cli
-brew install vdirsyncer
 
 # parsing/converting
 brew install jq
