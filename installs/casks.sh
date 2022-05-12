@@ -14,7 +14,6 @@ installcask font-roboto-mono-nerd-font
 
 # /Applications
 installcask 1password
-installcask agenda
 installcask alacritty
 installcask bettertouchtool
 installcask boost-note            # collaborative mardkown editing (with plantuml, ...)
