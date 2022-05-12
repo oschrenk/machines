@@ -62,6 +62,9 @@ brew install telnet
 brew install curl
 brew install wget
 
+## svn
+brew install svn   # some (packages, like roboto font) rely on it
+
 ## git
 brew install git                           # dvcs
 brew install git-extras                    # nice git extras
