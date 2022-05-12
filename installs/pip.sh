@@ -13,5 +13,3 @@ pip3 install todoman
 # for vdirsyncer
 pip3 install keyring
 
-# tmux window manager
-pip3 install tmuxp
