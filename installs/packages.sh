@@ -88,6 +88,7 @@ brew install openjdk@11
 brew install maven
 
 ## javascript
+brew install fnm  # node version manger
 brew install node
 brew install yarn
 
