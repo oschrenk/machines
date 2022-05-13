@@ -20,18 +20,22 @@ installcask mplus-mn-nerd-font-complete-mono
 # /Applications
 installcask 1password
 installcask alacritty
+installcask android-platform-tools
 installcask bettertouchtool
 installcask calibre
 installcask cog
+installcask dbeaver-community
 installcask discord
 installcask docker
 installcask google-chrome
 installcask grammarly
+installcask grammarly-desktop
 installcask hammerspoon
 installcask handbrake
 installcask hex-fiend
 installcask iina
 installcask intellij-idea-ce
+installcask jdk-mission-control
 installcask knockknock
 installcask karabiner-elements
 installcask keyboardcleantool
@@ -40,7 +44,9 @@ installcask kindlegen
 installcask lens                 # Kubernetes UI
 installcask marp
 installcask mindnode-pro
+installcask omnidisksweeper
 installcask paparazzi
+installcask paw
 installcask postman
 installcask rocket               # quick emoji access
 installcask secretive            # store ssh keys in secure enclave
@@ -48,9 +54,10 @@ installcask signal-beta
 installcask slack
 installcask spotify
 installcask telegram
-installcask the-unarchiver
 installcask the-hit-list
+installcask the-unarchiver
 installcask transmission
+installcask visual-studio-code
 installcask vlc
 installcask xact
 
