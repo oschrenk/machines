@@ -76,6 +76,7 @@ brew install ruby-build  # ruby
 brew install go          # go
 brew install python      # python
 brew install tectonic    # tex
+brew install typescript  # typescript
 
 # cloud
 brew install awscli
