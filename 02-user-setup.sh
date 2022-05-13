@@ -34,9 +34,7 @@ cd $DIR
 
 # setup user bins
 ./installs/go.sh
-./installs/gem.sh
 ./installs/npm.sh
-./installs/pip.sh
 
 # homebrew
 # disable analytics
