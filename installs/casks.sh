@@ -7,10 +7,15 @@ function installcask() {
 }
 
 # Fonts
-installcask mplus-mn-nerd-font-complete-mono
-installcask font-victor-mono
+installcask font-fira-code
+installcask font-ia-writer-duo
+installcask font-ia-writer-quattro
+installcask font-iosevka
+installcask font-mplus
 installcask font-roboto-mono
 installcask font-roboto-mono-nerd-font
+installcask font-victor-mono
+installcask mplus-mn-nerd-font-complete-mono
 
 # /Applications
 installcask 1password
