@@ -15,10 +15,10 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 ## --------------------------------------------------------------------------
 
 # Set computer name (as done via System Preferences → Sharing)
-scutil --set ComputerName "OlschBook"
-scutil --set HostName "OlschBook"
-scutil --set LocalHostName "OlschBook"
-sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "OlschBook"
+scutil --set ComputerName "Mushroom"
+scutil --set HostName "Mushroom"
+scutil --set LocalHostName "Mushroom"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "Mushroom"
 
 # ==============================================
 # Energy settings

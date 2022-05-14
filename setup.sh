@@ -9,7 +9,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 brew bundle
 
 # osx system defaults
-./defaults/system.sh
+./modules/defaults/system.sh
 
 # Add the fish to the list of legit shells
 sudo bash -c "echo /usr/local/bin/fish >> /private/etc/shells"
@@ -48,7 +48,7 @@ cd $DIR
 brew analytics off
 
 # osx user defaults
-./defaults/user.sh
+./modules/defaults/user.sh
 
 # application defaults
 ./defaults/chrome.sh
@@ -58,7 +58,7 @@ brew analytics off
 ./defaults/terminal.sh
 
 # launch agents
-cp ./agents/* ~/Library/LaunchAgents
+cp ./modules/agents/* ~/Library/LaunchAgents
 launchctl load ~/Library/LaunchAgents/*.plist
 
 # Setup fish as default shell
