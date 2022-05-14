@@ -62,7 +62,8 @@ brew "git-lfs"              # large file storage
 brew "git-open"             # open github/gitlab urls from terminal
 brew "svn"                  # svn,some packages eg roboto font rely on it
 
-# tickets
+# cli
+brew "chezmoi"
 brew "hub"                  # interact with github
 brew "go-jira"
 
