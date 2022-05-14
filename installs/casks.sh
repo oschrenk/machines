@@ -12,6 +12,8 @@ installcask font-ia-writer-duo
 installcask font-ia-writer-quattro
 installcask font-iosevka
 installcask font-mplus
+installcask font-open-sans
+installcask font-open-sans-condensed
 installcask font-roboto-mono
 installcask font-roboto-mono-nerd-font
 installcask font-victor-mono
