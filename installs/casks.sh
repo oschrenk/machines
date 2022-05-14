@@ -55,6 +55,7 @@ installcask secretive            # store ssh keys in secure enclave
 installcask signal-beta
 installcask slack
 installcask spotify
+installcask steam
 installcask telegram
 installcask the-hit-list
 installcask the-unarchiver
