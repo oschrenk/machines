@@ -4,22 +4,23 @@
 # brew leaves
 
 ## system
-# Install GNU core utilities (those that come with OS X are outdated)
-brew install coreutils
-echo "Don’t forget to add $(brew --prefix coreutils)/libexec/gnubin to \$PATH."
-brew install blueutil
+brew install blueutil       # get/set bluetooth from terminal
+brew install coreutils      # GNU core utilities
 brew install findutil       # g-prefixed `find`, `locate`, `updatedb`,`xargs`
 brew install gawk           # GNU awk utility
+brew install the_silver_searcher # Code-search similar to ack
 brew install watch          # issue commands at regular interval
-brew install watchman
+brew install watchman       # watch files and take action when they change
 
 ## edit
-brew install ctags
+brew install ctags          # generate index of symbols
 brew install neovim/neovim/neovim
 brew install vim
 
 ## crypto
 brew install age            # modern and secure encryption too
+brew install magic-wormhole # Securely transfers data between computers
+brew install croc           # Securely transfers data between computers
 
 ## command line
 brew install chrome-cli     # control chrome via cli
@@ -32,20 +33,16 @@ brew install tmux           # terminal multiplexer
 brew install tmuxp          # tmux session manager
 
 # parsing/converting
-brew install dos2unix
-brew install jq
-brew install miller
-brew install xmlstarlet
-brew install yq
-
-## searching
-brew install the_silver_searcher
+brew install dos2unix       # convert text between DOS, UNIX, and Mac formats
+brew install jq             # process JSON
+brew install miller         # process CSV
+brew install xmlstarlet     # process XML
+brew install yq             # process YAML
 
 ## network
 brew install httrack
 brew install nmap
 brew install ngrep
-brew install magic-wormhole
 brew install mobile-shell
 brew install ssh-copy-id
 brew install telnet
@@ -99,21 +96,22 @@ brew install typescript  # typescript
 brew install yarn        # javascript
 
 # cloud
-brew install awscli
+brew install awscli             # aws
 brew install derailed/k9s/k9s
 brew install doctl              # Digital Ocean
 brew install helm
 brew install kubectl
 brew install kubectx
 brew install kustomize
-brew install krew
+brew install krew               # Package manager for kubectl plugins
 brew install kube-linter
 brew install minikube
+brew install pulumi
 brew install tfenv
 brew install traefik
 brew install txn2/tap/kubefwd
 
 # macos
 brew install dockutil   # configures the dock
-brew install fileicon
+brew install fileicon   # managing custom icons for files and folders
 brew install mas        # install app store apps
