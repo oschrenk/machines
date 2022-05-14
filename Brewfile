@@ -60,8 +60,11 @@ brew "git-crypt"            # encrypt secrets in git
 brew "git-extras"           # nice git extras
 brew "git-lfs"              # large file storage
 brew "git-open"             # open github/gitlab urls from terminal
-brew "hub"                  # interact with github
 brew "svn"                  # svn,some packages eg roboto font rely on it
+
+# tickets
+brew "hub"                  # interact with github
+brew "go-jira"
 
 ## a/v
 brew "asciinema"
@@ -78,11 +81,13 @@ brew "xvid"
 brew "yt-dlp"
 
 ## programming
+brew "bower"       # JavaScript Package Manager
 brew "coursier/formulas/coursier" # Pure Scala Artifact Fetching
 brew "cloc"        # count lines of code
 brew "cmake"       # cross-platform  build automation
 brew "fnm"         # node version manger
 brew "go"          # go
+brew "grunt-cli"   # JavaScript Task Runner
 brew "maven"       # jvm
 brew "node"        # javascript
 brew "openjdk@11"  # jvm
