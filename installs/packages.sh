@@ -86,7 +86,6 @@ brew install fnm         # node version manger
 brew install go          # go
 brew install maven       # jvm
 brew install node        # javascript
-brew install node@12     # javascript
 brew install openjdk@11  # jvm
 brew install python      # python
 brew install poetry      # python
