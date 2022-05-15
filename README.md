@@ -15,7 +15,7 @@ This will trigger a popup asking for the installation of the "command line devel
 ```
 git clone https://github.com/oschrenk/machines.git
 cd machines
-./01-system-setup.sh
+setup.sh
 ```
 
 Follow the on-screen instructions. You will sometimes be asked for a password.
