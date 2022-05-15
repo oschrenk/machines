@@ -1,5 +1,11 @@
 # README #
 
+To sync
+
+```
+make
+```
+
 ## Bootstrap new machine
 
 To trigger the installation of "command line developer tools" (required for homebrew) we can "pretend" that we have `git` already.

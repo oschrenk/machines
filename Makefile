@@ -1,0 +1,9 @@
+all:
+	./01-packages.sh 
+	./02-setup-fish.sh
+	./03-configure-macos.sh
+	./04-configure-apps.sh
+	./05-configure-launch-agents.sh
+	./06-setup-projects.sh
+	./07-set-icons.sh               
+	./0a-setup-ruby.sh
