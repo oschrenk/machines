@@ -233,11 +233,6 @@ defaults write -g 'NSTableViewDefaultSizeMode' -int 1
 # Show scroll bars: {Always, Automatic, WhenScrolling}
 defaults write -g 'AppleShowScrollBars' -string 'Automatic'
 
-# Show Path bar in Finder
-defaults write com.apple.finder ShowPathbar -bool true
-
-# Hide Statusbar
-defaults write com.apple.finder 'ShowStatusBar' -bool false
 
 # Disable Sounds
 # /usr/bin/defaults write com.apple.finder 'FinderSounds' -bool false
