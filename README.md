@@ -2,7 +2,7 @@
 
 ## Setting up new machine
 
-We assume it has git
+To trigger the installation of "command line developer tools" (required for homebrew) we can "pretend that we have `git` already.
 
 ```
 mkdir -p ~/Projects/devops
@@ -10,8 +10,7 @@ cd ~/Projects/devops
 git clone https://github.com/oschrenk/machines.git
 ```
 
-This will trigger the installation of "command line developer tools". Choose "Install".
-Repeat the command and continue.
+This will trigger a popup asking for the installation of the "command line developer tools" . Choose "Install". Then, repeat the command above and continue.
 
 ```
 git clone https://github.com/oschrenk/machines.git
