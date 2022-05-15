@@ -261,9 +261,6 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 # Lock size
 defaults write com.apple.Dock size-immutable -bool true
 
-# Position on screen: bottom
-defaults write com.apple.dock 'orientation' -string 'bottom'
-
 # Autohide
 defaults write com.apple.dock 'autohide' -bool yes
 
