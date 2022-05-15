@@ -29,7 +29,6 @@ brew "1password-cli"  # 1password
 brew "chrome-cli"     # control chrome via cli
 brew "direnv"         # auto load env
 brew "fish"           # shell
-brew "bash"           # newer bash
 brew "fzf"            # fuzzy file finder
 brew "pandoc"         # document converter,
 brew "tmux"           # terminal multiplexer
