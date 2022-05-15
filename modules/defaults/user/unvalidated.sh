@@ -207,12 +207,6 @@ defaults write com.apple.dock showLaunchpadGestureEnabled -bool false
 # Finder
 ## --------------------------------------------------------------------------
 
-# Finder: new window location set to $HOME/Downloads. Same as Finder > Preferences > New Finder Windows show
-# For $HOME use "PfHm" and "file://${HOME}/"
-# For other path use "PfLo" and "file:///foo/bar/"
-defaults write com.apple.finder NewWindowTarget -string "PfLo"
-defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Downloads"
-
 # Use Column view in all Finder windows by default
 # Four-letter codes for the other view modes:
 # `icnv` (Icon), `clmv` (Column), `Flwv` (Cover Flow), `Nlsv` (List)
