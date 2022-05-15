@@ -261,9 +261,6 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 # Lock size
 defaults write com.apple.Dock size-immutable -bool true
 
-# Autohide delay
-defaults write com.apple.Dock autohide-delay -float 0
-
 # Enable spring loading for all Dock items
 defaults write com.apple.dock enable-spring-load-actions-on-all-items -bool true
 
