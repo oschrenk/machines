@@ -5,7 +5,7 @@
 # Forces messages in Mail to be displayed as plain text instead of formatted (0 to reverse)
 defaults write com.apple.mail PreferPlainText -bool TRUE
 
-# Add invitations to iCal automatically
+# don't add invitations to iCal automatically
 defaults write com.apple.mail AddInvitationsToICalAutomatically -bool false
 
 # Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
