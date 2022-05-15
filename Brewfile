@@ -25,6 +25,7 @@ brew "magic-wormhole" # Securely transfers data between computers
 brew "croc"           # Securely transfers data between computers
 
 ## command line
+brew "1password-cli"  # 1password
 brew "chrome-cli"     # control chrome via cli
 brew "direnv"         # auto load env
 brew "fish"           # shell
