@@ -2,6 +2,27 @@
 # brew "leaves"
 
 #######################################
+# Bootstrap priorities
+#######################################
+
+# having these installed early in the bootstrapping process allows 
+# to already configure and use services and applications while brew
+# keeps installing other packages
+
+cask "1password"
+cask "1password-cli"
+cask "alacritty"
+cask "google-chrome"
+cask "karabiner-elements"
+cask "hammerspoon"
+cask "intellij-idea-ce"
+brew "chezmoi"
+brew "fish"
+brew "fzf"
+mas "Bear", id: 1091189122 
+mas "NotePlan 3", id: 1505432629 
+
+#######################################
 # Packages
 #######################################
 
@@ -25,9 +46,10 @@ brew "magic-wormhole" # Securely transfers data between computers
 brew "croc"           # Securely transfers data between computers
 
 ## command line
+brew "bat"            # "better" cat
 brew "chrome-cli"     # control chrome via cli
 brew "direnv"         # auto load env
-brew "fish"           # shell
+brew "exa"            # "better" ls
 brew "fzf"            # fuzzy file finder
 brew "pandoc"         # document converter,
 brew "tmux"           # terminal multiplexer
@@ -131,7 +153,6 @@ mas "Affinity Designer", id: 824171161
 mas "Affinity Photo", id: 824183456
 mas "Affinity Publisher", id: 881418622   
 mas "Apple Configurator", id: 1037126344
-mas "Bear", id: 1091189122 
 mas "Controller", id: 1198176727 
 mas "Due", id: 524373870 
 mas "Health Auto Export", id: 1115567069 
@@ -141,7 +162,6 @@ mas "Keynote", id: 409183694
 mas "MindNode", id: 1289197285
 mas "NextDNS", id: 1464122853
 mas "NordVPN", id: 905953485  
-mas "NotePlan 3", id: 1505432629 
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541   
 mas "PhotoScape X", id: 929507092   
@@ -170,9 +190,6 @@ cask "mplus-mn-nerd-font-complete-mono"
 # Casks
 #######################################
 
-cask "1password"
-cask "1password-cli"
-cask "alacritty"
 cask "alfred"
 cask "android-platform-tools"
 cask "bettertouchtool"
@@ -184,19 +201,15 @@ cask "docker"
 cask "elgato-control-center"
 cask "firefox"
 cask "flux"
-cask "google-chrome"
 cask "gotomeeting"
 cask "grammarly"
 cask "grammarly-desktop"
-cask "hammerspoon"
 cask "handbrake"
 cask "hex-fiend"
 cask "iina"
-cask "intellij-idea-ce"
 cask "jdk-mission-control"
 cask "jdownloader"
 cask "kap"
-cask "karabiner-elements"
 cask "keyboardcleantool"
 cask "keycastr"             # shows key strokes on screen
 cask "kindlegen"
