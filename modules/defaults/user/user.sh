@@ -102,8 +102,6 @@ defaults write com.apple.screencapture location ~/Downloads
 # Disable shadow in screenshots
 # defaults write com.apple.screencapture disable-shadow -bool true
 
-# Disable Dashboard
-defaults write com.apple.dashboard mcx-disabled -boolean yes
 
 ## --------------------------------------------------------------------------
 # Menubar
