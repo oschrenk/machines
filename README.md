@@ -35,7 +35,7 @@ Downloading and compiling all the various applications and packages will take ro
 After casks are installed you can already start important apps and configure them
 
 - 1Password. Login, let it sync.
-- Chrome. Login, synchronize, then log into services.
+- Chrome. Login, synchronize, log into services.
     - Grammarly
     - Instapaper
 * Karabiner Elements. It will trigger a "System Extensions Blocked" popup. Click on "Open Security Preferences" and press "Allow".
@@ -47,4 +47,8 @@ After casks are installed you can already start important apps and configure the
   - Ideavim.
 * Hammerspoon. Preferences, apply accessibility settings.
 * alacritty. macOS will complain that it's from an unidentified developer. "System Preferences" > "Security & privacy" > General. Click Allow.
+* App Store, Press continue.
+* Calendar, configure them,
+* Photos. Sync, stay with power cable
+* Open Mail, configfure
 
