@@ -93,9 +93,6 @@ defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 # General UI/UX
 ## --------------------------------------------------------------------------
 
-# Take screenshots as png
-defaults write com.apple.screencapture type png
-
 # Save screenshots to ...
 defaults write com.apple.screencapture location ~/Downloads
 
