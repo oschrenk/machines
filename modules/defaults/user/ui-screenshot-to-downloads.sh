@@ -1,0 +1,3 @@
+#!/bin/sh
+# Save screenshots to ...
+defaults write com.apple.screencapture location ~/Downloads

@@ -90,17 +90,6 @@ defaults write com.apple.spotlight orderedItems -array \
 defaults write com.apple.TimeMachine DoNotOfferNewDisksForBackup -bool true
 
 ## --------------------------------------------------------------------------
-# General UI/UX
-## --------------------------------------------------------------------------
-
-# Save screenshots to ...
-defaults write com.apple.screencapture location ~/Downloads
-
-# Disable shadow in screenshots
-# defaults write com.apple.screencapture disable-shadow -bool true
-
-
-## --------------------------------------------------------------------------
 # Menubar
 ## --------------------------------------------------------------------------
 
