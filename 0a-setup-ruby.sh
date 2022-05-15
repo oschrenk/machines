@@ -21,7 +21,7 @@ TARGET_RUBY_VERSION="2.7.6"
 CURRENT_RUBY_VERSION=$(rbenv global)
 
 if [ "$CURRENT_RUBY_VERSION" = "$TARGET_RUBY_VERSION" ]; then
-  echo "Running ruby $CURRENT_RUBY_VERSION"
+  echo "Aleady running ruby $CURRENT_RUBY_VERSION"
   rbenv rehash
 else
   rbenv uninstall $CURRENT_RUBY_VERSION
