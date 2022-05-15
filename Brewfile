@@ -25,7 +25,6 @@ brew "magic-wormhole" # Securely transfers data between computers
 brew "croc"           # Securely transfers data between computers
 
 ## command line
-brew "1password-cli"  # 1password
 brew "chrome-cli"     # control chrome via cli
 brew "direnv"         # auto load env
 brew "fish"           # shell
@@ -172,6 +171,7 @@ cask "mplus-mn-nerd-font-complete-mono"
 #######################################
 
 cask "1password"
+cask "1password-cli"
 cask "alacritty"
 cask "alfred"
 cask "android-platform-tools"
