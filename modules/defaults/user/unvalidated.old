@@ -257,8 +257,6 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 # Dock
 ## --------------------------------------------------------------------------
 
-# Disable magnification
-defaults write com.apple.dock 'magnification' -bool false
 
 # Lock size
 defaults write com.apple.Dock size-immutable -bool true
