@@ -218,9 +218,6 @@ defaults write com.apple.Finder FXPreferredViewStyle -string "clmv"
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -boolean true
 defaults write NSGlobalDomain PMPrintingExpandedStateForPrint -boolean true
 
-# Show all filename extensions in Finder
-defaults write NSGlobalDomain AppleShowAllExtensions -bool true
-
 # Use current directory as default search scope in Finder
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
