@@ -257,9 +257,6 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 # Dock
 ## --------------------------------------------------------------------------
 
-# Size: 56 pixels
-defaults write com.apple.dock 'tilesize' -int 56
-
 # Disable magnification
 defaults write com.apple.dock 'magnification' -bool false
 
